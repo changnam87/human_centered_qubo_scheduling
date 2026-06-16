@@ -1,0 +1,34 @@
+{
+  "format": "qiskit_optimization_qubo_ready",
+  "num_binary_variables": 6,
+  "variables": [
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5"
+  ],
+  "objective_sense": "minimize",
+  "constant": 30.0,
+  "linear": {
+    "x0": -9.0,
+    "x1": -7.0,
+    "x2": -8.0,
+    "x3": -8.5,
+    "x4": -7.5,
+    "x5": -9.0
+  },
+  "quadratic": {
+    "x0,x1": 20.0,
+    "x0,x3": 0.5,
+    "x0,x4": 0.75,
+    "x1,x2": 1.0,
+    "x2,x3": 20.0,
+    "x3,x5": 0.25,
+    "x4,x5": 20.0
+  },
+  "energy_convention": "constant + sum_i linear_i x_i + sum_{i<j} quadratic_ij x_i x_j",
+  "known_best_bitstring": "101001",
+  "known_best_energy": 4.0
+}

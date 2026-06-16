@@ -1,0 +1,34 @@
+{
+  "package": "tiny_qaoa_ready_package",
+  "purpose": "Tiny QUBO package for Qiskit Optimization and QAOA-oriented toy experiments.",
+  "num_variables": 6,
+  "num_assignments_enumerated": 64,
+  "constant_offset": 30.0,
+  "num_qubo_terms": 13,
+  "num_linear_terms": 6,
+  "num_quadratic_terms": 7,
+  "exactly_one_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "penalty": 10.0,
+  "best_bitstring": "101001",
+  "best_energy": 4.0,
+  "best_is_feasible": true,
+  "best_feasible_bitstring": "101001",
+  "best_feasible_energy": 4.0,
+  "qubo_coefficients_csv": "exports/tiny_qaoa_ready_package/qubo_coefficients.csv",
+  "bruteforce_energy_table_csv": "exports/tiny_qaoa_ready_package/bruteforce_energy_table.csv",
+  "qiskit_qubo_json": "exports/tiny_qaoa_ready_package/qiskit_qubo.json",
+  "note": "Export only. Qiskit/QAOA execution is not performed in this step."
+}

@@ -635,3 +635,13 @@ A v0.2 progress checkpoint summary was created.
 The summary consolidates completed v0.2 progress including scaled QUBO/Ising export validation, dimod-style BQM export and validation, actual dimod BinaryQuadraticModel import PASS, and the current small-package solver-readiness status.
 
 The README and v0.2 roadmap were updated to point to the v0.2 progress checkpoint summary.
+
+## Additional Checkpoint: Tiny QAOA-Ready Package Export
+
+A tiny QUBO package was created for Qiskit Optimization and QAOA-oriented toy experiments.
+
+The package is intentionally tiny and separate from the full sample_4x4 QUBO.
+
+The package includes QUBO coefficients, a Qiskit-friendly QUBO JSON representation, a brute-force energy table, package metadata, and a known optimum.
+
+This step does not run Qiskit, QAOA, quantum hardware, or a quantum simulator.
