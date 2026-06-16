@@ -821,3 +821,15 @@ A v0.2 tag preparation note was created.
 The note summarizes the proposed tag scope, proposed target commit, small external-solver package results, tiny Qiskit/QAOA package results, allowed claims, excluded claims, and recommended annotated-tag commands.
 
 The README and v0.2 release-style summary were updated to point to the tag preparation note.
+
+## Additional Checkpoint: v0.2 Annotated Tag Created
+
+The v0.2 annotated tag was created and pushed to origin.
+
+Tag name: v0.2
+
+Tag target commit: 1abb376 Add project v0.2 tag preparation note
+
+Tag message: v0.2 solver-readiness and tiny QAOA software checkpoint
+
+The tag marks the solver-readiness and tiny QAOA software checkpoint, including small external-solver package readiness, dimod import validation, tiny Qiskit/QAOA workflow validation, external solver benchmark template, release candidate verification, and tag preparation documentation.
