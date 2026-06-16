@@ -463,3 +463,17 @@ A compact solver benchmark summary was created for the small external-solver-rea
 The summary consolidates brute-force enumeration, the initial simulated annealing baseline, and the best simulated annealing parameter sensitivity result.
 
 This provides a concise benchmark table for the small 15-variable package while remaining distinct from the full sample_4x4 prototype.
+
+## Additional Result: Small External Package Solver Benchmark Summary
+
+A compact solver benchmark summary was created for the small external-solver-ready QUBO/Ising package.
+
+The summary consolidates brute-force enumeration, the initial simulated annealing baseline, and the best simulated annealing parameter sensitivity case.
+
+The brute-force optimum was 5.30 with bitstring 100000000000100.
+
+The initial simulated annealing baseline had success_rate = 0.14, while the best tuned simulated annealing setting had success_rate = 0.725.
+
+The success-rate improvement was 0.585.
+
+This confirms that the small external package supports both exhaustive and heuristic solver workflows.
