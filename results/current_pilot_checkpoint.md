@@ -309,3 +309,15 @@ The report now documents the QUBO-to-Ising transformation using s_i = 2 x_i - 1 
 The Ising energy validation passed on six sampled assignments with max_abs_error = 0.0 and mean_abs_error = 0.0.
 
 This confirms energy consistency between the merged sparse QUBO representation and the Ising-transformed representation at prototype validation level.
+
+## Additional Checkpoint: Project README Updated
+
+The project-level README was updated to summarize the prototype purpose, current validation status, sample_4x4 scale, key QUBO/CP-SAT/Ising results, important scripts, large artifact handling, and recommended next steps.
+
+The README explicitly states that the project remains in prototype and pilot validation stage and has not yet executed quantum hardware, quantum annealing hardware, or QAOA.
+
+## Additional Checkpoint: Project README Updated
+
+The project-level README was updated to summarize the prototype purpose, current validation status, sample_4x4 scale, key QUBO/CP-SAT/Ising results, important scripts, large artifact handling, and recommended next steps.
+
+The README explicitly states that the project remains in prototype and pilot validation stage and has not yet executed quantum hardware, quantum annealing hardware, or QAOA.
