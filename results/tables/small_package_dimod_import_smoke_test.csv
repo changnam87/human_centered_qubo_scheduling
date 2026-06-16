@@ -1,0 +1,2 @@
+status,reason
+SKIPPED,dimod is not installed in the current environment.

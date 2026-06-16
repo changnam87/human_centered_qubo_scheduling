@@ -577,3 +577,13 @@ The README, technical validation report, v0.2 roadmap, v0.1 milestone summary, a
 The documentation records that unit_abs_max scaling preserved the best bitstring 100000000000100 across unscaled QUBO, scaled QUBO, and scaled Ising formulations.
 
 The validation enumerated all 32,768 assignments and passed with scaled QUBO-vs-Ising max_abs_error approximately 7.1e-15.
+
+## Additional Checkpoint: Small Package dimod Import Smoke Test
+
+A dimod import smoke test was added for the small package BQM-style JSON exports.
+
+The script attempts to build actual dimod BinaryQuadraticModel objects for BINARY and SPIN formulations if dimod is installed.
+
+If dimod is unavailable, the script records SKIPPED status gracefully.
+
+This is a local software import validation step and does not run D-Wave hardware, quantum annealing, or QAOA.

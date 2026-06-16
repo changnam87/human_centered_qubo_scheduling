@@ -1,0 +1,9 @@
+{
+  "experiment": "small_package_dimod_import_smoke_test",
+  "status": "SKIPPED",
+  "reason": "dimod is not installed in the current environment.",
+  "num_variables": 15,
+  "binary_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_bqm.json",
+  "spin_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_bqm.json",
+  "note": "Install dimod to run actual BinaryQuadraticModel import validation."
+}
