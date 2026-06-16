@@ -1,0 +1,20 @@
+{
+  "experiment": "small_external_package_sa_solver",
+  "package_dir": "exports/small_time_indexed_solver_package",
+  "num_variables": 15,
+  "restarts": 100,
+  "iterations": 10000,
+  "initial_temperature": 10.0,
+  "final_temperature": 0.0001,
+  "seed": 789,
+  "brute_force_optimum": 5.3,
+  "brute_force_bitstring": "100000000000100",
+  "best_energy": 5.300000000000001,
+  "best_bitstring": "100000000000100",
+  "best_gap_to_bruteforce": 8.881784197001252e-16,
+  "success_count": 13,
+  "success_rate": 0.13,
+  "validation_status": "PASS",
+  "runs_csv": "results/tables/small_external_package_sa_sensitivity/run092_r100_it10000_t10.0_tf0.0001_s789_runs.csv",
+  "note": "Minimal simulated annealing solver smoke test on small external package."
+}

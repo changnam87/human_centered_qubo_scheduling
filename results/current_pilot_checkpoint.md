@@ -423,3 +423,11 @@ The documentation now includes the brute-force smoke test result and the simulat
 The simulated annealing solver recovered the brute-force optimum energy 5.30 and bitstring 100000000000100, with success_count = 14 out of 100 restarts.
 
 This documents that the compact solver package can be consumed by both exhaustive and heuristic QUBO-style solvers.
+
+## Additional Checkpoint: Small External Package SA Parameter Sensitivity
+
+A simulated annealing parameter sensitivity workflow was added for the small external-solver-ready QUBO package.
+
+The sensitivity experiment evaluates restarts, iterations, temperature schedules, and seeds against the known brute-force optimum energy 5.30.
+
+This provides a lightweight heuristic solver sensitivity baseline for the small external package.
