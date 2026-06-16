@@ -771,3 +771,33 @@ Interpretation: the Qiskit classical optimizer path recovered the known brute-fo
 CplexOptimizer was unavailable because the CPLEX optional dependency was not installed, but the NumPyMinimumEigensolver path succeeded.
 
 This remains a classical solver validation step. It does not run QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## Addendum: Tiny QAOA Simulator Smoke Test PASS
+
+The tiny QAOA-ready QUBO package was tested with a QAOA software/simulator path.
+
+This test used the 6-variable toy package and did not run quantum hardware.
+
+Observed result:
+
+```text
+status = PASS
+num_variables = 6
+reps = 1
+maxiter = 100
+seed = 123
+sampler_name = StatevectorSampler
+qaoa_status = OptimizationResultStatus.SUCCESS
+known_best_bitstring = 101001
+known_best_energy = 4.0
+qaoa_bitstring = 101001
+qaoa_energy = 4.0
+qaoa_gap_to_known = 0.0
+qaoa_matches_known = true
+```
+
+Interpretation: the QAOA software path successfully recovered the known brute-force optimum for the tiny package under the tested toy setting.
+
+This is a toy simulator/software result only. It is not a sample_4x4 solve, not a quantum hardware result, and not evidence of quantum advantage.

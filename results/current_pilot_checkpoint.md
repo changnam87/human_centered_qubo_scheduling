@@ -723,3 +723,13 @@ The result was PASS: QAOA recovered the known optimum bitstring 101001 with ener
 This confirms that the QAOA software path can run on the tiny package.
 
 This is a toy simulator/software result only. It does not run quantum hardware and does not imply quantum advantage.
+
+## Additional Checkpoint: Tiny QAOA Simulator PASS Documented
+
+The README, technical validation report, v0.2 roadmap, v0.2 progress summary, and v0.1 milestone summary were updated with the tiny QAOA simulator smoke test PASS result.
+
+The documentation records that the 6-variable tiny package was solved with QAOA using reps = 1, maxiter = 100, seed = 123, and StatevectorSampler.
+
+QAOA recovered the known optimum bitstring 101001 with energy 4.0 and gap_to_known = 0.0.
+
+The documentation clearly states that this is a toy simulator/software result only, not quantum hardware execution and not evidence of quantum advantage.

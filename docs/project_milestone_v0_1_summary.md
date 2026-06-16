@@ -267,3 +267,15 @@ The tiny QAOA-ready package was solved through a classical Qiskit Optimization e
 MinimumEigenOptimizer with NumPyMinimumEigensolver recovered the known optimum bitstring 101001 with energy 4.0 and abs_error = 0.0.
 
 This validates the tiny package for classical Qiskit Optimization solver workflows, but it does not run QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## Addendum: Tiny QAOA Simulator Smoke Test PASS
+
+The tiny QAOA-ready package was tested with a QAOA software/simulator path.
+
+The 6-variable toy package was solved with reps = 1, maxiter = 100, seed = 123, and StatevectorSampler.
+
+The QAOA result recovered the known optimum bitstring 101001 with energy 4.0 and gap_to_known = 0.0.
+
+This is a toy simulator/software result only. It is not a sample_4x4 solve, not a quantum hardware result, and not evidence of quantum advantage.

@@ -362,3 +362,17 @@ The result was PASS: the solver recovered known_best_bitstring = 101001 with ene
 This completes the classical Qiskit exact-solver validation objective for the tiny package.
 
 This remains classical software validation and does not run QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## v0.2 Progress Update: Tiny QAOA Simulator Smoke Test PASS
+
+The tiny QAOA-ready package was tested with a QAOA software/simulator path.
+
+The test used reps = 1, maxiter = 100, seed = 123, and StatevectorSampler.
+
+The result was PASS: QAOA recovered the known optimum bitstring 101001 with energy 4.0 and gap_to_known = 0.0.
+
+This completes a first tiny QAOA-oriented software smoke test.
+
+This is a toy simulator/software result only. It does not run quantum hardware and does not imply quantum advantage.

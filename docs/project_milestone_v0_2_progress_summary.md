@@ -210,3 +210,29 @@ abs_error_solver_vs_known = 0.0
 This confirms that the tiny package can be solved through a classical Qiskit Optimization exact-solver path before attempting any QAOA-oriented experiment.
 
 This does not run QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## Addendum: Tiny QAOA Simulator Smoke Test PASS
+
+The tiny QAOA-ready package was tested with a QAOA software/simulator path.
+
+Observed result:
+
+```text
+status = PASS
+num_variables = 6
+reps = 1
+maxiter = 100
+seed = 123
+sampler_name = StatevectorSampler
+known_best_bitstring = 101001
+qaoa_bitstring = 101001
+known_best_energy = 4.0
+qaoa_energy = 4.0
+qaoa_gap_to_known = 0.0
+```
+
+This confirms that the QAOA software path can run on the tiny package and recover the known optimum under the tested toy setting.
+
+This does not run quantum hardware and does not imply quantum advantage.

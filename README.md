@@ -646,3 +646,37 @@ results/tables/tiny_qiskit_classical_optimizer_smoke_test_summary.json
 results/tables/tiny_qiskit_classical_optimizer_smoke_test.csv
 results/tiny_qiskit_classical_optimizer_smoke_test_manifest.md
 ```
+
+## Tiny QAOA Simulator Smoke Test
+
+The tiny QAOA-ready package was tested with a QAOA software/simulator path.
+
+This is a toy 6-variable simulation only. It does not run quantum hardware and does not imply quantum advantage.
+
+Observed result:
+
+```text
+status = PASS
+num_variables = 6
+reps = 1
+maxiter = 100
+seed = 123
+sampler_name = StatevectorSampler
+qaoa_status = OptimizationResultStatus.SUCCESS
+known_best_bitstring = 101001
+known_best_energy = 4.0
+qaoa_bitstring = 101001
+qaoa_energy = 4.0
+qaoa_gap_to_known = 0.0
+qaoa_matches_known = true
+```
+
+Interpretation: the QAOA software path successfully ran on the tiny package and recovered the known brute-force optimum under the tested toy setting.
+
+Relevant outputs:
+
+```text
+results/tables/tiny_qaoa_simulator_smoke_test_summary.json
+results/tables/tiny_qaoa_simulator_smoke_test.csv
+results/tiny_qaoa_simulator_smoke_test_manifest.md
+```
