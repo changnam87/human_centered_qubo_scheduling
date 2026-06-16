@@ -393,3 +393,11 @@ The README and sample_4x4 technical validation report were updated with informat
 The documentation now points to exports/small_time_indexed_solver_package/ and records the smoke-test result: 15 variables, 32,768 assignments enumerated, best bitstring 100000000000100, best QUBO energy 5.30, and validation status PASS.
 
 This clarifies that the small package can be used as a lightweight external solver input, while remaining distinct from the full sample_4x4 QUBO.
+
+## Additional Checkpoint: Small External Package Simulated Annealing Solver
+
+A minimal simulated annealing solver was added for the small external-solver-ready QUBO package.
+
+The solver reads the exported QUBO coefficients, performs bit-flip simulated annealing, and compares the best result against the brute-force optimum energy 5.30.
+
+This provides the first heuristic solver baseline for the small external package.
