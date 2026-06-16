@@ -691,3 +691,27 @@ validation_status = PASS
 Interpretation: the scaled QUBO and scaled Ising exports preserve the same optimum assignment as the unscaled package and remain energy-consistent within numerical tolerance.
 
 This is a solver-readiness coefficient-format validation step. It does not execute quantum hardware, quantum annealing, dimod, or QAOA.
+
+---
+
+## Addendum: dimod Import Smoke Test PASS
+
+After installing dimod in the active environment, the small package dimod-style BQM exports were imported into actual dimod BinaryQuadraticModel objects.
+
+Observed result:
+
+```text
+status = PASS
+dimod_version = 0.12.22
+num_variables = 15
+num_samples = 23
+binary_num_variables = 15
+spin_num_variables = 15
+binary_num_interactions = 90
+spin_num_interactions = 90
+max_abs_error approximately 4.55e-13
+```
+
+Interpretation: the BINARY and SPIN BQM-style JSON files are compatible with actual dimod BinaryQuadraticModel import and preserve sampled energy consistency.
+
+This is a local software validation step only. It does not run D-Wave hardware, quantum annealing, or QAOA.

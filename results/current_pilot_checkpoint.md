@@ -619,3 +619,11 @@ The result was PASS with dimod_version = 0.12.22, num_variables = 15, num_sample
 This confirms actual dimod import and sampled energy consistency for the small external solver package.
 
 This step did not run D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Checkpoint: dimod Import PASS Documented
+
+The README, technical validation report, v0.2 roadmap, v0.1 milestone summary, and release-style checkpoint summary were updated with the dimod import smoke test PASS result.
+
+The documentation records dimod_version = 0.12.22, num_variables = 15, num_samples = 23, binary_num_interactions = 90, spin_num_interactions = 90, and max_abs_error approximately 4.55e-13.
+
+This documents actual dimod BinaryQuadraticModel import compatibility while making clear that D-Wave hardware, quantum annealing, and QAOA were not executed.

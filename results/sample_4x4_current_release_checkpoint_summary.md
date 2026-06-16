@@ -278,3 +278,13 @@ The validation preserved the best bitstring 100000000000100 across unscaled QUBO
 The scale factor was approximately 0.0010425354 and the validation status was PASS.
 
 This provides a bounded-coefficient export format for external solver-readiness testing.
+
+---
+
+## Addendum: dimod Import Smoke Test PASS
+
+The small package dimod-style BQM exports were validated with actual dimod BinaryQuadraticModel import.
+
+The test passed with dimod_version = 0.12.22, 15 variables, 90 binary interactions, 90 spin interactions, and max_abs_error approximately 4.55e-13.
+
+This confirms local dimod compatibility without running D-Wave hardware, quantum annealing, or QAOA.

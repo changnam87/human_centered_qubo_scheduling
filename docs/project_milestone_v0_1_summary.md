@@ -235,3 +235,13 @@ The unscaled best energy was 5.30, while the scaled best energy was approximatel
 The scaled QUBO-vs-Ising maximum absolute error was approximately 7.1e-15, with validation status PASS.
 
 This strengthens solver-format readiness for the small package.
+
+---
+
+## Addendum: dimod Import Smoke Test PASS
+
+The small package dimod-style BQM exports were imported into actual dimod BinaryQuadraticModel objects after installing dimod.
+
+The import smoke test passed with dimod_version = 0.12.22 and max_abs_error approximately 4.55e-13 across 23 sampled assignments.
+
+This confirms actual dimod import compatibility for the small package while remaining distinct from D-Wave hardware, quantum annealing, or QAOA execution.

@@ -308,3 +308,17 @@ The unscaled best energy was 5.30 and the scaled best energy was approximately 0
 The scaled QUBO-vs-Ising maximum absolute error was approximately 7.1e-15, and validation status was PASS.
 
 This completes the scaled coefficient-format validation objective for the small package.
+
+---
+
+## v0.2 Progress Update: dimod Import Smoke Test PASS
+
+The dimod import smoke test was completed after installing dimod in the active environment.
+
+The small package BINARY and SPIN BQM-style JSON files were imported into actual dimod BinaryQuadraticModel objects.
+
+The result was PASS with dimod_version = 0.12.22, num_variables = 15, num_samples = 23, binary_num_interactions = 90, spin_num_interactions = 90, and max_abs_error approximately 4.55e-13.
+
+This completes the dimod import smoke-test objective for the small package.
+
+This remains local software validation and does not run D-Wave hardware, quantum annealing, or QAOA.
