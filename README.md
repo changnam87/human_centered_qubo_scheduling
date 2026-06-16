@@ -361,3 +361,55 @@ results/tables/small_external_solver_smoke_test_result.csv
 results/tables/small_external_solver_smoke_test_summary.json
 results/small_external_solver_smoke_test_manifest.md
 ```
+
+## Small External Solver Baselines
+
+The small external-solver-ready package has two completed baseline checks.
+
+### Brute-force smoke test
+
+The brute-force smoke test enumerates all assignments for the 15-variable package.
+
+```text
+num_variables = 15
+num_assignments_enumerated = 32768
+best_bitstring = 100000000000100
+best_qubo_energy = 5.30
+best_ising_energy = 5.30
+max_abs_error_qubo_vs_ising approximately 1.14e-12
+validation_status = PASS
+```
+
+### Simulated annealing baseline
+
+A minimal bit-flip simulated annealing solver was also tested on the same exported QUBO package.
+
+```text
+restarts = 100
+iterations per restart = 2000
+initial_temperature = 10.0
+final_temperature = 0.001
+brute_force_optimum = 5.30
+SA best_energy = 5.30
+best_bitstring = 100000000000100
+best_gap_to_bruteforce approximately 8.88e-16
+success_count = 14 / 100
+success_rate = 0.14
+validation_status = PASS
+```
+
+These results confirm that the compact package can be consumed by both exhaustive and heuristic QUBO-style solvers. The simulated annealing result also shows that solver performance is stochastic: the optimum was recovered in 14 percent of restarts under the tested settings.
+
+Relevant scripts:
+
+```text
+scripts/run_small_external_solver_smoke_test.py
+scripts/run_small_external_package_sa_solver.py
+```
+
+Relevant outputs:
+
+```text
+results/tables/small_external_solver_smoke_test_summary.json
+results/tables/small_external_package_sa_solver_summary.json
+```

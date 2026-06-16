@@ -413,3 +413,13 @@ The best gap to brute-force was approximately 8.88e-16, indicating numerical flo
 The optimum was reached in 14 out of 100 restarts, giving success_rate = 0.14.
 
 This confirms that the small external-solver package can be consumed by a simple heuristic solver and that the known optimum can be recovered.
+
+## Additional Checkpoint: Small External Solver Baselines Documented
+
+The README, technical validation report, and release-style checkpoint summary were updated with the small external solver package baseline results.
+
+The documentation now includes the brute-force smoke test result and the simulated annealing baseline result.
+
+The simulated annealing solver recovered the brute-force optimum energy 5.30 and bitstring 100000000000100, with success_count = 14 out of 100 restarts.
+
+This documents that the compact solver package can be consumed by both exhaustive and heuristic QUBO-style solvers.

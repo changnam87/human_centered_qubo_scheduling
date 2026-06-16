@@ -206,3 +206,17 @@ Recommended next prototype steps:
 The sample_4x4 prototype now validates the full path from human-centered scheduling formulation to sparse QUBO, objective-equivalent CP-SAT comparison, near-optimal local QUBO search, QUBO-to-Ising metadata, Ising energy validation, and runtime/artifact profiling.
 
 This is a strong prototype checkpoint, but it remains a pilot validation milestone rather than a final paper or quantum hardware result.
+
+---
+
+## Addendum: Small External Solver Baselines
+
+The small external-solver-ready package now has two completed baseline checks.
+
+Brute-force enumeration over all 32,768 assignments found best_bitstring = 100000000000100 with best QUBO energy = 5.30 and QUBO-vs-Ising max_abs_error approximately 1.14e-12.
+
+A minimal simulated annealing solver recovered the same best energy 5.30 and best bitstring 100000000000100.
+
+The simulated annealing run used 100 restarts and 2,000 iterations per restart, reaching the brute-force optimum in 14 out of 100 restarts.
+
+This confirms that the small external package can be consumed by exhaustive and heuristic QUBO-style solvers.

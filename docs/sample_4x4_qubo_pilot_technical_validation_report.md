@@ -490,3 +490,53 @@ validation_status = PASS
 Interpretation: the small external-solver package can be consumed as a valid QUBO/Ising solver input.
 
 This smoke test is not a full sample_4x4 solve and is not a quantum hardware result. It is a lightweight package-level validation step for external solver readiness.
+
+---
+
+## Addendum: Small External Solver Baselines
+
+The small external-solver-ready QUBO/Ising package was evaluated with two baseline solver checks: exhaustive brute-force enumeration and a minimal simulated annealing heuristic.
+
+## Brute-Force Smoke Test
+
+The brute-force smoke test enumerated all binary assignments for the 15-variable small package.
+
+Observed result:
+
+```text
+num_variables = 15
+num_assignments_enumerated = 32768
+best_bitstring = 100000000000100
+best_qubo_energy = 5.30
+best_ising_energy = 5.30
+max_abs_error_qubo_vs_ising approximately 1.14e-12
+validation_status = PASS
+```
+
+This confirms that the exported small package can be consumed as a valid QUBO/Ising input and that QUBO and Ising energies are numerically consistent across the exhaustive assignment set.
+
+## Simulated Annealing Baseline
+
+A minimal bit-flip simulated annealing solver was run on the same 15-variable QUBO package.
+
+Observed result:
+
+```text
+restarts = 100
+iterations per restart = 2000
+initial_temperature = 10.0
+final_temperature = 0.001
+brute_force_optimum = 5.30
+SA best_energy = 5.30
+best_bitstring = 100000000000100
+best_gap_to_bruteforce approximately 8.88e-16
+success_count = 14 / 100
+success_rate = 0.14
+validation_status = PASS
+```
+
+The simulated annealing solver recovered the known brute-force optimum and the same best bitstring. The optimum was reached in 14 out of 100 restarts under the tested settings.
+
+Interpretation: the small external-solver package is usable by both exhaustive and heuristic solvers. The simulated annealing result confirms solver-readiness while also showing stochastic sensitivity to initialization and annealing trajectory.
+
+This remains a small-package solver baseline. It is not a full sample_4x4 solve and is not a quantum hardware or QAOA result.
