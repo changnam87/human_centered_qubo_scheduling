@@ -493,3 +493,11 @@ A v0.1-style project milestone summary was created.
 The milestone summary consolidates the sample_4x4 sparse QUBO/Ising prototype pipeline, CP-SAT comparison, tuned local search result, Ising validation, runtime/artifact profile, small external solver package, brute-force and simulated annealing solver benchmarks, limitations, and recommended v0.2 directions.
 
 The README was updated to point to the milestone summary.
+
+## Additional Checkpoint: Small Package dimod-Compatible BQM Export
+
+A dimod-compatible BQM-style export was added for the small external-solver-ready QUBO/Ising package.
+
+The export includes BINARY and SPIN JSON files plus linear/quadratic CSV files.
+
+This prepares the small package for D-Wave Ocean/dimod-style workflows but does not execute D-Wave hardware, quantum annealing, or QAOA.

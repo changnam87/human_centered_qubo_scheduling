@@ -1,0 +1,20 @@
+{
+  "experiment": "small_package_dimod_bqm_export",
+  "package_dir": "exports/small_time_indexed_solver_package",
+  "num_variables": 15,
+  "binary_vartype": "BINARY",
+  "binary_offset": 61.0,
+  "binary_linear_terms": 15,
+  "binary_quadratic_terms": 90,
+  "spin_vartype": "SPIN",
+  "spin_offset": 959.2,
+  "spin_linear_terms": 15,
+  "spin_quadratic_terms": 90,
+  "binary_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_bqm.json",
+  "spin_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_bqm.json",
+  "binary_linear_csv": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_linear.csv",
+  "binary_quadratic_csv": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_quadratic.csv",
+  "spin_linear_csv": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_linear.csv",
+  "spin_quadratic_csv": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_quadratic.csv",
+  "note": "dimod-compatible style export. This does not require dimod and does not run D-Wave hardware."
+}
