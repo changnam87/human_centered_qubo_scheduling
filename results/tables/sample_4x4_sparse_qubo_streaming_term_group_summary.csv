@@ -1,0 +1,8 @@
+term_group,streamed_rows,share_of_total
+human_target_penalty_quadratic,4154403,0.46823037134031864
+assignment_penalty_quadratic,2368473,0.26694352769808766
+precedence_penalty,1949832,0.21975974921336136
+resource_overlap_penalty,379545,0.042777384931207016
+linear_cost_and_reward,8713,0.0009820162428845242
+assignment_penalty_linear,8713,0.0009820162428845242
+human_target_penalty_linear,2883,0.00032493433125629326

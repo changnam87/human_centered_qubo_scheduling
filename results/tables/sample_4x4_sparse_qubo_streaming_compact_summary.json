@@ -1,0 +1,8 @@
+{
+  "num_variables": 8713,
+  "num_human_variables": 2883,
+  "constant": 496.0,
+  "total_streamed_rows": 8872562,
+  "elapsed_seconds": 21.39249873161316,
+  "output_csv": "results/tables/sample_4x4_sparse_qubo_coefficients_stream.csv"
+}

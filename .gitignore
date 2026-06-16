@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .DS_Store
 .ipynb_checkpoints/
+results/tables/sample_4x4_sparse_qubo_coefficients_stream.csv

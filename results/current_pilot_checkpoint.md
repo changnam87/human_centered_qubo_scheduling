@@ -129,3 +129,15 @@ Assignment one-start penalties and precedence forbidden-pair penalties were also
 The memory estimates suggest that dense QUBO export is inappropriate and that full sparse export should use streaming CSV or component-wise writing rather than a monolithic in-memory dictionary.
 
 This establishes the need for a streaming sample_4x4 sparse QUBO export strategy as the next prototype step.
+
+## Additional Checkpoint: sample_4x4 Streaming Sparse QUBO Export
+
+A streaming sparse QUBO coefficient export prototype was added for sample_4x4 scale.
+
+The exporter writes coefficient rows directly to CSV without constructing a dense matrix or monolithic in-memory QUBO dictionary.
+
+The exported term groups include linear cost/reward terms, squared target human-utilization terms, one-start assignment penalty terms, resource overlap penalty terms, and precedence penalty terms.
+
+The streamed coefficient file is intentionally unmerged, preserving term_group labels for component-level analysis and validation.
+
+This establishes a scalable export path before attempting sample_4x4 QUBO optimization.
