@@ -211,3 +211,11 @@ The best solution found by the merged sample_4x4 QUBO local search was decompose
 The analysis reports assignment cost, workload cost, ergonomic cost, start-time cost, reward term, target penalty, feasibility penalties, and machine/human/robot assignment counts.
 
 The analysis also compares the local QUBO best solution against the previously established CP-SAT baseline values, with the caveat that the QUBO local-search objective includes human reward and target penalty terms.
+
+## Additional Checkpoint: sample_4x4 Technical Validation Report
+
+A consolidated technical validation report was created for the sample_4x4 human-centered QUBO scheduling pilot.
+
+The report summarizes formulation validation, squared target penalty analysis, sparse QUBO export, streamed and merged energy validation, solver-ready metadata, local search, and solution component analysis.
+
+This report is intended as an internal prototype/pilot validation document, not as a final manuscript.
