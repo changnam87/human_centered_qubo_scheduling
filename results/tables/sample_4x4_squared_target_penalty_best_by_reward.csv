@@ -1,0 +1,6 @@
+human_reward,best_lambda_target,human_assignments_mean,human_assignments_std,distance_from_target_mean,squared_deviation_mean,total_cost_without_reward_mean,adjusted_objective_manual_mean,workload_mean,ergonomic_mean
+0.0,3.0,4.0,0.0,0.0,0.0,54.30499999999999,54.30499999999999,4.5,2.82
+1.0,2.0,4.0,0.0,0.0,0.0,54.30499999999999,50.305,4.55,2.85
+2.0,1.0,4.0,0.0,0.0,0.0,54.30499999999999,46.305,4.5,2.82
+2.5,0.25,4.0,0.0,0.0,0.0,54.30499999999999,44.305,4.55,2.85
+3.0,1.0,4.0,0.0,0.0,0.0,54.30499999999999,42.305,4.55,2.85

@@ -1,0 +1,5 @@
+constraint_penalty,settings,feasible_rate,target_consistent_rate,mean_best_all_human_count,mean_best_all_distance_from_target,mean_assignment_violations,mean_overlap_violations,mean_precedence_violations
+1.0,25,0.0,0.0,0.44,0.56,1.56,0.0,0.0
+5.0,25,1.0,0.48,0.8,0.52,0.0,0.0,0.0
+10.0,25,1.0,0.48,0.8,0.52,0.0,0.0,0.0
+30.0,25,1.0,0.48,0.8,0.52,0.0,0.0,0.0

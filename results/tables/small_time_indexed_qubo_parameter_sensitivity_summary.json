@@ -1,0 +1,32 @@
+{
+  "experiment": "small_time_indexed_qubo_parameter_sensitivity",
+  "num_operations": 2,
+  "num_resources": 2,
+  "horizon": 4,
+  "num_variables": 15,
+  "target_human_assignments": 1,
+  "human_rewards": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "lambda_targets": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "constraint_penalties": [
+    1.0,
+    5.0,
+    10.0,
+    30.0
+  ],
+  "num_parameter_settings": 100,
+  "num_settings_best_all_feasible": 75,
+  "num_settings_best_all_infeasible": 25,
+  "output_csv": "results/tables/small_time_indexed_qubo_parameter_sensitivity.csv"
+}
