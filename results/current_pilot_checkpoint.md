@@ -179,3 +179,13 @@ Solver-ready metadata was generated for the merged sample_4x4 sparse QUBO.
 The metadata includes number of variables, constant offset, linear and quadratic term counts, coefficient ranges, sparse density estimates, scaling recommendation, and file schema.
 
 This prepares the compact sparse QUBO representation for downstream solver experiments while keeping the large merged coefficient CSV as a local ignored artifact.
+
+## Additional Result: sample_4x4 Solver-Ready Sparse QUBO Metadata
+
+The solver-ready metadata analysis showed that the merged sample_4x4 sparse QUBO contains 8,713 binary variables and 8,218,171 nonzero upper-triangular coefficient terms.
+
+The model has 8,713 linear terms and 8,209,458 quadratic terms, with quadratic density approximately 0.2163.
+
+The coefficient range is [-35.4, 62.0], with absolute maximum 62.0 and recommended unit-range scaling factor approximately 0.016129.
+
+This establishes the sample_4x4 QUBO as a solver-ready sparse coefficient representation, although still relatively dense due to target-utilization and scheduling constraint couplings.
