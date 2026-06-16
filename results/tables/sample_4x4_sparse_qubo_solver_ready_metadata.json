@@ -1,0 +1,43 @@
+{
+  "experiment": "sample_4x4_sparse_qubo_solver_ready_metadata",
+  "merged_csv": "results/tables/sample_4x4_sparse_qubo_coefficients_merged.csv",
+  "merged_csv_is_local_artifact": true,
+  "num_variables": 8713,
+  "constant_offset": 496.0,
+  "total_terms": 8218171,
+  "linear_terms": 8713,
+  "quadratic_terms": 8209458,
+  "possible_upper_triangular_terms": 37962541,
+  "possible_quadratic_terms": 37953828,
+  "sparse_density_upper_triangular": 0.2164810569450554,
+  "quadratic_density": 0.21630118574600696,
+  "coefficient_min": -35.4,
+  "coefficient_max": 62.0,
+  "coefficient_mean": 26.777348317527096,
+  "coefficient_abs_mean": 26.835188097205574,
+  "coefficient_abs_max": 62.0,
+  "positive_terms": 8209458,
+  "negative_terms": 8713,
+  "zero_terms": 0,
+  "max_i": 8712,
+  "max_j": 8712,
+  "scale_to_unit_abs_max": 0.016129032258064516,
+  "schema": {
+    "i": "integer variable index, 0-based",
+    "j": "integer variable index, 0-based, with i <= j",
+    "coefficient": "merged QUBO coefficient for x_i x_j"
+  },
+  "qubo_energy_convention": "E(x) = constant_offset + sum_{i<=j} coefficient(i,j) * x_i * x_j",
+  "streaming_summary_reference": "results/tables/sample_4x4_sparse_qubo_streaming_summary.json",
+  "merge_summary_reference": "results/tables/sample_4x4_sparse_qubo_merge_summary.json",
+  "merge_total_input_rows": 8872562,
+  "merge_unique_pairs_after_drop": 8218171,
+  "merge_reduction_ratio_after_drop": 0.926245542155693,
+  "solver_notes": [
+    "The merged CSV is solver-ready as an upper-triangular sparse QUBO coefficient list.",
+    "The constant offset should be added back when comparing absolute energies.",
+    "Some solvers ignore constant offsets during optimization; this is acceptable because constants do not affect argmin.",
+    "For hardware annealers or solvers with coefficient ranges, coefficients may need scaling.",
+    "The large merged CSV should usually remain a local artifact or be stored externally."
+  ]
+}

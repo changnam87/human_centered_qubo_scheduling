@@ -1,0 +1,17 @@
+metric,value
+num_variables,8713.0
+constant_offset,496.0
+total_terms,8218171.0
+linear_terms,8713.0
+quadratic_terms,8209458.0
+sparse_density_upper_triangular,0.2164810569450554
+quadratic_density,0.21630118574600696
+coefficient_min,-35.4
+coefficient_max,62.0
+coefficient_abs_max,62.0
+coefficient_mean,26.777348317527096
+coefficient_abs_mean,26.835188097205574
+positive_terms,8209458.0
+negative_terms,8713.0
+zero_terms,0.0
+scale_to_unit_abs_max,0.016129032258064516

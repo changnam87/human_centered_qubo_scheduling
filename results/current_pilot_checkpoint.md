@@ -171,3 +171,11 @@ The unmerged streamed file contained 8,872,562 rows, while the merged compact sp
 The merged QUBO energy validation passed across six sampled assignments, with maximum absolute error approximately 1.14e-13 relative to the direct representative objective.
 
 This establishes a solver-ready compact sparse QUBO representation pathway for sample_4x4, while keeping large coefficient CSV files as local ignored artifacts.
+
+## Additional Checkpoint: sample_4x4 Solver-Ready Sparse QUBO Metadata
+
+Solver-ready metadata was generated for the merged sample_4x4 sparse QUBO.
+
+The metadata includes number of variables, constant offset, linear and quadratic term counts, coefficient ranges, sparse density estimates, scaling recommendation, and file schema.
+
+This prepares the compact sparse QUBO representation for downstream solver experiments while keeping the large merged coefficient CSV as a local ignored artifact.
