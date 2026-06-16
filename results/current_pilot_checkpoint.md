@@ -607,3 +607,15 @@ The dimod import smoke test was rerun after installing dimod in the active envir
 The test imports the small package BINARY and SPIN BQM-style JSON files into actual dimod BinaryQuadraticModel objects and validates sampled energies.
 
 This is a local software import validation step and does not run D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Result: Small Package dimod Import Smoke Test PASS
+
+The dimod import smoke test was rerun after installing dimod in the active environment.
+
+The test imported the small package BINARY and SPIN BQM-style JSON files into actual dimod BinaryQuadraticModel objects.
+
+The result was PASS with dimod_version = 0.12.22, num_variables = 15, num_samples = 23, binary_num_interactions = 90, spin_num_interactions = 90, and max_abs_error approximately 4.55e-13.
+
+This confirms actual dimod import and sampled energy consistency for the small external solver package.
+
+This step did not run D-Wave hardware, quantum annealing, or QAOA.

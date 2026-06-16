@@ -51,3 +51,27 @@ The validation compared manual BQM energies and dimod-computed energies on sampl
 The expected successful result is PASS with max_abs_error below numerical tolerance.
 
 This remains a local software import validation step and does not run D-Wave hardware, quantum annealing, or QAOA.
+
+## Updated Result After Installing dimod
+
+After installing dimod in the active environment, the dimod import smoke test was rerun.
+
+The test imported the BINARY and SPIN BQM-style JSON files into actual dimod BinaryQuadraticModel objects.
+
+Observed result:
+
+```text
+status = PASS
+dimod_version = 0.12.22
+num_variables = 15
+num_samples = 23
+binary_num_variables = 15
+spin_num_variables = 15
+binary_num_interactions = 90
+spin_num_interactions = 90
+max_abs_error approximately 4.55e-13
+```
+
+This confirms actual dimod BinaryQuadraticModel import and sampled energy consistency for the small package.
+
+This remains a local software import validation step and does not run D-Wave hardware, quantum annealing, or QAOA.
