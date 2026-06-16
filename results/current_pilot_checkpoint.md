@@ -537,3 +537,11 @@ The documentation now records that BINARY and SPIN BQM-style JSON files were gen
 The maximum absolute error across compared energy representations was approximately 9.09e-13, with validation status PASS.
 
 This documents solver-format readiness while making clear that dimod, D-Wave hardware, quantum annealing, and QAOA were not executed.
+
+## Additional Checkpoint: Project Roadmap v0.2 Created
+
+A v0.2 roadmap document was created.
+
+The roadmap defines next milestone directions including scaled QUBO/Ising exports, dimod import smoke testing, tiny Qiskit/QAOA-oriented workflows, improved local search neighborhoods, seed-specific sample_4x4 export summaries, external solver benchmark templates, and documentation hygiene.
+
+The README was updated to point to the v0.2 roadmap.

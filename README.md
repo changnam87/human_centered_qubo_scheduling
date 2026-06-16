@@ -552,3 +552,13 @@ results/tables/small_package_dimod_bqm_energy_validation.csv
 results/tables/small_package_dimod_bqm_energy_validation_summary.json
 results/small_package_dimod_bqm_energy_validation_manifest.md
 ```
+
+## Project Roadmap v0.2
+
+A v0.2 roadmap is available at:
+
+```text
+docs/project_roadmap_v0_2.md
+```
+
+The roadmap defines the next planned milestone: scaled exports, dimod import smoke tests, tiny Qiskit/QAOA-oriented experiments, improved local search neighborhoods, seed-specific sample_4x4 summaries, and external solver benchmark templates.
