@@ -373,3 +373,15 @@ A minimal brute-force external solver smoke test was added for the small time-in
 The test reads the exported QUBO and Ising files, enumerates all binary assignments, identifies the minimum-energy assignment, and validates QUBO/Ising energy consistency.
 
 This confirms that the small package can be consumed as an external solver input.
+
+## Additional Result: Small External Solver Smoke Test PASS
+
+A minimal brute-force external solver smoke test was completed for the small time-indexed QUBO/Ising package.
+
+The test enumerated all 32,768 assignments for the 15-variable package.
+
+The best bitstring was 100000000000100 with best QUBO energy 5.30.
+
+The corresponding Ising energy was 5.30, with maximum absolute QUBO-vs-Ising error approximately 1.14e-12.
+
+The validation status was PASS, confirming that the small package can be consumed as a valid external QUBO/Ising solver input.
