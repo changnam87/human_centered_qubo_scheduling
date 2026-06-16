@@ -677,3 +677,17 @@ The README, technical validation report, v0.2 roadmap, v0.2 progress summary, an
 The documentation records that the tiny package has 6 variables, the Qiskit Optimization QuadraticProgram objective matched manual and brute-force energies across all 64 assignments, the best bitstring was 101001, the best energy was 4.0, and max_abs_error was 0.0.
 
 This documents Qiskit Optimization compatibility while making clear that QAOA, quantum simulation, and quantum hardware were not executed.
+
+## Additional Result: Tiny Qiskit Classical Optimizer Smoke Test FALLBACK_PASS
+
+The tiny Qiskit classical optimizer smoke test was executed.
+
+The result was FALLBACK_PASS because CplexOptimizer and MinimumEigenOptimizer dependencies were unavailable in the current environment.
+
+The script used manual exhaustive fallback over all 64 assignments and recovered the known optimum bitstring 101001 with energy 4.0.
+
+The solver best and manual best matched the known optimum with abs_error = 0.0.
+
+This confirms the tiny package objective remains correct, while indicating that qiskit_algorithms or CPLEX-related dependencies are needed for an actual Qiskit classical optimizer solve path.
+
+This step did not run QAOA, a quantum simulator, or quantum hardware.
