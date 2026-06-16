@@ -349,3 +349,11 @@ A release-style checkpoint summary was created for the current sample_4x4 QUBO/I
 The summary consolidates sample_4x4 scale, sparse QUBO size, CP-SAT squared-target optimum, tuned local QUBO result, QUBO-to-Ising validation, runtime/artifact profile, and recommended next steps.
 
 The README was updated to point to this release-style checkpoint summary.
+
+## Additional Checkpoint: sample_4x4 Reproducibility Workflow
+
+A reproducibility workflow document and artifact-check script were added for the sample_4x4 QUBO/Ising prototype pipeline.
+
+The workflow documents the recommended regeneration order for large ignored artifacts and downstream validation summaries.
+
+The artifact-check script reports whether tracked summaries and large local ignored artifacts are present in the working tree.

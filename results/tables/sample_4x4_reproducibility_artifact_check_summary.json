@@ -1,0 +1,107 @@
+{
+  "experiment": "sample_4x4_reproducibility_artifact_check",
+  "tracked_expected_count": 11,
+  "large_local_artifact_count": 3,
+  "optional_local_artifact_count": 2,
+  "missing_tracked": [],
+  "missing_large_local": [],
+  "rows": [
+    {
+      "category": "tracked_expected",
+      "path": "README.md",
+      "exists": true,
+      "size_mb": 0.008355140686035156
+    },
+    {
+      "category": "tracked_expected",
+      "path": "docs/sample_4x4_qubo_pilot_technical_validation_report.md",
+      "exists": true,
+      "size_mb": 0.014390945434570312
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/current_pilot_checkpoint.md",
+      "exists": true,
+      "size_mb": 0.020330429077148438
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/sample_4x4_current_release_checkpoint_summary.md",
+      "exists": true,
+      "size_mb": 0.0054340362548828125
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/tables/sample_4x4_sparse_qubo_solver_ready_metadata.json",
+      "exists": true,
+      "size_mb": 0.0018558502197265625
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/tables/sample_4x4_cpsat_squared_target_summary.json",
+      "exists": true,
+      "size_mb": 0.0012264251708984375
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/tables/sample_4x4_local_search_parameter_sensitivity_best.json",
+      "exists": true,
+      "size_mb": 0.00101470947265625
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/tables/sample_4x4_tuned_local_qubo_solution_component_summary.json",
+      "exists": true,
+      "size_mb": 0.0028676986694335938
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/tables/sample_4x4_qubo_to_ising_metadata_summary.json",
+      "exists": true,
+      "size_mb": 0.0011053085327148438
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/tables/sample_4x4_ising_energy_validation_summary.json",
+      "exists": true,
+      "size_mb": 0.00047969818115234375
+    },
+    {
+      "category": "tracked_expected",
+      "path": "results/tables/sample_4x4_runtime_memory_profile_summary.json",
+      "exists": true,
+      "size_mb": 0.004645347595214844
+    },
+    {
+      "category": "large_local_ignored",
+      "path": "results/tables/sample_4x4_sparse_qubo_coefficients_stream.csv",
+      "exists": true,
+      "size_mb": 800.641149520874
+    },
+    {
+      "category": "large_local_ignored",
+      "path": "results/tables/sample_4x4_sparse_qubo_coefficients_merged.csv",
+      "exists": true,
+      "size_mb": 112.24568462371826
+    },
+    {
+      "category": "large_local_ignored",
+      "path": "results/tables/sample_4x4_ising_couplers.csv",
+      "exists": true,
+      "size_mb": 117.79031753540039
+    },
+    {
+      "category": "optional_local",
+      "path": "results/tables/local_search_parameter_sensitivity/run020_r30_it20000_t5.0_tf0.001_s789_best_solution.csv",
+      "exists": true,
+      "size_mb": 0.0005207061767578125
+    },
+    {
+      "category": "optional_local",
+      "path": "results/tables/local_search_parameter_sensitivity/run020_r30_it20000_t5.0_tf0.001_s789_summary.json",
+      "exists": true,
+      "size_mb": 0.0008087158203125
+    }
+  ],
+  "note": "Large local artifacts are intentionally ignored by Git and may need regeneration."
+}

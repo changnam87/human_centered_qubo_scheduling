@@ -290,3 +290,17 @@ results/tables/sample_4x4_runtime_memory_profile_summary.csv
 results/tables/sample_4x4_large_artifact_size_summary.csv
 results/sample_4x4_runtime_memory_profile_manifest.md
 ```
+
+## Reproducibility Workflow
+
+A sample_4x4 reproducibility workflow is available at:
+
+```text
+docs/sample_4x4_reproducibility_workflow.md
+```
+
+An artifact presence checker is available at:
+
+```bash
+python scripts/check_sample_4x4_reproducibility_artifacts.py
+```
