@@ -189,3 +189,17 @@ The model has 8,713 linear terms and 8,209,458 quadratic terms, with quadratic d
 The coefficient range is [-35.4, 62.0], with absolute maximum 62.0 and recommended unit-range scaling factor approximately 0.016129.
 
 This establishes the sample_4x4 QUBO as a solver-ready sparse coefficient representation, although still relatively dense due to target-utilization and scheduling constraint couplings.
+
+## Additional Result: sample_4x4 Merged QUBO Local Search Prototype
+
+A local classical heuristic search was run directly on the merged sample_4x4 sparse QUBO.
+
+The merged QUBO contained 8,713 variables and 8,218,171 coefficient rows and was loaded without dense matrix construction.
+
+In the full prototype run with 20 restarts and 5,000 iterations per restart, the best energy found was 51.25.
+
+The feasible rate was 19 out of 20 restarts, or 0.95.
+
+The best solution satisfied one-start assignment, resource-overlap, and precedence diagnostics and achieved exactly four human assignments, matching the target_human_assignments value.
+
+This demonstrates that the solver-ready sparse QUBO can be used for energy-based local search, while remaining a prototype heuristic result rather than a proof of optimality.
