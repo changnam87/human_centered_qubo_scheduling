@@ -587,3 +587,15 @@ The script attempts to build actual dimod BinaryQuadraticModel objects for BINAR
 If dimod is unavailable, the script records SKIPPED status gracefully.
 
 This is a local software import validation step and does not run D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Result: Small Package dimod Import Smoke Test SKIPPED
+
+The dimod import smoke test was executed for the small package BQM-style JSON exports.
+
+The result was SKIPPED because dimod is not installed in the current environment.
+
+This is not a validation failure. The script handled the missing optional dependency gracefully.
+
+Actual dimod BinaryQuadraticModel import validation can be performed later after installing dimod.
+
+This step did not run D-Wave hardware, quantum annealing, or QAOA.

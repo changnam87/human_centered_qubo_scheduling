@@ -10,11 +10,15 @@ This test is for the small 15-variable package only.
 
 It does not run D-Wave hardware, quantum annealing, or QAOA.
 
-## Behavior
+## Observed Result
 
-If dimod is installed, the script builds BINARY and SPIN BinaryQuadraticModel objects and validates sampled energies.
+The dimod import smoke test returned SKIPPED status.
 
-If dimod is not installed, the script records SKIPPED status rather than failing.
+The reason was that dimod is not installed in the current environment.
+
+This is not a validation failure. The script handled the missing optional dependency gracefully.
+
+To run actual dimod BinaryQuadraticModel import validation, install dimod in the active environment and rerun the script.
 
 ## Inputs
 
@@ -30,7 +34,7 @@ scripts/run_small_package_dimod_import_smoke_test.py
 results/tables/small_package_dimod_import_smoke_test.csv
 results/tables/small_package_dimod_import_smoke_test_summary.json
 
-## Success Criterion
+## Status Meaning
 
 PASS means dimod imported the BQM objects and sampled energies matched within tolerance.
 
