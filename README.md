@@ -815,3 +815,13 @@ results/tables/project_v0_2_release_candidate_verification_summary.json
 results/tables/project_v0_2_release_candidate_verification_checks.csv
 results/project_v0_2_release_candidate_verification_manifest.md
 ```
+
+## Project v0.2 Tag Preparation Note
+
+A v0.2 tag preparation note is available at:
+
+```text
+docs/project_v0_2_tag_preparation_note.md
+```
+
+This note summarizes the proposed v0.2 tag scope, proposed target commit, allowed claims, excluded claims, and recommended tagging commands.

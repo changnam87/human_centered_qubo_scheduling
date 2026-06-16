@@ -206,3 +206,15 @@ The release candidate readiness criterion is satisfied because fail_count = 0 an
 The verification checked required documentation, required summary files, package directories, selected Python script compilation, and selected headline values.
 
 This verification step did not rerun expensive experiments, quantum simulators, quantum hardware, or solver benchmarks.
+
+---
+
+## v0.2 Tag Preparation
+
+A v0.2 tag preparation note has been created at:
+
+```text
+docs/project_v0_2_tag_preparation_note.md
+```
+
+The note identifies the proposed v0.2 tag target, summarizes included functionality, defines allowed and excluded claims, and provides recommended annotated-tag commands.

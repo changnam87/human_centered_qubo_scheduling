@@ -813,3 +813,11 @@ The README, v0.2 release-style summary, v0.2 release candidate checklist, and v0
 The documentation records overall_status = PASS, num_checks = 49, pass_count = 48, fail_count = 0, and warn_count = 1.
 
 The release candidate readiness criterion is satisfied because fail_count = 0 and overall_status = PASS.
+
+## Additional Checkpoint: Project v0.2 Tag Preparation Note Created
+
+A v0.2 tag preparation note was created.
+
+The note summarizes the proposed tag scope, proposed target commit, small external-solver package results, tiny Qiskit/QAOA package results, allowed claims, excluded claims, and recommended annotated-tag commands.
+
+The README and v0.2 release-style summary were updated to point to the tag preparation note.
