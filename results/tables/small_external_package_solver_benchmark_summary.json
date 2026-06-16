@@ -1,0 +1,61 @@
+{
+  "experiment": "small_external_package_solver_benchmark_summary",
+  "package_dir": "exports/small_time_indexed_solver_package",
+  "num_variables": 15,
+  "brute_force_optimum": 5.300000000000001,
+  "brute_force_bitstring": "100000000000100",
+  "initial_sa_success_rate": 0.14,
+  "best_sa_success_rate": 0.725,
+  "success_rate_improvement": 0.585,
+  "benchmark_rows": [
+    {
+      "solver": "brute_force",
+      "description": "Exhaustive enumeration over all assignments.",
+      "num_variables": 15,
+      "assignments_or_restarts": 32768,
+      "iterations_per_restart": null,
+      "initial_temperature": null,
+      "final_temperature": null,
+      "seed": null,
+      "best_energy": 5.300000000000001,
+      "best_bitstring": "100000000000100",
+      "gap_to_bruteforce": 0.0,
+      "success_count": 32768,
+      "success_rate": 1.0,
+      "validation_status": "PASS"
+    },
+    {
+      "solver": "simulated_annealing_initial",
+      "description": "Initial bit-flip simulated annealing baseline.",
+      "num_variables": 15,
+      "assignments_or_restarts": 100,
+      "iterations_per_restart": 2000,
+      "initial_temperature": 10.0,
+      "final_temperature": 0.001,
+      "seed": 123,
+      "best_energy": 5.300000000000001,
+      "best_bitstring": "100000000000100",
+      "gap_to_bruteforce": 8.881784197001252e-16,
+      "success_count": 14,
+      "success_rate": 0.14,
+      "validation_status": "PASS"
+    },
+    {
+      "solver": "simulated_annealing_best_sensitivity",
+      "description": "Best case from SA parameter sensitivity grid.",
+      "num_variables": 15,
+      "assignments_or_restarts": 200,
+      "iterations_per_restart": 10000,
+      "initial_temperature": 20.0,
+      "final_temperature": 0.01,
+      "seed": 456,
+      "best_energy": 5.300000000000001,
+      "best_bitstring": "100000000000100",
+      "gap_to_bruteforce": 8.881784197001252e-16,
+      "success_count": 145,
+      "success_rate": 0.725,
+      "validation_status": "PASS"
+    }
+  ],
+  "note": "Compact benchmark summary for the small external package; not a full sample_4x4 benchmark."
+}

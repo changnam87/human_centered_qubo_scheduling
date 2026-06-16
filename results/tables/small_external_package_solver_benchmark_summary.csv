@@ -1,0 +1,4 @@
+solver,description,num_variables,assignments_or_restarts,iterations_per_restart,initial_temperature,final_temperature,seed,best_energy,best_bitstring,gap_to_bruteforce,success_count,success_rate,validation_status
+brute_force,Exhaustive enumeration over all assignments.,15,32768,,,,,5.300000000000001,100000000000100,0.0,32768,1.0,PASS
+simulated_annealing_initial,Initial bit-flip simulated annealing baseline.,15,100,2000.0,10.0,0.001,123.0,5.300000000000001,100000000000100,8.881784197001252e-16,14,0.14,PASS
+simulated_annealing_best_sensitivity,Best case from SA parameter sensitivity grid.,15,200,10000.0,20.0,0.01,456.0,5.300000000000001,100000000000100,8.881784197001252e-16,145,0.725,PASS

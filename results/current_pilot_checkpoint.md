@@ -455,3 +455,11 @@ The documentation records that 216 parameter cases were evaluated.
 The best case, run214_r200_it10000_t20.0_tf0.01_s456, reached the brute-force optimum energy 5.30 in 145 out of 200 restarts, giving success_rate = 0.725.
 
 This improves over the initial simulated annealing baseline success_rate of 0.14.
+
+## Additional Checkpoint: Small External Package Solver Benchmark Summary
+
+A compact solver benchmark summary was created for the small external-solver-ready QUBO/Ising package.
+
+The summary consolidates brute-force enumeration, the initial simulated annealing baseline, and the best simulated annealing parameter sensitivity result.
+
+This provides a concise benchmark table for the small 15-variable package while remaining distinct from the full sample_4x4 prototype.
