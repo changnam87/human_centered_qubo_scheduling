@@ -669,3 +669,11 @@ The result was PASS: best_manual_bitstring = 101001, best_qiskit_bitstring = 101
 This validates Qiskit Optimization compatibility for the tiny QAOA-ready package.
 
 This step does not run QAOA, a quantum simulator, or quantum hardware.
+
+## Additional Checkpoint: Tiny Qiskit Optimization PASS Documented
+
+The README, technical validation report, v0.2 roadmap, v0.2 progress summary, and v0.1 milestone summary were updated with the tiny Qiskit Optimization smoke test PASS result.
+
+The documentation records that the tiny package has 6 variables, the Qiskit Optimization QuadraticProgram objective matched manual and brute-force energies across all 64 assignments, the best bitstring was 101001, the best energy was 4.0, and max_abs_error was 0.0.
+
+This documents Qiskit Optimization compatibility while making clear that QAOA, quantum simulation, and quantum hardware were not executed.

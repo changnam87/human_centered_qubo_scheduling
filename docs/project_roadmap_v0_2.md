@@ -334,3 +334,17 @@ docs/project_milestone_v0_2_progress_summary.md
 ```
 
 This progress checkpoint summarizes completed scaled export validation, dimod-style BQM validation, and actual dimod BinaryQuadraticModel import compatibility for the small external package.
+
+---
+
+## v0.2 Progress Update: Tiny Qiskit Optimization Smoke Test PASS
+
+The tiny QAOA-ready package was validated with Qiskit Optimization.
+
+After installing qiskit-optimization, the smoke test built a QuadraticProgram from exports/tiny_qaoa_ready_package/qiskit_qubo.json and enumerated all 64 assignments.
+
+The result was PASS: best_manual_bitstring = 101001, best_qiskit_bitstring = 101001, best energy = 4.0, and max_abs_error = 0.0.
+
+This completes the Qiskit Optimization smoke-test objective for the tiny package.
+
+This remains a software validation step and does not run QAOA, a quantum simulator, or quantum hardware.

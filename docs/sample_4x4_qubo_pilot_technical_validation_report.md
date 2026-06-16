@@ -715,3 +715,31 @@ max_abs_error approximately 4.55e-13
 Interpretation: the BINARY and SPIN BQM-style JSON files are compatible with actual dimod BinaryQuadraticModel import and preserve sampled energy consistency.
 
 This is a local software validation step only. It does not run D-Wave hardware, quantum annealing, or QAOA.
+
+---
+
+## Addendum: Tiny Qiskit Optimization Smoke Test PASS
+
+The tiny QAOA-ready QUBO package was validated with Qiskit Optimization after installing qiskit-optimization in the active environment.
+
+The test built a Qiskit Optimization QuadraticProgram from the tiny package qiskit_qubo.json file and enumerated all 64 assignments.
+
+Observed result:
+
+```text
+status = PASS
+num_variables = 6
+num_assignments_enumerated = 64
+best_manual_bitstring = 101001
+best_manual_energy = 4.0
+best_qiskit_bitstring = 101001
+best_qiskit_energy = 4.0
+known_metadata_best_bitstring = 101001
+known_metadata_best_energy = 4.0
+max_abs_error = 0.0
+num_qp_variables = 6
+```
+
+Interpretation: the tiny QUBO package is compatible with Qiskit Optimization QuadraticProgram objective evaluation.
+
+This is a Qiskit Optimization software validation step only. It does not run QAOA, a quantum simulator, or quantum hardware.

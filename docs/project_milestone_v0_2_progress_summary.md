@@ -167,3 +167,24 @@ large-scale solver benchmark conclusions
 ## v0.2 Progress Conclusion
 
 The v0.2 milestone has made strong progress on solver-format readiness. The small package now has validated scaled exports and actual dimod import compatibility, providing a clean bridge from internal QUBO/Ising validation toward external solver workflows.
+
+---
+
+## Addendum: Tiny Qiskit Optimization Smoke Test PASS
+
+The tiny QAOA-ready package was validated with Qiskit Optimization after installing qiskit-optimization.
+
+The smoke test built a QuadraticProgram from the tiny qiskit_qubo.json file and enumerated all 64 assignments.
+
+The result was PASS.
+
+```text
+num_variables = 6
+num_assignments_enumerated = 64
+best_manual_bitstring = 101001
+best_qiskit_bitstring = 101001
+best_energy = 4.0
+max_abs_error = 0.0
+```
+
+This confirms Qiskit Optimization compatibility for the tiny package while still not executing QAOA, a quantum simulator, or quantum hardware.

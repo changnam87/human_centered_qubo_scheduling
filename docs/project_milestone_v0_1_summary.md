@@ -245,3 +245,15 @@ The small package dimod-style BQM exports were imported into actual dimod Binary
 The import smoke test passed with dimod_version = 0.12.22 and max_abs_error approximately 4.55e-13 across 23 sampled assignments.
 
 This confirms actual dimod import compatibility for the small package while remaining distinct from D-Wave hardware, quantum annealing, or QAOA execution.
+
+---
+
+## Addendum: Tiny Qiskit Optimization Smoke Test PASS
+
+The tiny QAOA-ready package was validated with Qiskit Optimization.
+
+The package has 6 binary variables and a known brute-force optimum bitstring 101001 with energy 4.0.
+
+The Qiskit Optimization QuadraticProgram objective matched manual and brute-force energies across all 64 assignments with max_abs_error = 0.0.
+
+This validates Qiskit Optimization compatibility for the tiny package, but it does not run QAOA, a quantum simulator, or quantum hardware.

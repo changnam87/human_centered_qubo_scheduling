@@ -572,3 +572,41 @@ docs/project_milestone_v0_2_progress_summary.md
 ```
 
 This document summarizes completed v0.2 progress, including scaled QUBO/Ising export validation and actual dimod BinaryQuadraticModel import compatibility for the small external package.
+
+## Tiny Qiskit Optimization Smoke Test
+
+The tiny QAOA-ready package was validated with Qiskit Optimization after installing qiskit-optimization in the active environment.
+
+The test built a Qiskit Optimization QuadraticProgram from:
+
+```text
+exports/tiny_qaoa_ready_package/qiskit_qubo.json
+```
+
+Observed result:
+
+```text
+status = PASS
+num_variables = 6
+num_assignments_enumerated = 64
+best_manual_bitstring = 101001
+best_manual_energy = 4.0
+best_qiskit_bitstring = 101001
+best_qiskit_energy = 4.0
+known_metadata_best_bitstring = 101001
+known_metadata_best_energy = 4.0
+max_abs_error = 0.0
+num_qp_variables = 6
+```
+
+This confirms that the tiny QUBO package is compatible with Qiskit Optimization QuadraticProgram objective evaluation.
+
+This is not a QAOA run and does not execute a quantum simulator or quantum hardware.
+
+Relevant outputs:
+
+```text
+results/tables/tiny_qiskit_optimization_smoke_test_summary.json
+results/tables/tiny_qiskit_optimization_smoke_test.csv
+results/tiny_qiskit_optimization_smoke_test_manifest.md
+```
