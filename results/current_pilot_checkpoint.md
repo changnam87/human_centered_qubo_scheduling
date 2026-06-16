@@ -75,3 +75,25 @@ With constraint_penalty = 1.0, the QUBO optimum was infeasible for all tested se
 With constraint_penalty >= 5.0, the QUBO optimum was feasible for all tested settings, with assignment, overlap, and precedence violations reduced to zero.
 
 The target-consistent rate remained 0.48 at stable constraint penalties, indicating that feasibility is controlled by constraint penalties, while human-utilization target consistency depends on human_reward and lambda_target calibration.
+
+## Additional Checkpoint: Small Time-Indexed QUBO Reward-Lambda Target Map
+
+After identifying a stable feasibility regime for the small time-indexed QUBO, a reward/lambda target-consistency map was generated.
+
+The analysis filtered to constraint_penalty >= 5.0 and evaluated which human_reward and lambda_target combinations produced feasible and target-consistent QUBO optima.
+
+This separates the role of constraint penalties from the role of human-utilization parameters: constraint_penalty stabilizes feasibility, while human_reward and lambda_target tune human target consistency.
+
+The resulting map provides a small-scale calibration checkpoint before scaling toward larger time-indexed QUBO instances.
+
+## Additional Result: Reward-Lambda Target-Consistency Map
+
+In the small time-indexed QUBO, the stable feasible regime was defined by constraint_penalty >= 5.0.
+
+Within this feasible regime, target consistency depended on the joint tuning of human_reward and lambda_target.
+
+Low human_reward values required larger lambda_target values to induce human assignment, while excessive human_reward values required larger lambda_target values to suppress over-assignment.
+
+The widest target-consistent tuning region occurred near human_reward = 3.0, where lambda_target >= 0.5 produced feasible target-consistent optima.
+
+This result confirms the separation of roles among QUBO weights: constraint penalties enforce scheduling feasibility, while human_reward and lambda_target control human-utilization behavior.
