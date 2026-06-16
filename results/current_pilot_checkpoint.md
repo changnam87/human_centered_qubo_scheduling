@@ -33,3 +33,21 @@ Completed pipeline:
 4. Decide which experiments remain pilot-only and which should become paper-scale experiments.
 5. Formalize the multi-objective trade-off model more rigorously.
 6. Later, after the pipeline is stable, begin actual manuscript writing.
+
+## Additional Checkpoint: QUBO-Compatible Squared Target Penalty
+
+The prototype was extended from absolute target-deviation control to a QUBO-compatible squared target human-utilization penalty.
+
+The squared target formulation uses:
+
+objective = total_cost_without_reward - human_reward * human_count + lambda_target * (human_count - target)^2
+
+This formulation is directly expandable into linear and quadratic binary terms because human_count is a sum of binary human-assignment indicators.
+
+A toy-level QUBO expansion validation confirmed exact agreement between the direct squared penalty and its expanded QUBO form.
+
+The sample_4x4 squared target penalty batch showed that appropriate lambda_target values can achieve target_human_assignments = 4 across all tested human_reward settings.
+
+A full sample_4x4 energy validation recomputed the squared-target objective for each solved row and compared it against the stored adjusted_objective_manual value.
+
+This provides a formulation-level checkpoint for moving from CP-SAT prototype validation toward QUBO/Ising implementation.

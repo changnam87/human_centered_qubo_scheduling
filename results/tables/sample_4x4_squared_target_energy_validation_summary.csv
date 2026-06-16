@@ -1,0 +1,2 @@
+input_rows,solved_rows,tolerance,max_abs_error_vs_manual,mean_abs_error_vs_manual,pass_vs_manual,max_abs_error_vs_cp_sat,mean_abs_error_vs_cp_sat,pass_vs_cp_sat,validation_status
+350,350,1e-09,7.105427357601002e-15,3.451207573691915e-16,True,1.4210854715202004e-14,4.62867839295151e-15,True,PASS
