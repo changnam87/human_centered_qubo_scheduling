@@ -1,0 +1,5 @@
+artifact,path,size_mb,tracked
+streamed_qubo_coefficients_csv,results/tables/sample_4x4_sparse_qubo_coefficients_stream.csv,800.641149520874,False
+merged_qubo_coefficients_csv,results/tables/sample_4x4_sparse_qubo_coefficients_merged.csv,112.24568462371826,False
+ising_couplers_csv,results/tables/sample_4x4_ising_couplers.csv,117.79031753540039,False
+ising_linear_fields_csv,results/tables/sample_4x4_ising_linear_fields.csv,0.12123775482177734,True

@@ -1,0 +1,140 @@
+{
+  "experiment": "sample_4x4_runtime_memory_profile_summary",
+  "purpose": "Compact engineering profile built from existing summary artifacts; heavy experiments are not rerun.",
+  "key_results": {
+    "num_variables": 8713,
+    "merged_terms": 8218171,
+    "quadratic_density": 0.21630118574600696,
+    "cpsat_squared_target_optimum": 47.7,
+    "initial_local_best": 51.25,
+    "tuned_local_best": 48.19999999999975,
+    "tuned_gap_to_cpsat": 0.4999999999999929,
+    "ising_validation_status": "PASS",
+    "ising_validation_max_abs_error": 0.0
+  },
+  "pipeline_profile": [
+    {
+      "stage": "export_feasibility_estimate",
+      "main_metric": "estimated_sparse_terms_before_merge",
+      "main_value": 8860966,
+      "runtime_seconds": null,
+      "validation_status": null,
+      "notes": "Representative pre-export size and memory estimate."
+    },
+    {
+      "stage": "streaming_sparse_qubo_export",
+      "main_metric": "streamed_rows",
+      "main_value": null,
+      "runtime_seconds": 21.39249873161316,
+      "validation_status": null,
+      "notes": "Large streamed coefficient CSV is a local ignored artifact."
+    },
+    {
+      "stage": "streamed_qubo_energy_validation",
+      "main_metric": "max_abs_error",
+      "main_value": 1.1368683772161603e-13,
+      "runtime_seconds": 5.226915121078491,
+      "validation_status": "PASS",
+      "notes": "Chunked validation of streamed sparse QUBO energy."
+    },
+    {
+      "stage": "duplicate_merge",
+      "main_metric": "unique_pairs_after_drop",
+      "main_value": 8218171,
+      "runtime_seconds": 10.29958701133728,
+      "validation_status": null,
+      "notes": "Merged duplicate (i,j) QUBO coefficient rows."
+    },
+    {
+      "stage": "merged_qubo_energy_validation",
+      "main_metric": "max_abs_error",
+      "main_value": 1.1368683772161603e-13,
+      "runtime_seconds": 3.57962965965271,
+      "validation_status": "PASS",
+      "notes": "Validation of compact merged sparse QUBO energy."
+    },
+    {
+      "stage": "solver_ready_metadata",
+      "main_metric": "total_terms",
+      "main_value": 8218171,
+      "runtime_seconds": null,
+      "validation_status": null,
+      "notes": "Generated sparse QUBO metadata, density, and scaling recommendation."
+    },
+    {
+      "stage": "local_qubo_search_initial",
+      "main_metric": "best_energy",
+      "main_value": 51.25,
+      "runtime_seconds": 3.1451127529144287,
+      "validation_status": "feasible_rate=0.95",
+      "notes": "Initial operation-level local search on merged sparse QUBO."
+    },
+    {
+      "stage": "cpsat_squared_target_baseline",
+      "main_metric": "objective_unscaled_from_solver",
+      "main_value": 47.7,
+      "runtime_seconds": null,
+      "validation_status": "OPTIMAL",
+      "notes": "Objective-equivalent CP-SAT optimum for squared-target QUBO objective."
+    },
+    {
+      "stage": "local_search_parameter_sensitivity",
+      "main_metric": "best_energy",
+      "main_value": 48.19999999999975,
+      "runtime_seconds": null,
+      "validation_status": "feasible_rate=1.0",
+      "notes": "Best case: run020_r30_it20000_t5.0_tf0.001_s789"
+    },
+    {
+      "stage": "tuned_local_component_analysis",
+      "main_metric": "absolute_gap_to_cpsat",
+      "main_value": 0.4999999999999929,
+      "runtime_seconds": null,
+      "validation_status": "relative_gap=0.010482180293500898",
+      "notes": "Explains remaining tuned local gap by objective components."
+    },
+    {
+      "stage": "qubo_to_ising_metadata",
+      "main_metric": "ising_couplers",
+      "main_value": 8209458,
+      "runtime_seconds": null,
+      "validation_status": null,
+      "notes": "Generated Ising offset, h fields, J couplers, and scaling metadata."
+    },
+    {
+      "stage": "ising_energy_validation",
+      "main_metric": "max_abs_error",
+      "main_value": 0.0,
+      "runtime_seconds": null,
+      "validation_status": "PASS",
+      "notes": "Fast QUBO-to-Ising energy consistency validation."
+    }
+  ],
+  "large_artifacts": [
+    {
+      "artifact": "streamed_qubo_coefficients_csv",
+      "path": "results/tables/sample_4x4_sparse_qubo_coefficients_stream.csv",
+      "size_mb": 800.641149520874,
+      "tracked": false
+    },
+    {
+      "artifact": "merged_qubo_coefficients_csv",
+      "path": "results/tables/sample_4x4_sparse_qubo_coefficients_merged.csv",
+      "size_mb": 112.24568462371826,
+      "tracked": false
+    },
+    {
+      "artifact": "ising_couplers_csv",
+      "path": "results/tables/sample_4x4_ising_couplers.csv",
+      "size_mb": 117.79031753540039,
+      "tracked": false
+    },
+    {
+      "artifact": "ising_linear_fields_csv",
+      "path": "results/tables/sample_4x4_ising_linear_fields.csv",
+      "size_mb": 0.12123775482177734,
+      "tracked": true
+    }
+  ],
+  "note": "File sizes are None when the large local ignored artifact is not present in the current working tree."
+}

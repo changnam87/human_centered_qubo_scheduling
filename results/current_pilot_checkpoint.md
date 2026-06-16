@@ -321,3 +321,13 @@ The README explicitly states that the project remains in prototype and pilot val
 The project-level README was updated to summarize the prototype purpose, current validation status, sample_4x4 scale, key QUBO/CP-SAT/Ising results, important scripts, large artifact handling, and recommended next steps.
 
 The README explicitly states that the project remains in prototype and pilot validation stage and has not yet executed quantum hardware, quantum annealing hardware, or QAOA.
+
+## Additional Result: sample_4x4 Runtime and Artifact Profile Summary
+
+A runtime and artifact-size profile summary was generated for the sample_4x4 QUBO/Ising prototype pipeline.
+
+The profile reports 8,713 variables, 8,218,171 merged terms, quadratic density approximately 0.2163, CP-SAT squared-target optimum 47.70, tuned local QUBO best 48.20, tuned gap 0.50, and Ising validation PASS with max_abs_error 0.0.
+
+Runtime highlights include streaming sparse QUBO export approximately 21.39 seconds, streamed energy validation approximately 5.23 seconds, duplicate merge approximately 10.30 seconds, and merged energy validation approximately 3.58 seconds.
+
+Large local artifact sizes include streamed QUBO coefficients approximately 800.64 MB, merged QUBO coefficients approximately 112.25 MB, and Ising couplers approximately 117.79 MB.

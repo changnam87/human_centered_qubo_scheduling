@@ -1,0 +1,13 @@
+stage,main_metric,main_value,runtime_seconds,validation_status,notes
+export_feasibility_estimate,estimated_sparse_terms_before_merge,8860966.0,,,Representative pre-export size and memory estimate.
+streaming_sparse_qubo_export,streamed_rows,,21.39249873161316,,Large streamed coefficient CSV is a local ignored artifact.
+streamed_qubo_energy_validation,max_abs_error,1.1368683772161603e-13,5.226915121078491,PASS,Chunked validation of streamed sparse QUBO energy.
+duplicate_merge,unique_pairs_after_drop,8218171.0,10.29958701133728,,"Merged duplicate (i,j) QUBO coefficient rows."
+merged_qubo_energy_validation,max_abs_error,1.1368683772161603e-13,3.57962965965271,PASS,Validation of compact merged sparse QUBO energy.
+solver_ready_metadata,total_terms,8218171.0,,,"Generated sparse QUBO metadata, density, and scaling recommendation."
+local_qubo_search_initial,best_energy,51.25,3.1451127529144287,feasible_rate=0.95,Initial operation-level local search on merged sparse QUBO.
+cpsat_squared_target_baseline,objective_unscaled_from_solver,47.7,,OPTIMAL,Objective-equivalent CP-SAT optimum for squared-target QUBO objective.
+local_search_parameter_sensitivity,best_energy,48.19999999999975,,feasible_rate=1.0,Best case: run020_r30_it20000_t5.0_tf0.001_s789
+tuned_local_component_analysis,absolute_gap_to_cpsat,0.4999999999999929,,relative_gap=0.010482180293500898,Explains remaining tuned local gap by objective components.
+qubo_to_ising_metadata,ising_couplers,8209458.0,,,"Generated Ising offset, h fields, J couplers, and scaling metadata."
+ising_energy_validation,max_abs_error,0.0,,PASS,Fast QUBO-to-Ising energy consistency validation.
