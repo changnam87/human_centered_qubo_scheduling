@@ -624,3 +624,40 @@ The best tuned simulated annealing case recovered the brute-force optimum in 145
 Thus, parameter tuning improved the simulated annealing optimum-recovery rate from 0.14 to 0.725.
 
 This remains a small-package solver benchmark. It is not a full sample_4x4 benchmark, quantum hardware result, or QAOA result.
+
+---
+
+## Addendum: dimod-Style BQM Export and Energy Validation
+
+The small external-solver-ready QUBO/Ising package was exported into dimod-compatible BQM-style files.
+
+The export includes BINARY and SPIN formulations in JSON format, along with linear and quadratic CSV tables.
+
+## Exported BQM-Style Files
+
+```text
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_bqm.json
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_bqm.json
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_linear.csv
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_quadratic.csv
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_linear.csv
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_quadratic.csv
+```
+
+## Energy Validation
+
+The dimod-style BQM energy validation compared original QUBO energy, original Ising energy, dimod-style BINARY BQM energy, and dimod-style SPIN BQM energy.
+
+Observed result:
+
+```text
+num_variables = 15
+num_samples = 23
+max_abs_error approximately 9.09e-13
+mean_abs_error_binary_vs_spin_bqm approximately 1.15e-13
+validation_status = PASS
+```
+
+Interpretation: the dimod-style BQM JSON exports preserve energy consistency within numerical floating-point tolerance.
+
+This remains a solver-format readiness result. It does not run dimod, D-Wave hardware, quantum annealing, or QAOA.

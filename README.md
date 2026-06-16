@@ -505,3 +505,50 @@ docs/project_milestone_v0_1_summary.md
 ```
 
 This summary consolidates the current sample_4x4 prototype pipeline, small external solver package, solver benchmark results, known limitations, and recommended v0.2 directions.
+
+## dimod-Style BQM Export and Validation
+
+The small external-solver-ready package now includes dimod-compatible BQM-style exports for both BINARY and SPIN formulations.
+
+These exports are designed for D-Wave Ocean/dimod-style workflows, but they do not require dimod to be installed and do not execute quantum hardware.
+
+Exported files include:
+
+```text
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_bqm.json
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_bqm.json
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_linear.csv
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_quadratic.csv
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_linear.csv
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_quadratic.csv
+exports/small_time_indexed_solver_package/small_time_indexed_dimod_bqm_export_summary.json
+```
+
+The dimod-style BQM energy validation compared:
+
+```text
+1. original QUBO energy
+2. original Ising energy
+3. dimod-style BINARY BQM energy
+4. dimod-style SPIN BQM energy
+```
+
+Observed validation result:
+
+```text
+num_variables = 15
+num_samples = 23
+max_abs_error approximately 9.09e-13
+mean_abs_error_binary_vs_spin_bqm approximately 1.15e-13
+validation_status = PASS
+```
+
+This confirms numerical energy consistency of the dimod-style BQM JSON exports.
+
+Relevant validation outputs:
+
+```text
+results/tables/small_package_dimod_bqm_energy_validation.csv
+results/tables/small_package_dimod_bqm_energy_validation_summary.json
+results/small_package_dimod_bqm_energy_validation_manifest.md
+```

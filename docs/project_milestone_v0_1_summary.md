@@ -205,3 +205,17 @@ Recommended v0.2 directions:
 ## v0.1 Conclusion
 
 The v0.1 milestone establishes a strong prototype foundation for human-centered QUBO/Ising scheduling. The project now has validated formulation logic, sparse QUBO engineering, CP-SAT comparison, local heuristic search, Ising conversion validation, reproducibility documentation, and a small external-solver-ready package with solver baselines.
+
+---
+
+## Addendum: dimod-Style BQM Export and Validation
+
+The small external-solver-ready package now includes dimod-compatible BQM-style exports for BINARY and SPIN formulations.
+
+The exported BQM-style JSON files were validated without requiring dimod.
+
+The validation compared original QUBO energy, original Ising energy, dimod-style BINARY BQM energy, and dimod-style SPIN BQM energy.
+
+The validation used 23 sampled assignments and passed with max_abs_error approximately 9.09e-13.
+
+This confirms solver-format energy consistency for the small package while still not representing D-Wave hardware, quantum annealing, or QAOA execution.

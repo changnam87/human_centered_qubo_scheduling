@@ -254,3 +254,15 @@ The best tuned simulated annealing case had success_rate = 0.725.
 The success-rate improvement was 0.585.
 
 This confirms that the small external package supports compact solver benchmarking for exhaustive and heuristic workflows.
+
+---
+
+## Addendum: dimod-Style BQM Export
+
+The small external-solver-ready package now includes dimod-compatible BQM-style exports.
+
+Both BINARY and SPIN BQM-style JSON files were generated and validated.
+
+Energy validation across original QUBO, original Ising, dimod-style BINARY BQM, and dimod-style SPIN BQM representations passed with max_abs_error approximately 9.09e-13 across 23 sampled assignments.
+
+This is a solver-format readiness result and does not execute dimod, D-Wave hardware, quantum annealing, or QAOA.

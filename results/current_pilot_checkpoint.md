@@ -527,3 +527,13 @@ The validation compared original QUBO energy, original Ising energy, dimod-style
 The maximum absolute error was approximately 9.09e-13, and the validation status was PASS.
 
 This confirms numerical energy consistency of the dimod-style BQM JSON exports without requiring dimod, D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Checkpoint: dimod-Style BQM Export and Validation Documented
+
+The README, technical validation report, v0.1 milestone summary, and release-style checkpoint summary were updated with the small package dimod-style BQM export and validation results.
+
+The documentation now records that BINARY and SPIN BQM-style JSON files were generated and validated on 23 sampled assignments.
+
+The maximum absolute error across compared energy representations was approximately 9.09e-13, with validation status PASS.
+
+This documents solver-format readiness while making clear that dimod, D-Wave hardware, quantum annealing, and QAOA were not executed.
