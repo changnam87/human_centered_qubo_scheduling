@@ -771,3 +771,11 @@ The summary consolidates the small external-solver-ready package workflow and th
 It records scaled QUBO/Ising validation, dimod import validation, brute-force/SA benchmarks, Qiskit Optimization validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity.
 
 The README, v0.2 roadmap, and v0.2 progress summary were updated to point to the overall checkpoint.
+
+## Additional Checkpoint: External Solver Benchmark Template Created
+
+A standard external solver benchmark template was created.
+
+The template defines a schema for recording future QUBO, Ising, BQM, Qiskit Optimization, QAOA simulator, simulated annealing, and possible hardware-oriented solver results.
+
+This is a reporting/documentation step only and does not run any solver or hardware.

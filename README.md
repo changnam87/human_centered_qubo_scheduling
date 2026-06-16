@@ -750,3 +750,21 @@ docs/project_milestone_v0_2_current_overall_checkpoint.md
 ```
 
 This document consolidates the small external-solver package results and the tiny Qiskit/QAOA-oriented package results into one current v0.2 checkpoint.
+
+## External Solver Benchmark Template
+
+A standard external solver benchmark template is available at:
+
+```text
+docs/external_solver_benchmark_template.md
+```
+
+The schema is stored in:
+
+```text
+results/tables/external_solver_benchmark_schema.csv
+results/tables/external_solver_benchmark_schema.json
+results/tables/external_solver_benchmark_template_example.csv
+```
+
+This template standardizes how future solver results should report instance ID, solver name, formulation type, reference energy, best energy, gap, feasibility, runtime, success rate, and status.
