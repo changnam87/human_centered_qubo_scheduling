@@ -357,3 +357,11 @@ A reproducibility workflow document and artifact-check script were added for the
 The workflow documents the recommended regeneration order for large ignored artifacts and downstream validation summaries.
 
 The artifact-check script reports whether tracked summaries and large local ignored artifacts are present in the working tree.
+
+## Additional Checkpoint: Small External-Solver-Ready Package
+
+A compact external-solver-ready QUBO/Ising package was created for the small time-indexed scheduling instance.
+
+The package includes raw QUBO coefficients, scaled QUBO coefficients, Ising linear fields, Ising couplers, package metadata, and QUBO/Ising energy validation.
+
+This package is intended for lightweight external solver tests and does not represent the full sample_4x4 QUBO.
