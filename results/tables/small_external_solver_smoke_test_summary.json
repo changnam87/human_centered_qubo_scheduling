@@ -1,0 +1,12 @@
+{
+  "experiment": "small_external_solver_smoke_test",
+  "package_dir": "exports/small_time_indexed_solver_package",
+  "num_variables": 15,
+  "num_assignments_enumerated": 32768,
+  "best_bitstring": "100000000000100",
+  "best_qubo_energy": 5.300000000000001,
+  "best_ising_energy": 5.300000000000182,
+  "max_abs_error_qubo_vs_ising": 1.1368683772161603e-12,
+  "validation_status": "PASS",
+  "note": "Brute-force smoke test for small external-solver-ready package only."
+}

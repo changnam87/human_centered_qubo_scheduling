@@ -365,3 +365,11 @@ A compact external-solver-ready QUBO/Ising package was created for the small tim
 The package includes raw QUBO coefficients, scaled QUBO coefficients, Ising linear fields, Ising couplers, package metadata, and QUBO/Ising energy validation.
 
 This package is intended for lightweight external solver tests and does not represent the full sample_4x4 QUBO.
+
+## Additional Checkpoint: Small External Solver Smoke Test
+
+A minimal brute-force external solver smoke test was added for the small time-indexed QUBO/Ising package.
+
+The test reads the exported QUBO and Ising files, enumerates all binary assignments, identifies the minimum-energy assignment, and validates QUBO/Ising energy consistency.
+
+This confirms that the small package can be consumed as an external solver input.
