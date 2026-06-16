@@ -1,0 +1,12 @@
+metric,cpsat_squared_target,tuned_local_qubo,local_minus_cpsat
+adjusted_objective,47.70000000000001,48.2,0.4999999999999929
+total_cost_without_reward,57.70000000000001,58.2,0.4999999999999929
+assignment_cost,41.10000000000001,41.1,-7.105427357601002e-15
+workload_cost,4.5,4.5,0.0
+ergonomic_cost,2.6999999999999997,2.7,4.440892098500626e-16
+start_time_cost,9.4,9.9,0.5
+human_count,4.0,4.0,0.0
+machine_count,12.0,12.0,0.0
+robot_count,0.0,0.0,0.0
+reward_term,10.0,10.0,0.0
+target_penalty,0.0,0.0,0.0

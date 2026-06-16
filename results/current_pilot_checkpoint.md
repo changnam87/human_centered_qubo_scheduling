@@ -245,3 +245,11 @@ This case achieved best_energy = 48.20 with feasible_rate = 1.0.
 Compared with the CP-SAT squared-target optimum of 47.70, the tuned local QUBO gap was 0.50, or approximately 1.05 percent.
 
 This reduced the previous local-search gap from 3.55 to 0.50, showing that parameter tuning substantially improves the local QUBO heuristic while still not proving optimality.
+
+## Additional Checkpoint: sample_4x4 Tuned Local QUBO Solution Component Analysis
+
+The best tuned local QUBO solution from the parameter sensitivity experiment was decomposed into interpretable objective components.
+
+The analysis compares the tuned local solution against the objective-equivalent CP-SAT squared-target optimum.
+
+This identifies which components explain the remaining gap between the tuned local QUBO solution and the CP-SAT optimum.
