@@ -257,3 +257,13 @@ The package has 6 binary variables and a known brute-force optimum bitstring 101
 The Qiskit Optimization QuadraticProgram objective matched manual and brute-force energies across all 64 assignments with max_abs_error = 0.0.
 
 This validates Qiskit Optimization compatibility for the tiny package, but it does not run QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## Addendum: Tiny Qiskit Classical Optimizer PASS
+
+The tiny QAOA-ready package was solved through a classical Qiskit Optimization exact-solver path.
+
+MinimumEigenOptimizer with NumPyMinimumEigensolver recovered the known optimum bitstring 101001 with energy 4.0 and abs_error = 0.0.
+
+This validates the tiny package for classical Qiskit Optimization solver workflows, but it does not run QAOA, a quantum simulator, or quantum hardware.

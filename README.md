@@ -610,3 +610,39 @@ results/tables/tiny_qiskit_optimization_smoke_test_summary.json
 results/tables/tiny_qiskit_optimization_smoke_test.csv
 results/tiny_qiskit_optimization_smoke_test_manifest.md
 ```
+
+## Tiny Qiskit Classical Optimizer Smoke Test
+
+The tiny QAOA-ready package was also tested with a classical Qiskit Optimization solver path after installing qiskit-algorithms.
+
+The successful solver path was:
+
+```text
+MinimumEigenOptimizer + NumPyMinimumEigensolver
+```
+
+Observed result:
+
+```text
+status = PASS
+solver_name = MinimumEigenOptimizer_NumPyMinimumEigensolver
+solver_status = OptimizationResultStatus.SUCCESS
+num_variables = 6
+known_best_bitstring = 101001
+known_best_energy = 4.0
+solver_best_bitstring = 101001
+solver_best_energy = 4.0
+abs_error_solver_vs_known = 0.0
+```
+
+CplexOptimizer remained unavailable because the CPLEX optional dependency was not installed, but the NumPyMinimumEigensolver path successfully recovered the known optimum.
+
+This is a classical Qiskit Optimization validation step. It does not run QAOA, a quantum simulator, or quantum hardware.
+
+Relevant outputs:
+
+```text
+results/tables/tiny_qiskit_classical_optimizer_smoke_test_summary.json
+results/tables/tiny_qiskit_classical_optimizer_smoke_test.csv
+results/tiny_qiskit_classical_optimizer_smoke_test_manifest.md
+```

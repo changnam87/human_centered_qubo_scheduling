@@ -188,3 +188,25 @@ max_abs_error = 0.0
 ```
 
 This confirms Qiskit Optimization compatibility for the tiny package while still not executing QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## Addendum: Tiny Qiskit Classical Optimizer PASS
+
+After installing qiskit-algorithms, the tiny QAOA-ready package was solved through MinimumEigenOptimizer with NumPyMinimumEigensolver.
+
+The result was PASS.
+
+```text
+solver_name = MinimumEigenOptimizer_NumPyMinimumEigensolver
+solver_status = OptimizationResultStatus.SUCCESS
+known_best_bitstring = 101001
+known_best_energy = 4.0
+solver_best_bitstring = 101001
+solver_best_energy = 4.0
+abs_error_solver_vs_known = 0.0
+```
+
+This confirms that the tiny package can be solved through a classical Qiskit Optimization exact-solver path before attempting any QAOA-oriented experiment.
+
+This does not run QAOA, a quantum simulator, or quantum hardware.

@@ -703,3 +703,11 @@ The solver recovered the known optimum bitstring 101001 with energy 4.0, matchin
 CplexOptimizer was unavailable due to the missing CPLEX optional dependency, but the NumPyMinimumEigensolver path succeeded.
 
 This step did not run QAOA, a quantum simulator, or quantum hardware.
+
+## Additional Checkpoint: Tiny Qiskit Classical Optimizer PASS Documented
+
+The README, technical validation report, v0.2 roadmap, v0.2 progress summary, and v0.1 milestone summary were updated with the tiny Qiskit classical optimizer smoke test PASS result.
+
+The documentation records that MinimumEigenOptimizer with NumPyMinimumEigensolver recovered the known optimum bitstring 101001 with energy 4.0 and abs_error_solver_vs_known = 0.0.
+
+This documents classical Qiskit Optimization solver compatibility while making clear that QAOA, quantum simulation, and quantum hardware were not executed.

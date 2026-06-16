@@ -743,3 +743,31 @@ num_qp_variables = 6
 Interpretation: the tiny QUBO package is compatible with Qiskit Optimization QuadraticProgram objective evaluation.
 
 This is a Qiskit Optimization software validation step only. It does not run QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## Addendum: Tiny Qiskit Classical Optimizer Smoke Test PASS
+
+After installing qiskit-algorithms, the tiny QAOA-ready QUBO package was solved through a classical Qiskit Optimization solver path.
+
+The successful path was MinimumEigenOptimizer with NumPyMinimumEigensolver.
+
+Observed result:
+
+```text
+status = PASS
+solver_name = MinimumEigenOptimizer_NumPyMinimumEigensolver
+solver_status = OptimizationResultStatus.SUCCESS
+num_variables = 6
+known_best_bitstring = 101001
+known_best_energy = 4.0
+solver_best_bitstring = 101001
+solver_best_energy = 4.0
+abs_error_solver_vs_known = 0.0
+```
+
+Interpretation: the Qiskit classical optimizer path recovered the known brute-force optimum for the tiny package.
+
+CplexOptimizer was unavailable because the CPLEX optional dependency was not installed, but the NumPyMinimumEigensolver path succeeded.
+
+This remains a classical solver validation step. It does not run QAOA, a quantum simulator, or quantum hardware.

@@ -348,3 +348,17 @@ The result was PASS: best_manual_bitstring = 101001, best_qiskit_bitstring = 101
 This completes the Qiskit Optimization smoke-test objective for the tiny package.
 
 This remains a software validation step and does not run QAOA, a quantum simulator, or quantum hardware.
+
+---
+
+## v0.2 Progress Update: Tiny Qiskit Classical Optimizer PASS
+
+The tiny QAOA-ready package was solved through a classical Qiskit Optimization path after installing qiskit-algorithms.
+
+The successful solver path was MinimumEigenOptimizer with NumPyMinimumEigensolver.
+
+The result was PASS: the solver recovered known_best_bitstring = 101001 with energy = 4.0 and abs_error_solver_vs_known = 0.0.
+
+This completes the classical Qiskit exact-solver validation objective for the tiny package.
+
+This remains classical software validation and does not run QAOA, a quantum simulator, or quantum hardware.
