@@ -1,0 +1,7 @@
+sample_name,num_selected_variables,qubo_energy,ising_energy,abs_error
+tuned_local_best,16,48.19999999999999,48.19999999999999,0.0
+all_zero,0,496.0,496.0,0.0
+random_one_start_0,16,562.2499999999999,562.2499999999999,0.0
+random_one_start_1,16,286.95,286.95,0.0
+random_sparse_0,12,701.1000000000001,701.1000000000001,0.0
+random_sparse_1,14,741.85,741.85,0.0

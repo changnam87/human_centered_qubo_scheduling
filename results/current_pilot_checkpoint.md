@@ -287,3 +287,15 @@ The analysis uses the transformation x_i = (1 + s_i) / 2 and computes Ising offs
 This prepares the prototype for downstream Ising-based solver experiments, quantum annealing formats, and QAOA-oriented representations.
 
 This step does not yet run quantum hardware or quantum simulation.
+
+## Additional Result: sample_4x4 Ising Energy Validation PASS
+
+The sample_4x4 QUBO-to-Ising energy validation passed.
+
+The validation compared merged QUBO energy and Ising-transformed energy on six sampled assignments using the mapping s_i = 2 x_i - 1.
+
+The maximum absolute error was 0.0 and the mean absolute error was 0.0.
+
+This confirms exact energy consistency between the merged sparse QUBO representation and the corresponding Ising energy representation on the sampled assignments.
+
+This step validates the transformation only; it does not yet run quantum hardware, quantum annealing, or QAOA.

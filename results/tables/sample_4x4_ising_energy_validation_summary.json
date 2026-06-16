@@ -1,0 +1,18 @@
+{
+  "experiment": "sample_4x4_ising_energy_validation_fast",
+  "num_samples": 6,
+  "sample_names": [
+    "tuned_local_best",
+    "all_zero",
+    "random_one_start_0",
+    "random_one_start_1",
+    "random_sparse_0",
+    "random_sparse_1"
+  ],
+  "max_abs_error": 0.0,
+  "mean_abs_error": 0.0,
+  "validation_status": "PASS",
+  "qubo_constant": 496.0,
+  "energy_convention": "x_i in {0,1}, s_i = 2*x_i - 1",
+  "note": "Fast validation applies QUBO-to-Ising transformation directly from merged QUBO rows."
+}
