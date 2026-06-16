@@ -84,3 +84,21 @@ If distance_from_target decreases to zero for some penalty values, the formulati
 If low human_reward values still reach the target when target_deviation_penalty is large, the target-deviation term is strong enough to induce human involvement even without a large positive reward.
 
 These findings remain prototype-level validation results and should motivate future QUBO-compatible target-based formulations.
+
+## Observed Target-Deviation Penalty Pattern
+
+The target-deviation penalty pilot showed that the penalty term successfully acted as a symmetric control mechanism for human utilization.
+
+Unlike the overuse-only penalty, which penalizes only human assignments above the target, the target-deviation penalty penalizes both under-use and over-use relative to the target human assignment count.
+
+Across all tested human_reward values, an appropriate target_deviation_penalty achieved exactly the target level of four human assignments, with mean human assignments of 4.0 and mean distance from target of 0.0.
+
+The best target_deviation_penalty values were reward-dependent. For human_reward = 0.0, the best penalty was 3.0. For human_reward = 1.0, the best penalty was 2.0. For human_reward = 2.0, the best penalty was 1.0. For human_reward = 2.5, the best penalty was 0.5. For human_reward = 3.0, the best penalty was 1.0.
+
+These results show that lower human_reward values require stronger target-deviation penalties to induce human involvement, while higher human_reward values require the penalty to suppress excessive human assignment.
+
+When the target was achieved, the solutions converged to a consistent average cost structure, with mean total cost without reward of approximately 54.305, mean workload cost of 4.5, and mean ergonomic cost of 2.82.
+
+The adjusted objective sometimes increased as the target-deviation penalty increased. This is expected because the goal of this formulation is not simply to lower the reward-adjusted objective, but to control human utilization around a desired target.
+
+Overall, this pilot supports the target-deviation penalty as a prototype-level formulation for target-oriented human utilization in human-centered scheduling.
