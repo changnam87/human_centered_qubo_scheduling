@@ -65,3 +65,13 @@ The QUBO coefficient dictionary was saved in explicit coefficient form as Q[i,j]
 Brute-force validation over all 2^12 binary assignments confirmed that the exported QUBO energy matched the direct objective.
 
 This provides the first explicit coefficient-export checkpoint for moving from CP-SAT equivalent validation to actual QUBO/Ising implementation.
+
+## Additional Result: Small Time-Indexed QUBO Penalty Calibration
+
+The small time-indexed QUBO parameter sensitivity identified a clear feasibility threshold for the constraint penalty.
+
+With constraint_penalty = 1.0, the QUBO optimum was infeasible for all tested settings.
+
+With constraint_penalty >= 5.0, the QUBO optimum was feasible for all tested settings, with assignment, overlap, and precedence violations reduced to zero.
+
+The target-consistent rate remained 0.48 at stable constraint penalties, indicating that feasibility is controlled by constraint penalties, while human-utilization target consistency depends on human_reward and lambda_target calibration.
