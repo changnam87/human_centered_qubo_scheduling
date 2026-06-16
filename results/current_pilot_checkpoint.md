@@ -151,3 +151,13 @@ The validation reads the large local coefficient CSV in chunks and compares stre
 This confirms whether the streaming sparse coefficient export is internally consistent without loading the full QUBO dictionary into memory.
 
 The large coefficient CSV remains a local ignored artifact, while validation summaries are tracked in Git.
+
+## Additional Result: sample_4x4 Streamed QUBO Energy Validation PASS
+
+The sample_4x4 streamed sparse QUBO coefficient export was validated using chunked CSV-based energy evaluation.
+
+Across six sampled assignments, the streamed QUBO energy matched the direct representative objective with maximum absolute error approximately 1.14e-13.
+
+The validation status was PASS.
+
+This confirms that the streaming sparse export path can represent the intended sample_4x4 QUBO objective without loading the full QUBO into memory.

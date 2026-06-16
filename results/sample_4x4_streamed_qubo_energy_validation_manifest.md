@@ -43,3 +43,19 @@ The validation passes when the maximum absolute error between streamed QUBO ener
 ## Pilot Status
 
 This validates coefficient-level consistency for the streamed sparse export. It does not solve the sample_4x4 QUBO.
+
+## Observed Streamed Energy Validation Result
+
+The streamed sample_4x4 QUBO energy validation passed.
+
+The validation read the large local sparse coefficient CSV in chunks and compared streamed QUBO energy against the direct representative sample_4x4 objective.
+
+The validation used six sampled assignments: all_zero, greedy_feasible, two random one-start samples, and two random sparse binary samples.
+
+The maximum absolute error was approximately 1.14e-13 and the mean absolute error was approximately 6.63e-14.
+
+The validation status was PASS.
+
+This confirms that the streamed sparse coefficient export is internally consistent with the intended objective, while avoiding construction of a dense matrix or monolithic in-memory QUBO dictionary.
+
+The large coefficient CSV remains a local ignored artifact, while the validation script and summary outputs are tracked in Git.
