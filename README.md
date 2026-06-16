@@ -495,3 +495,13 @@ results/tables/small_external_package_solver_benchmark_summary.csv
 results/tables/small_external_package_solver_benchmark_summary.json
 results/small_external_package_solver_benchmark_summary_manifest.md
 ```
+
+## Project Milestone v0.1
+
+A v0.1-style milestone summary is available at:
+
+```text
+docs/project_milestone_v0_1_summary.md
+```
+
+This summary consolidates the current sample_4x4 prototype pipeline, small external solver package, solver benchmark results, known limitations, and recommended v0.2 directions.

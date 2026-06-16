@@ -485,3 +485,11 @@ The README, technical validation report, and release-style checkpoint summary we
 The documentation now records brute-force optimum 5.30, best bitstring 100000000000100, initial simulated annealing success_rate 0.14, best tuned simulated annealing success_rate 0.725, and success-rate improvement 0.585.
 
 This documents that the small external package supports both exhaustive and heuristic solver benchmark workflows.
+
+## Additional Checkpoint: Project Milestone v0.1 Summary Created
+
+A v0.1-style project milestone summary was created.
+
+The milestone summary consolidates the sample_4x4 sparse QUBO/Ising prototype pipeline, CP-SAT comparison, tuned local search result, Ising validation, runtime/artifact profile, small external solver package, brute-force and simulated annealing solver benchmarks, limitations, and recommended v0.2 directions.
+
+The README was updated to point to the milestone summary.
