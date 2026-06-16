@@ -761,3 +761,13 @@ A dedicated v0.2 checkpoint summary was created for the tiny Qiskit/QAOA-oriente
 The summary consolidates the tiny QUBO export, Qiskit Optimization QuadraticProgram validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity results.
 
 The README, v0.2 roadmap, and v0.2 progress summary were updated to point to this checkpoint summary.
+
+## Additional Checkpoint: Project Milestone v0.2 Current Overall Checkpoint Created
+
+A current overall v0.2 checkpoint summary was created.
+
+The summary consolidates the small external-solver-ready package workflow and the tiny Qiskit/QAOA-oriented workflow.
+
+It records scaled QUBO/Ising validation, dimod import validation, brute-force/SA benchmarks, Qiskit Optimization validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity.
+
+The README, v0.2 roadmap, and v0.2 progress summary were updated to point to the overall checkpoint.

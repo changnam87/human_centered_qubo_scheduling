@@ -740,3 +740,13 @@ docs/tiny_qaoa_package_v0_2_checkpoint_summary.md
 ```
 
 This document summarizes the tiny QUBO export, Qiskit Optimization validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity results.
+
+## Project Milestone v0.2 Current Overall Checkpoint
+
+A current overall v0.2 checkpoint summary is available at:
+
+```text
+docs/project_milestone_v0_2_current_overall_checkpoint.md
+```
+
+This document consolidates the small external-solver package results and the tiny Qiskit/QAOA-oriented package results into one current v0.2 checkpoint.
