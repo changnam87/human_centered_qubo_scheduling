@@ -711,3 +711,15 @@ The README, technical validation report, v0.2 roadmap, v0.2 progress summary, an
 The documentation records that MinimumEigenOptimizer with NumPyMinimumEigensolver recovered the known optimum bitstring 101001 with energy 4.0 and abs_error_solver_vs_known = 0.0.
 
 This documents classical Qiskit Optimization solver compatibility while making clear that QAOA, quantum simulation, and quantum hardware were not executed.
+
+## Additional Result: Tiny QAOA Simulator Smoke Test PASS
+
+The tiny QAOA simulator/software smoke test was completed for the 6-variable QAOA-ready package.
+
+The test used reps = 1, maxiter = 100, seed = 123, and StatevectorSampler.
+
+The result was PASS: QAOA recovered the known optimum bitstring 101001 with energy 4.0 and gap_to_known = 0.0.
+
+This confirms that the QAOA software path can run on the tiny package.
+
+This is a toy simulator/software result only. It does not run quantum hardware and does not imply quantum advantage.
