@@ -1,0 +1,15 @@
+metric,value
+assignment_cost,41.10000000000001
+workload_cost,4.5
+ergonomic_cost,2.6999999999999997
+start_time_cost,9.4
+total_cost_without_reward,57.70000000000001
+human_count,4
+machine_count,12
+robot_count,0
+reward_term,10.0
+target_penalty,0.0
+adjusted_objective,47.70000000000001
+solver_objective_scaled,4770.0
+solver_objective_unscaled,47.7
+abs_error_component_vs_solver,7.105427357601002e-15

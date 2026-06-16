@@ -219,3 +219,15 @@ A consolidated technical validation report was created for the sample_4x4 human-
 The report summarizes formulation validation, squared target penalty analysis, sparse QUBO export, streamed and merged energy validation, solver-ready metadata, local search, and solution component analysis.
 
 This report is intended as an internal prototype/pilot validation document, not as a final manuscript.
+
+## Additional Result: sample_4x4 CP-SAT Squared-Target Baseline
+
+An objective-equivalent CP-SAT baseline was solved for the representative sample_4x4 squared-target QUBO objective.
+
+The CP-SAT model returned OPTIMAL status with unscaled adjusted objective 47.70.
+
+The solution had total_cost_without_reward = 57.70, human_count = 4, reward_term = 10.0, target_penalty = 0.0, and adjusted_objective = 47.70.
+
+The previous local QUBO search best energy was 51.25, giving an absolute gap of 3.55 and a relative gap of approximately 7.44 percent against the CP-SAT squared-target optimum.
+
+This confirms that the local QUBO heuristic found a feasible target-consistent solution but did not reach the objective-equivalent CP-SAT optimum.

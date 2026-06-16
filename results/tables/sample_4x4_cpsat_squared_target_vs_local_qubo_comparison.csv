@@ -1,0 +1,6 @@
+metric,cpsat_squared_target,local_qubo_best,local_minus_cpsat
+adjusted_objective,47.70000000000001,51.25,3.54999999999999
+total_cost_without_reward,57.70000000000001,61.25,3.54999999999999
+human_count,4,4,0
+workload_cost,4.5,5.5,1.0
+ergonomic_cost,2.6999999999999997,3.3,0.6000000000000001
