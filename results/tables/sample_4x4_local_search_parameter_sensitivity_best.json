@@ -1,0 +1,27 @@
+{
+  "experiment": "sample_4x4_local_search_parameter_sensitivity",
+  "num_cases": 72,
+  "cpsat_optimum": 47.7,
+  "previous_local_best": 51.25,
+  "best_case": {
+    "run_id": 20,
+    "tag": "run020_r30_it20000_t5.0_tf0.001_s789",
+    "restarts": 30,
+    "iterations": 20000,
+    "initial_temperature": 5.0,
+    "final_temperature": 0.001,
+    "seed": 789,
+    "best_energy": 48.19999999999975,
+    "cpsat_optimum": 47.7,
+    "absolute_gap": 0.4999999999997442,
+    "relative_gap": 0.010482180293495685,
+    "feasible_runs": 30,
+    "feasible_rate": 1.0,
+    "best_run": 23,
+    "load_seconds": 3.1439707279205322,
+    "runs_csv": "results/tables/local_search_parameter_sensitivity/run020_r30_it20000_t5.0_tf0.001_s789_runs.csv",
+    "best_solution_csv": "results/tables/local_search_parameter_sensitivity/run020_r30_it20000_t5.0_tf0.001_s789_best_solution.csv",
+    "summary_json": "results/tables/local_search_parameter_sensitivity/run020_r30_it20000_t5.0_tf0.001_s789_summary.json"
+  },
+  "note": "Prototype local search sensitivity; not a proof of optimality."
+}

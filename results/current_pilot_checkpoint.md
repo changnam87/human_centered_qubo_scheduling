@@ -231,3 +231,17 @@ The solution had total_cost_without_reward = 57.70, human_count = 4, reward_term
 The previous local QUBO search best energy was 51.25, giving an absolute gap of 3.55 and a relative gap of approximately 7.44 percent against the CP-SAT squared-target optimum.
 
 This confirms that the local QUBO heuristic found a feasible target-consistent solution but did not reach the objective-equivalent CP-SAT optimum.
+
+## Additional Result: sample_4x4 Local Search Parameter Sensitivity
+
+A local QUBO search parameter sensitivity experiment was completed using the merged sample_4x4 sparse QUBO.
+
+The experiment evaluated 72 parameter cases across restarts, iterations, temperature schedules, and random seeds.
+
+The best observed case used 30 restarts, 20,000 iterations, initial_temperature = 5.0, final_temperature = 0.001, and seed = 789.
+
+This case achieved best_energy = 48.20 with feasible_rate = 1.0.
+
+Compared with the CP-SAT squared-target optimum of 47.70, the tuned local QUBO gap was 0.50, or approximately 1.05 percent.
+
+This reduced the previous local-search gap from 3.55 to 0.50, showing that parameter tuning substantially improves the local QUBO heuristic while still not proving optimality.

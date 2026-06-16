@@ -1,0 +1,22 @@
+{
+  "experiment": "sample_4x4_merged_qubo_local_search",
+  "merged_csv": "results/tables/sample_4x4_sparse_qubo_coefficients_merged.csv",
+  "num_variables": 8713,
+  "constant_offset": 496.0,
+  "total_merged_rows": 8218171,
+  "linear_rows": 8713,
+  "quadratic_rows": 8209458,
+  "restarts": 20,
+  "iterations": 5000,
+  "seed": 123,
+  "initial_temperature": 10.0,
+  "final_temperature": 0.01,
+  "load_seconds": 3.099135160446167,
+  "best_energy": 51.25,
+  "best_run": 15,
+  "feasible_runs": 19,
+  "feasible_rate": 0.95,
+  "runs_csv": "results/tables/local_search_parameter_sensitivity/run000_r20_it5000_t10.0_tf0.01_s123_runs.csv",
+  "best_solution_csv": "results/tables/local_search_parameter_sensitivity/run000_r20_it5000_t10.0_tf0.01_s123_best_solution.csv",
+  "note": "Prototype local heuristic search; not a proof of optimality."
+}

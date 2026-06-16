@@ -1,0 +1,17 @@
+operation,job,step,resource,resource_type,start_time,duration,finish_time,variable_index
+0,0,0,6,human,0,3,3,370
+1,0,1,4,human,3,4,7,800
+2,0,2,3,machine,7,4,11,1284
+3,0,3,2,machine,11,2,13,1767
+4,1,0,0,machine,1,3,4,2186
+5,1,1,6,human,4,5,9,3091
+6,1,2,1,machine,9,2,11,3335
+7,1,3,1,machine,11,3,14,3889
+8,2,0,1,machine,0,4,4,4421
+9,2,1,1,machine,4,2,6,4962
+10,2,2,1,machine,6,3,9,5516
+11,2,3,3,machine,13,4,17,6186
+12,3,0,4,human,0,3,3,6776
+13,3,1,2,machine,3,3,6,7206
+14,3,2,2,machine,6,4,10,7751
+15,3,3,0,machine,10,2,12,8170
