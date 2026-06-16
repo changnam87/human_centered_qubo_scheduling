@@ -509,3 +509,11 @@ A dimod-compatible BQM-style export was added for the small external-solver-read
 The export includes BINARY and SPIN JSON files plus linear/quadratic CSV files.
 
 This prepares the small package for D-Wave Ocean/dimod-style workflows but does not execute D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Checkpoint: Small Package dimod-Style BQM Energy Validation
+
+Energy validation was added for the small package dimod-compatible BQM-style exports.
+
+The validation compares original QUBO energy, original Ising energy, dimod-style BINARY BQM energy, and dimod-style SPIN BQM energy on sampled assignments.
+
+This checks solver-format consistency without requiring dimod, D-Wave hardware, quantum annealing, or QAOA.

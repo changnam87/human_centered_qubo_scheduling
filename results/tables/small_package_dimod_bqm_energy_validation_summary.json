@@ -1,0 +1,12 @@
+{
+  "experiment": "small_package_dimod_bqm_energy_validation",
+  "package_dir": "exports/small_time_indexed_solver_package",
+  "num_variables": 15,
+  "num_samples": 23,
+  "max_abs_error": 9.094947017729282e-13,
+  "mean_abs_error_binary_vs_spin_bqm": 1.153859616549554e-13,
+  "validation_status": "PASS",
+  "binary_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_bqm.json",
+  "spin_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_bqm.json",
+  "note": "Validates dimod-style BQM JSON energy consistency without requiring dimod."
+}
