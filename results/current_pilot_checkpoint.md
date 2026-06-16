@@ -627,3 +627,11 @@ The README, technical validation report, v0.2 roadmap, v0.1 milestone summary, a
 The documentation records dimod_version = 0.12.22, num_variables = 15, num_samples = 23, binary_num_interactions = 90, spin_num_interactions = 90, and max_abs_error approximately 4.55e-13.
 
 This documents actual dimod BinaryQuadraticModel import compatibility while making clear that D-Wave hardware, quantum annealing, and QAOA were not executed.
+
+## Additional Checkpoint: Project Milestone v0.2 Progress Summary Created
+
+A v0.2 progress checkpoint summary was created.
+
+The summary consolidates completed v0.2 progress including scaled QUBO/Ising export validation, dimod-style BQM export and validation, actual dimod BinaryQuadraticModel import PASS, and the current small-package solver-readiness status.
+
+The README and v0.2 roadmap were updated to point to the v0.2 progress checkpoint summary.

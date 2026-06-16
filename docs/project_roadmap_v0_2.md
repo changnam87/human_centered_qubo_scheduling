@@ -322,3 +322,15 @@ The result was PASS with dimod_version = 0.12.22, num_variables = 15, num_sample
 This completes the dimod import smoke-test objective for the small package.
 
 This remains local software validation and does not run D-Wave hardware, quantum annealing, or QAOA.
+
+---
+
+## v0.2 Progress Checkpoint Summary
+
+A v0.2 progress checkpoint summary has been created at:
+
+```text
+docs/project_milestone_v0_2_progress_summary.md
+```
+
+This progress checkpoint summarizes completed scaled export validation, dimod-style BQM validation, and actual dimod BinaryQuadraticModel import compatibility for the small external package.

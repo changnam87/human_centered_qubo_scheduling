@@ -562,3 +562,13 @@ docs/project_roadmap_v0_2.md
 ```
 
 The roadmap defines the next planned milestone: scaled exports, dimod import smoke tests, tiny Qiskit/QAOA-oriented experiments, improved local search neighborhoods, seed-specific sample_4x4 summaries, and external solver benchmark templates.
+
+## Project Milestone v0.2 Progress
+
+A v0.2 progress checkpoint summary is available at:
+
+```text
+docs/project_milestone_v0_2_progress_summary.md
+```
+
+This document summarizes completed v0.2 progress, including scaled QUBO/Ising export validation and actual dimod BinaryQuadraticModel import compatibility for the small external package.
