@@ -177,3 +177,143 @@ human-centered scheduling formulation
 ```
 
 This establishes a strong prototype foundation for future solver experiments, QUBO-to-Ising conversion, and eventual research-paper development.
+
+---
+
+## Addendum: Objective-Equivalent CP-SAT Baseline and Tuned Local QUBO Search
+
+This addendum updates the technical validation report with results from the objective-equivalent CP-SAT squared-target baseline, local QUBO search parameter sensitivity, and tuned local QUBO solution component analysis.
+
+## CP-SAT Squared-Target Objective-Equivalent Baseline
+
+The original CP-SAT baseline minimized total cost without human reward or squared target penalty. To create a fairer comparison against the representative QUBO local search objective, a new CP-SAT model was solved using the same squared-target objective:
+
+```text
+objective = total_cost_without_reward - human_reward * human_count + lambda_target * (human_count - target_human_assignments)^2
+```
+
+The parameters were:
+
+```text
+human_reward = 2.5
+lambda_target = 1.0
+target_human_assignments = 4
+scale = 100
+```
+
+The CP-SAT model returned OPTIMAL status.
+
+```text
+scaled objective = 4770.0
+unscaled adjusted objective = 47.70
+total_cost_without_reward = 57.70
+human_count = 4
+machine_count = 12
+robot_count = 0
+reward_term = 10.0
+target_penalty = 0.0
+```
+
+The component recomputation matched the solver objective within numerical tolerance.
+
+This objective-equivalent CP-SAT result provides a stronger comparison point for the local QUBO heuristic than the original total-cost-only CP-SAT baseline.
+
+## Local QUBO Search Parameter Sensitivity
+
+The previous local QUBO search best solution had:
+
+```text
+best_energy = 51.25
+CP-SAT squared-target optimum = 47.70
+absolute gap = 3.55
+relative gap approximately 7.44 percent
+```
+
+A parameter sensitivity experiment was then run over local search settings.
+
+The full sensitivity grid included:
+
+```text
+restarts = 30, 50
+iterations = 10000, 20000
+initial_temperature = 5.0, 10.0, 20.0
+final_temperature = 0.001, 0.01
+seeds = 123, 456, 789
+total cases = 72
+```
+
+The best observed case was:
+
+```text
+run_id = 20
+tag = run020_r30_it20000_t5.0_tf0.001_s789
+restarts = 30
+iterations = 20000
+initial_temperature = 5.0
+final_temperature = 0.001
+seed = 789
+best_energy = 48.20
+feasible_rate = 1.0
+```
+
+This reduced the gap to the CP-SAT optimum:
+
+```text
+new absolute gap = 48.20 - 47.70 = 0.50
+new relative gap approximately 1.05 percent
+```
+
+Interpretation: local QUBO heuristic performance improved substantially through parameter tuning, reducing the previous gap from 3.55 to 0.50 energy units.
+
+## Tuned Local QUBO Solution Component Analysis
+
+The best tuned local QUBO solution was decomposed into interpretable objective components and compared against the CP-SAT squared-target optimum.
+
+The tuned local solution had:
+
+```text
+adjusted_objective = 48.20
+total_cost_without_reward = 58.20
+human_count = 4
+machine_count = 12
+robot_count = 0
+reward_term = 10.0
+target_penalty = 0.0
+feasibility violations = 0
+```
+
+The CP-SAT squared-target optimum had:
+
+```text
+adjusted_objective = 47.70
+total_cost_without_reward = 57.70
+human_count = 4
+machine_count = 12
+robot_count = 0
+reward_term = 10.0
+target_penalty = 0.0
+```
+
+The component comparison showed that the tuned local solution matched the CP-SAT optimum in assignment cost, workload cost, ergonomic cost, human_count, reward term, and target penalty.
+
+The remaining 0.50 objective gap was entirely explained by start-time cost:
+
+```text
+CP-SAT start_time_cost = 9.40
+tuned local QUBO start_time_cost = 9.90
+difference = 0.50
+```
+
+Interpretation: the tuned local QUBO heuristic matched the CP-SAT human-centered allocation pattern but remained slightly worse in timing optimization.
+
+## Updated Pilot-Level Interpretation
+
+The updated results strengthen the prototype validation in several ways:
+
+1. An objective-equivalent CP-SAT optimum is now available for the squared-target QUBO objective.
+2. The local QUBO heuristic can be evaluated against this objective-equivalent optimum.
+3. Parameter tuning reduced the local-search gap from approximately 7.44 percent to approximately 1.05 percent.
+4. The remaining gap is not due to human-centered allocation failure; it is due to a small start-time cost difference.
+5. The tuned local QUBO solution is feasible and target-consistent.
+
+These findings remain prototype/pilot validation results. They do not prove global optimality of the local QUBO heuristic, but they show that the merged sparse QUBO representation supports meaningful near-optimal energy-based search on the representative sample_4x4 instance.

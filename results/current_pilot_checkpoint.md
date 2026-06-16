@@ -265,3 +265,15 @@ Component analysis showed that assignment cost, workload cost, ergonomic cost, h
 The entire gap was due to start-time cost: 9.90 for the tuned local QUBO solution versus 9.40 for the CP-SAT optimum.
 
 This indicates that the tuned local QUBO heuristic matched the CP-SAT human-centered allocation pattern but was slightly worse in timing optimization.
+
+## Additional Checkpoint: Technical Validation Report Updated with CP-SAT Equivalent Baseline and Tuned Local Search
+
+The sample_4x4 technical validation report was updated with STEP 20–22 results.
+
+The update includes the objective-equivalent CP-SAT squared-target baseline, local QUBO search parameter sensitivity, and tuned local QUBO solution component-gap explanation.
+
+The CP-SAT squared-target optimum was 47.70.
+
+The tuned local QUBO best energy was 48.20, reducing the local-search gap to 0.50 or approximately 1.05 percent.
+
+Component analysis showed that the remaining gap was entirely due to start-time cost, while human_count, workload cost, ergonomic cost, reward term, and target penalty matched the CP-SAT optimum.
