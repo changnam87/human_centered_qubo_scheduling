@@ -253,3 +253,15 @@ The best tuned local QUBO solution from the parameter sensitivity experiment was
 The analysis compares the tuned local solution against the objective-equivalent CP-SAT squared-target optimum.
 
 This identifies which components explain the remaining gap between the tuned local QUBO solution and the CP-SAT optimum.
+
+## Additional Result: sample_4x4 Tuned Local QUBO Component Gap Explanation
+
+The tuned local QUBO solution had adjusted_objective = 48.20, compared with the CP-SAT squared-target optimum of 47.70.
+
+The remaining absolute gap was 0.50, or approximately 1.05 percent.
+
+Component analysis showed that assignment cost, workload cost, ergonomic cost, human_count, reward term, and target penalty matched the CP-SAT optimum.
+
+The entire gap was due to start-time cost: 9.90 for the tuned local QUBO solution versus 9.40 for the CP-SAT optimum.
+
+This indicates that the tuned local QUBO heuristic matched the CP-SAT human-centered allocation pattern but was slightly worse in timing optimization.
