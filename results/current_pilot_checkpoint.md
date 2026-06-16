@@ -141,3 +141,13 @@ The exported term groups include linear cost/reward terms, squared target human-
 The streamed coefficient file is intentionally unmerged, preserving term_group labels for component-level analysis and validation.
 
 This establishes a scalable export path before attempting sample_4x4 QUBO optimization.
+
+## Additional Checkpoint: sample_4x4 Streamed QUBO Energy Validation
+
+A component-wise energy validation was added for the sample_4x4 streamed sparse QUBO export.
+
+The validation reads the large local coefficient CSV in chunks and compares streamed QUBO energy against direct objective values for sampled assignments.
+
+This confirms whether the streaming sparse coefficient export is internally consistent without loading the full QUBO dictionary into memory.
+
+The large coefficient CSV remains a local ignored artifact, while validation summaries are tracked in Git.

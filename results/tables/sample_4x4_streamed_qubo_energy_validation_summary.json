@@ -1,0 +1,19 @@
+{
+  "experiment": "sample_4x4_streamed_qubo_energy_validation",
+  "coeff_csv": "results/tables/sample_4x4_sparse_qubo_coefficients_stream.csv",
+  "num_samples": 6,
+  "sample_names": [
+    "all_zero",
+    "greedy_feasible",
+    "random_one_start_0",
+    "random_one_start_1",
+    "random_sparse_0",
+    "random_sparse_1"
+  ],
+  "chunksize": 250000,
+  "elapsed_seconds": 5.226915121078491,
+  "max_abs_error": 1.1368683772161603e-13,
+  "mean_abs_error": 6.631732200427602e-14,
+  "validation_status": "PASS",
+  "note": "Validation reads large streamed coefficient CSV in chunks; coefficient CSV is local and ignored by Git."
+}
