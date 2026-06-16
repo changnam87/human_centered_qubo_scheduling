@@ -290,3 +290,21 @@ Large sample_4x4 artifacts should remain local ignored files unless moved to Git
 ## v0.2 Roadmap Conclusion
 
 The v0.2 roadmap focuses on making the prototype more solver-ready, reproducible, and externally testable while preserving careful boundaries around what has and has not been demonstrated.
+
+---
+
+## v0.2 Progress Update: Scaled QUBO/Ising Export Validation Completed
+
+The first v0.2 work package, scaled QUBO/Ising export validation for the small external package, has been completed.
+
+The validation enumerated all 32,768 assignments for the 15-variable package.
+
+Using unit_abs_max scaling, the maximum absolute coefficient before scaling was 959.2 and the scale factor was approximately 0.0010425354.
+
+The unscaled QUBO, scaled QUBO, and scaled Ising formulations all selected the same best bitstring 100000000000100.
+
+The unscaled best energy was 5.30 and the scaled best energy was approximately 0.00552544.
+
+The scaled QUBO-vs-Ising maximum absolute error was approximately 7.1e-15, and validation status was PASS.
+
+This completes the scaled coefficient-format validation objective for the small package.

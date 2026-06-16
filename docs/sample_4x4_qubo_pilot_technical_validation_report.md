@@ -661,3 +661,33 @@ validation_status = PASS
 Interpretation: the dimod-style BQM JSON exports preserve energy consistency within numerical floating-point tolerance.
 
 This remains a solver-format readiness result. It does not run dimod, D-Wave hardware, quantum annealing, or QAOA.
+
+---
+
+## Addendum: Scaled QUBO/Ising Export Validation
+
+Scaled QUBO and Ising coefficient exports were generated and validated for the small external-solver-ready package.
+
+The scaling uses a positive scale factor, which should preserve the argmin and energy ordering.
+
+## Observed Result
+
+```text
+num_variables = 15
+num_assignments_enumerated = 32768
+scale_mode = unit_abs_max
+abs_max_before_scaling = 959.2
+scale_factor approximately 0.0010425354
+best_unscaled_bitstring = 100000000000100
+best_scaled_qubo_bitstring = 100000000000100
+best_scaled_ising_bitstring = 100000000000100
+unscaled best energy = 5.30
+scaled QUBO best energy approximately 0.00552544
+scaled Ising best energy approximately 0.00552544
+scaled QUBO-vs-Ising max_abs_error approximately 7.1e-15
+validation_status = PASS
+```
+
+Interpretation: the scaled QUBO and scaled Ising exports preserve the same optimum assignment as the unscaled package and remain energy-consistent within numerical tolerance.
+
+This is a solver-readiness coefficient-format validation step. It does not execute quantum hardware, quantum annealing, dimod, or QAOA.

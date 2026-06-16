@@ -266,3 +266,15 @@ Both BINARY and SPIN BQM-style JSON files were generated and validated.
 Energy validation across original QUBO, original Ising, dimod-style BINARY BQM, and dimod-style SPIN BQM representations passed with max_abs_error approximately 9.09e-13 across 23 sampled assignments.
 
 This is a solver-format readiness result and does not execute dimod, D-Wave hardware, quantum annealing, or QAOA.
+
+---
+
+## Addendum: Scaled QUBO/Ising Export Validation
+
+Validated scaled QUBO and Ising exports were added for the small external-solver-ready package.
+
+The validation preserved the best bitstring 100000000000100 across unscaled QUBO, scaled QUBO, and scaled Ising formulations.
+
+The scale factor was approximately 0.0010425354 and the validation status was PASS.
+
+This provides a bounded-coefficient export format for external solver-readiness testing.

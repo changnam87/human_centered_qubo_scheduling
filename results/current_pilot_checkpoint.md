@@ -569,3 +569,11 @@ The unscaled best energy was 5.30, and the scaled best energy was approximately 
 The scaled QUBO-vs-Ising maximum absolute error was approximately 7.1e-15, and validation status was PASS.
 
 This confirms that positive coefficient scaling preserves the argmin and energy consistency for the small package.
+
+## Additional Checkpoint: Scaled Export Validation Documented
+
+The README, technical validation report, v0.2 roadmap, v0.1 milestone summary, and release-style checkpoint summary were updated with the small package scaled QUBO/Ising export validation results.
+
+The documentation records that unit_abs_max scaling preserved the best bitstring 100000000000100 across unscaled QUBO, scaled QUBO, and scaled Ising formulations.
+
+The validation enumerated all 32,768 assignments and passed with scaled QUBO-vs-Ising max_abs_error approximately 7.1e-15.

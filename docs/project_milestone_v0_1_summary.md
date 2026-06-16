@@ -219,3 +219,19 @@ The validation compared original QUBO energy, original Ising energy, dimod-style
 The validation used 23 sampled assignments and passed with max_abs_error approximately 9.09e-13.
 
 This confirms solver-format energy consistency for the small package while still not representing D-Wave hardware, quantum annealing, or QAOA execution.
+
+---
+
+## Addendum: Scaled QUBO/Ising Export Validation
+
+The small external-solver-ready package now includes validated scaled QUBO and Ising exports.
+
+The validation used unit_abs_max scaling and enumerated all 32,768 assignments for the 15-variable package.
+
+The unscaled, scaled QUBO, and scaled Ising formulations all preserved the same best bitstring 100000000000100.
+
+The unscaled best energy was 5.30, while the scaled best energy was approximately 0.00552544.
+
+The scaled QUBO-vs-Ising maximum absolute error was approximately 7.1e-15, with validation status PASS.
+
+This strengthens solver-format readiness for the small package.
