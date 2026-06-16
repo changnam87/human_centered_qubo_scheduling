@@ -12,6 +12,24 @@ This is a toy package and not the full sample_4x4 QUBO.
 
 This step does not run Qiskit, QAOA, quantum hardware, or a quantum simulator.
 
+## Observed Result
+
+The tiny package has 6 binary variables.
+
+All 64 assignments were enumerated by brute force.
+
+The QUBO has 13 total terms, including 6 linear terms and 7 quadratic terms.
+
+The constant offset is 30.0.
+
+The exactly-one penalty is 10.0.
+
+The best bitstring is 101001.
+
+The best energy is 4.0.
+
+The best assignment is feasible under the exactly-one-per-pair constraints.
+
 ## Package Directory
 
 exports/tiny_qaoa_ready_package/

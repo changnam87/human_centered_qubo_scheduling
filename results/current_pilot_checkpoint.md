@@ -645,3 +645,15 @@ The package is intentionally tiny and separate from the full sample_4x4 QUBO.
 The package includes QUBO coefficients, a Qiskit-friendly QUBO JSON representation, a brute-force energy table, package metadata, and a known optimum.
 
 This step does not run Qiskit, QAOA, quantum hardware, or a quantum simulator.
+
+## Additional Result: Tiny QAOA-Ready Package Export
+
+A tiny QUBO package was created for Qiskit Optimization and QAOA-oriented toy experiments.
+
+The package has 6 binary variables, 13 QUBO terms, 6 linear terms, 7 quadratic terms, and constant offset 30.0.
+
+All 64 assignments were enumerated by brute force.
+
+The best bitstring is 101001 with best energy 4.0, and the best assignment is feasible under the exactly-one-per-pair constraints.
+
+This step only exports and validates the tiny package; it does not run Qiskit, QAOA, quantum hardware, or a quantum simulator.
