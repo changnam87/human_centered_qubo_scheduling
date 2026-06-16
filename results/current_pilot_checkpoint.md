@@ -117,3 +117,15 @@ The study estimates variable count, sparse coefficient term count, memory requir
 The purpose is to determine whether full sparse QUBO coefficient export should be performed in memory or via streaming CSV export.
 
 This prepares the project for a future full sample_4x4 sparse QUBO coefficient export without yet attempting QUBO optimization at that scale.
+
+## Additional Result: sample_4x4 QUBO Export Feasibility Findings
+
+The sample_4x4 QUBO export feasibility study estimated 8,713 representative valid-start variables and 8,860,966 sparse QUBO terms before coefficient merging.
+
+The dominant source of quadratic terms was the squared target human-utilization penalty, with 4,154,403 pairwise terms among 2,883 human variables.
+
+Assignment one-start penalties and precedence forbidden-pair penalties were also major contributors.
+
+The memory estimates suggest that dense QUBO export is inappropriate and that full sparse export should use streaming CSV or component-wise writing rather than a monolithic in-memory dictionary.
+
+This establishes the need for a streaming sample_4x4 sparse QUBO export strategy as the next prototype step.
