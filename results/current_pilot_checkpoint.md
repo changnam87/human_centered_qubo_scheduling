@@ -401,3 +401,15 @@ A minimal simulated annealing solver was added for the small external-solver-rea
 The solver reads the exported QUBO coefficients, performs bit-flip simulated annealing, and compares the best result against the brute-force optimum energy 5.30.
 
 This provides the first heuristic solver baseline for the small external package.
+
+## Additional Result: Small External Package Simulated Annealing Solver PASS
+
+The minimal simulated annealing solver was run on the small 15-variable external QUBO package.
+
+Using 100 restarts and 2,000 iterations per restart, the solver recovered the known brute-force optimum energy 5.30 and best bitstring 100000000000100.
+
+The best gap to brute-force was approximately 8.88e-16, indicating numerical floating-point error only.
+
+The optimum was reached in 14 out of 100 restarts, giving success_rate = 0.14.
+
+This confirms that the small external-solver package can be consumed by a simple heuristic solver and that the known optimum can be recovered.
