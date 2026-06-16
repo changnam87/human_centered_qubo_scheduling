@@ -431,3 +431,17 @@ A simulated annealing parameter sensitivity workflow was added for the small ext
 The sensitivity experiment evaluates restarts, iterations, temperature schedules, and seeds against the known brute-force optimum energy 5.30.
 
 This provides a lightweight heuristic solver sensitivity baseline for the small external package.
+
+## Additional Result: Small External Package SA Parameter Sensitivity
+
+The full simulated annealing parameter sensitivity experiment was completed for the small external-solver-ready QUBO package.
+
+The experiment evaluated 216 parameter cases across restarts, iterations, temperature schedules, and seeds.
+
+The best observed case was run214_r200_it10000_t20.0_tf0.01_s456, using 200 restarts, 10,000 iterations, initial_temperature = 20.0, final_temperature = 0.01, and seed = 456.
+
+This case recovered the brute-force optimum energy 5.30 and bitstring 100000000000100.
+
+The optimum was reached in 145 out of 200 restarts, giving success_rate = 0.725.
+
+This improves substantially over the initial SA baseline success_rate of 0.14.
