@@ -768,3 +768,13 @@ results/tables/external_solver_benchmark_template_example.csv
 ```
 
 This template standardizes how future solver results should report instance ID, solver name, formulation type, reference energy, best energy, gap, feasibility, runtime, success rate, and status.
+
+## Project v0.2 Release Candidate Checklist
+
+A v0.2 release candidate checklist is available at:
+
+```text
+docs/project_v0_2_release_candidate_checklist.md
+```
+
+The checklist defines required documentation, package outputs, validation summaries, large-artifact policy, and claims boundaries before declaring a v0.2 release-style checkpoint.

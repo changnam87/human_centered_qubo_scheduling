@@ -779,3 +779,11 @@ A standard external solver benchmark template was created.
 The template defines a schema for recording future QUBO, Ising, BQM, Qiskit Optimization, QAOA simulator, simulated annealing, and possible hardware-oriented solver results.
 
 This is a reporting/documentation step only and does not run any solver or hardware.
+
+## Additional Checkpoint: Project v0.2 Release Candidate Checklist Created
+
+A v0.2 release candidate checklist was created.
+
+The checklist covers repository cleanliness, core documentation, sample_4x4 prototype status, small external-solver package status, tiny Qiskit/QAOA package status, benchmark template status, large artifact policy, claims boundaries, and final verification commands.
+
+The README and v0.2 roadmap were updated to point to the release candidate checklist.
