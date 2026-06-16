@@ -277,3 +277,13 @@ The CP-SAT squared-target optimum was 47.70.
 The tuned local QUBO best energy was 48.20, reducing the local-search gap to 0.50 or approximately 1.05 percent.
 
 Component analysis showed that the remaining gap was entirely due to start-time cost, while human_count, workload cost, ergonomic cost, reward term, and target penalty matched the CP-SAT optimum.
+
+## Additional Checkpoint: sample_4x4 QUBO-to-Ising Metadata
+
+QUBO-to-Ising conversion metadata was generated for the merged sample_4x4 sparse QUBO.
+
+The analysis uses the transformation x_i = (1 + s_i) / 2 and computes Ising offset, linear fields h_i, couplers J_ij, coefficient ranges, density, and scaling recommendations.
+
+This prepares the prototype for downstream Ising-based solver experiments, quantum annealing formats, and QAOA-oriented representations.
+
+This step does not yet run quantum hardware or quantum simulation.
