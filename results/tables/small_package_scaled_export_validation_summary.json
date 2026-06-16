@@ -1,0 +1,22 @@
+{
+  "experiment": "small_package_scaled_export_validation",
+  "num_variables": 15,
+  "num_assignments_enumerated": 32768,
+  "scale_mode": "unit_abs_max",
+  "abs_max_before_scaling": 959.2,
+  "scale_factor": 0.001042535446205171,
+  "best_unscaled_bitstring": "100000000000100",
+  "best_unscaled_energy": 5.300000000000001,
+  "best_scaled_qubo_bitstring": "100000000000100",
+  "best_scaled_qubo_energy": 0.005525437864887402,
+  "best_scaled_ising_bitstring": "100000000000100",
+  "best_scaled_ising_energy": 0.005525437864887073,
+  "argmin_consistent": true,
+  "max_abs_error_qubo_rescaled": 4.092726157978177e-12,
+  "max_abs_error_ising_rescaled": 4.547473508864641e-12,
+  "max_abs_error_scaled_qubo_vs_scaled_ising": 7.105427357601002e-15,
+  "validation_status": "PASS",
+  "scaling_metadata_json": "exports/small_time_indexed_solver_package/small_time_indexed_scaled_scaling_metadata.json",
+  "validation_csv": "results/tables/small_package_scaled_export_validation.csv",
+  "note": "Validates scaled QUBO/Ising exports on all assignments for the small package."
+}

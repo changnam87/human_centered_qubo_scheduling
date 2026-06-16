@@ -54,3 +54,33 @@ small_time_indexed_dimod_bqm_export_summary.json
 ```
 
 These exports prepare the small package for D-Wave Ocean/dimod-style workflows, but they do not execute D-Wave hardware or quantum annealing.
+
+## Scaled QUBO/Ising Exports
+
+The package includes scaled QUBO and Ising coefficient exports for solver-readiness testing.
+
+The scaling uses a positive factor, so the energy ordering and argmin are preserved.
+
+Energy relation:
+
+```text
+scaled_energy = unscaled_energy * scale_factor
+```
+
+Files:
+
+```text
+small_time_indexed_scaled_qubo_coefficients.csv
+small_time_indexed_scaled_ising_linear_fields.csv
+small_time_indexed_scaled_ising_couplers.csv
+small_time_indexed_scaled_scaling_metadata.json
+```
+
+Validation output:
+
+```text
+results/tables/small_package_scaled_export_validation.csv
+results/tables/small_package_scaled_export_validation_summary.json
+```
+
+This is a coefficient-format validation step and does not execute quantum hardware, quantum annealing, dimod, or QAOA.

@@ -545,3 +545,11 @@ A v0.2 roadmap document was created.
 The roadmap defines next milestone directions including scaled QUBO/Ising exports, dimod import smoke testing, tiny Qiskit/QAOA-oriented workflows, improved local search neighborhoods, seed-specific sample_4x4 export summaries, external solver benchmark templates, and documentation hygiene.
 
 The README was updated to point to the v0.2 roadmap.
+
+## Additional Checkpoint: Small Package Scaled QUBO/Ising Export Validation
+
+Scaled QUBO and Ising exports were added and validated for the small external-solver-ready package.
+
+The validation enumerates all assignments and checks that positive scaling preserves argmin and energy ordering.
+
+This is a solver-readiness coefficient-format validation step and does not execute quantum hardware, quantum annealing, dimod, or QAOA.

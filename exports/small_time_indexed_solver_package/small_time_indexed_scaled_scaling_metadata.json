@@ -1,0 +1,13 @@
+{
+  "package": "small_time_indexed_solver_package",
+  "scale_mode": "unit_abs_max",
+  "abs_max_before_scaling": 959.2,
+  "scale_factor": 0.001042535446205171,
+  "scaled_qubo_offset": 0.06359466221851542,
+  "scaled_ising_offset": 1.0,
+  "scaled_qubo_csv": "exports/small_time_indexed_solver_package/small_time_indexed_scaled_qubo_coefficients.csv",
+  "scaled_ising_h_csv": "exports/small_time_indexed_solver_package/small_time_indexed_scaled_ising_linear_fields.csv",
+  "scaled_ising_j_csv": "exports/small_time_indexed_solver_package/small_time_indexed_scaled_ising_couplers.csv",
+  "energy_relation": "scaled_energy = unscaled_energy * scale_factor",
+  "note": "Positive scaling preserves argmin and energy ordering."
+}
