@@ -51,3 +51,17 @@ The sample_4x4 squared target penalty batch showed that appropriate lambda_targe
 A full sample_4x4 energy validation recomputed the squared-target objective for each solved row and compared it against the stored adjusted_objective_manual value.
 
 This provides a formulation-level checkpoint for moving from CP-SAT prototype validation toward QUBO/Ising implementation.
+
+## Additional Checkpoint: Toy QUBO Coefficient Export
+
+A toy assignment-level QUBO was exported for the QUBO-compatible squared target human-utilization formulation.
+
+The toy model used 4 operations and 3 resources, yielding 12 binary variables.
+
+The exported QUBO included assignment cost, workload and ergonomic human-centered cost, soft human reward, squared target human-utilization penalty, and one-hot assignment penalties.
+
+The QUBO coefficient dictionary was saved in explicit coefficient form as Q[i,j].
+
+Brute-force validation over all 2^12 binary assignments confirmed that the exported QUBO energy matched the direct objective.
+
+This provides the first explicit coefficient-export checkpoint for moving from CP-SAT equivalent validation to actual QUBO/Ising implementation.

@@ -1,0 +1,35 @@
+{
+  "num_operations": 4,
+  "num_resources": 3,
+  "num_variables": 12,
+  "human_reward": 2.5,
+  "target_human_assignments": 2,
+  "lambda_target": 1.0,
+  "assignment_penalty": 20.0,
+  "constant": 84.0,
+  "num_qubo_terms": 30,
+  "num_linear_terms": 12,
+  "num_quadratic_terms": 18,
+  "num_bruteforce_rows": 4096,
+  "max_abs_error": 5.684341886080802e-14,
+  "validation_status": "PASS",
+  "best_all": {
+    "bitstring": "010001010100",
+    "feasible_one_hot": true,
+    "human_count": 2,
+    "direct_objective": 9.4,
+    "qubo_energy": 9.399999999999999,
+    "abs_error": 1.7763568394002505e-15
+  },
+  "best_feasible": {
+    "bitstring": "010001010100",
+    "feasible_one_hot": true,
+    "human_count": 2,
+    "direct_objective": 9.4,
+    "qubo_energy": 9.399999999999999,
+    "abs_error": 1.7763568394002505e-15
+  },
+  "coefficient_csv": "results/tables/toy_squared_target_qubo_coefficients.csv",
+  "validation_csv": "results/tables/toy_squared_target_qubo_energy_validation.csv",
+  "best_solution_csv": "results/tables/toy_squared_target_qubo_best_solution.csv"
+}

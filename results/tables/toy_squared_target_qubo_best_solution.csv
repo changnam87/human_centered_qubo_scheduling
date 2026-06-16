@@ -1,0 +1,5 @@
+operation,resource,resource_type,variable_index,variable_name
+0,1,human,1,x_op0_res1_human
+1,2,robot,5,x_op1_res2_robot
+2,1,human,7,x_op2_res1_human
+3,0,machine,9,x_op3_res0_machine
