@@ -1,0 +1,6 @@
+metric,value
+total_input_rows,8872562.0
+unique_pairs_before_drop,8218171.0
+unique_pairs_after_drop,8218171.0
+reduction_ratio_after_drop,0.926245542155693
+elapsed_seconds,10.29958701133728

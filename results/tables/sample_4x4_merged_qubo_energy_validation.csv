@@ -1,0 +1,7 @@
+sample_name,num_selected_variables,human_count,direct_objective,merged_qubo_energy,abs_error,total_cost_without_reward,reward_term,target_penalty,assignment_penalty,resource_overlap_penalty,precedence_penalty
+all_zero,0,0,496.0,496.0,0.0,0.0,0.0,16.0,480.0,0.0,0.0
+greedy_feasible,16,0,201.45,201.45,0.0,65.45,0.0,16.0,0.0,120.0,0.0
+random_one_start_0,16,9,562.25,562.2499999999999,1.1368683772161603e-13,109.74999999999997,22.5,25.0,0.0,210.0,240.0
+random_one_start_1,16,3,286.95000000000005,286.95,5.684341886080802e-14,83.45000000000002,7.5,1.0,0.0,0.0,210.0
+random_sparse_0,12,7,701.1,701.1000000000001,1.1368683772161603e-13,79.6,17.5,9.0,420.0,60.0,150.0
+random_sparse_1,14,7,741.8499999999999,741.85,1.1368683772161603e-13,90.34999999999998,17.5,9.0,300.0,60.0,300.0

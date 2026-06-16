@@ -161,3 +161,13 @@ Across six sampled assignments, the streamed QUBO energy matched the direct repr
 The validation status was PASS.
 
 This confirms that the streaming sparse export path can represent the intended sample_4x4 QUBO objective without loading the full QUBO into memory.
+
+## Additional Result: sample_4x4 Merged Sparse QUBO Validation PASS
+
+The sample_4x4 streamed sparse QUBO coefficients were merged by grouping duplicate (i,j) pairs and summing their coefficients.
+
+The unmerged streamed file contained 8,872,562 rows, while the merged compact sparse QUBO contained 8,218,171 unique nonzero pairs.
+
+The merged QUBO energy validation passed across six sampled assignments, with maximum absolute error approximately 1.14e-13 relative to the direct representative objective.
+
+This establishes a solver-ready compact sparse QUBO representation pathway for sample_4x4, while keeping large coefficient CSV files as local ignored artifacts.

@@ -1,0 +1,23 @@
+{
+  "experiment": "sample_4x4_sparse_qubo_duplicate_merge",
+  "input_csv": "results/tables/sample_4x4_sparse_qubo_coefficients_stream.csv",
+  "output_csv": "results/tables/sample_4x4_sparse_qubo_coefficients_merged.csv",
+  "total_input_rows": 8872562,
+  "chunk_count": 18,
+  "chunksize": 500000,
+  "unique_pairs_before_drop": 8218171,
+  "unique_pairs_after_drop": 8218171,
+  "drop_tolerance": 1e-12,
+  "reduction_ratio_after_drop": 0.926245542155693,
+  "term_group_counts": {
+    "human_target_penalty_quadratic": 4154403,
+    "linear_cost_and_reward": 8713,
+    "human_target_penalty_linear": 2883,
+    "assignment_penalty_quadratic": 2368473,
+    "assignment_penalty_linear": 8713,
+    "resource_overlap_penalty": 379545,
+    "precedence_penalty": 1949832
+  },
+  "elapsed_seconds": 10.29958701133728,
+  "note": "Merged CSV may be large and should usually be treated as a local artifact."
+}
