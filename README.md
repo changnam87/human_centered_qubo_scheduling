@@ -788,3 +788,30 @@ docs/project_v0_2_release_style_summary.md
 ```
 
 This summary consolidates the current v0.2 solver-readiness and tiny QAOA software checkpoint.
+
+## Project v0.2 Release Candidate Verification
+
+The v0.2 release candidate verification script was executed successfully.
+
+Observed result:
+
+```text
+overall_status = PASS
+num_checks = 49
+pass_count = 48
+fail_count = 0
+warn_count = 1
+```
+
+The release candidate readiness criterion is satisfied because fail_count = 0 and overall_status = PASS.
+
+The warning is not a failed verification check; it may occur when generated verification outputs make the working tree non-clean during the check.
+
+Relevant files:
+
+```text
+scripts/verify_project_v0_2_release_candidate.py
+results/tables/project_v0_2_release_candidate_verification_summary.json
+results/tables/project_v0_2_release_candidate_verification_checks.csv
+results/project_v0_2_release_candidate_verification_manifest.md
+```
