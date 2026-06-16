@@ -376,3 +376,19 @@ The result was PASS: QAOA recovered the known optimum bitstring 101001 with ener
 This completes a first tiny QAOA-oriented software smoke test.
 
 This is a toy simulator/software result only. It does not run quantum hardware and does not imply quantum advantage.
+
+---
+
+## v0.2 Progress Update: Tiny QAOA Parameter Sensitivity Completed
+
+The tiny QAOA-ready package was evaluated with a QAOA toy simulator parameter sensitivity experiment.
+
+The experiment evaluated 45 parameter cases across reps, maxiter, and seed settings.
+
+QAOA recovered the known optimum bitstring 101001 with energy 4.0 in 44 out of 45 cases, giving success_rate approximately 0.9778.
+
+The best selected case was run000_p1_it50_s123, using reps = 1, maxiter = 50, seed = 123, and StatevectorSampler.
+
+This completes the first QAOA toy parameter-sensitivity objective for the tiny package.
+
+This remains a toy simulator/software result only. It does not run quantum hardware and does not imply quantum advantage.

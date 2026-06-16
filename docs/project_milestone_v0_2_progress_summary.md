@@ -236,3 +236,36 @@ qaoa_gap_to_known = 0.0
 This confirms that the QAOA software path can run on the tiny package and recover the known optimum under the tested toy setting.
 
 This does not run quantum hardware and does not imply quantum advantage.
+
+---
+
+## Addendum: Tiny QAOA Parameter Sensitivity
+
+The tiny QAOA-ready package was evaluated with a QAOA toy simulator parameter sensitivity experiment.
+
+The experiment evaluated 45 parameter cases.
+
+```text
+pass_count = 44
+partial_pass_count = 1
+skipped_count = 0
+fail_count = 0
+success_rate approximately 0.9778
+```
+
+The best selected case was:
+
+```text
+tag = run000_p1_it50_s123
+reps = 1
+maxiter = 50
+seed = 123
+sampler_name = StatevectorSampler
+qaoa_bitstring = 101001
+qaoa_energy = 4.0
+qaoa_gap_to_known = 0.0
+```
+
+This confirms that the tiny QAOA toy software path is robust across the tested parameter grid.
+
+This does not run quantum hardware and does not imply quantum advantage.

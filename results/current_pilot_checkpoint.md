@@ -745,3 +745,11 @@ QAOA recovered the known optimum bitstring 101001 with energy 4.0 in 44 out of 4
 The best selected case was run000_p1_it50_s123 with reps = 1, maxiter = 50, seed = 123, StatevectorSampler, qaoa_gap_to_known = 0.0, and status PASS.
 
 This is a toy software/simulator result only. It does not run quantum hardware and does not imply quantum advantage.
+
+## Additional Checkpoint: Tiny QAOA Parameter Sensitivity Documented
+
+The README, technical validation report, v0.2 roadmap, v0.2 progress summary, and v0.1 milestone summary were updated with the tiny QAOA parameter sensitivity results.
+
+The documentation records that 45 parameter cases were evaluated and QAOA recovered the known optimum bitstring 101001 with energy 4.0 in 44 cases, giving success_rate approximately 0.9778.
+
+The documentation clearly states that this is a toy simulator/software result only, not quantum hardware execution and not evidence of quantum advantage.

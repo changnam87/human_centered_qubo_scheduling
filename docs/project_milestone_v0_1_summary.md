@@ -279,3 +279,15 @@ The 6-variable toy package was solved with reps = 1, maxiter = 100, seed = 123, 
 The QAOA result recovered the known optimum bitstring 101001 with energy 4.0 and gap_to_known = 0.0.
 
 This is a toy simulator/software result only. It is not a sample_4x4 solve, not a quantum hardware result, and not evidence of quantum advantage.
+
+---
+
+## Addendum: Tiny QAOA Parameter Sensitivity
+
+The tiny QAOA-ready package was evaluated with QAOA toy simulator parameter sensitivity.
+
+Across 45 tested parameter cases, QAOA recovered the known optimum bitstring 101001 with energy 4.0 in 44 cases, giving success_rate approximately 0.9778.
+
+The best selected case used reps = 1, maxiter = 50, seed = 123, and StatevectorSampler.
+
+This is a toy simulator/software result only. It is not a sample_4x4 solve, not a quantum hardware result, and not evidence of quantum advantage.

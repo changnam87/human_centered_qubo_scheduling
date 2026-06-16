@@ -801,3 +801,40 @@ qaoa_matches_known = true
 Interpretation: the QAOA software path successfully recovered the known brute-force optimum for the tiny package under the tested toy setting.
 
 This is a toy simulator/software result only. It is not a sample_4x4 solve, not a quantum hardware result, and not evidence of quantum advantage.
+
+---
+
+## Addendum: Tiny QAOA Parameter Sensitivity
+
+The tiny 6-variable QAOA-ready package was evaluated with a QAOA toy simulator parameter sensitivity experiment.
+
+The tested grid covered reps = 1, 2, 3; maxiter = 50, 100, 200; and seeds = 123, 456, 789, 1001, 2025.
+
+Observed result:
+
+```text
+num_cases = 45
+pass_count = 44
+partial_pass_count = 1
+skipped_count = 0
+fail_count = 0
+success_rate approximately 0.9778
+```
+
+Best selected case:
+
+```text
+tag = run000_p1_it50_s123
+reps = 1
+maxiter = 50
+seed = 123
+sampler_name = StatevectorSampler
+qaoa_bitstring = 101001
+qaoa_energy = 4.0
+qaoa_gap_to_known = 0.0
+status = PASS
+```
+
+Interpretation: the QAOA software path was robust on the tiny toy package across the tested parameter grid, recovering the known optimum in 44 out of 45 cases.
+
+This is a toy simulator/software result only. It is not a sample_4x4 solve, not a quantum hardware result, and not evidence of quantum advantage.

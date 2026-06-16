@@ -680,3 +680,53 @@ results/tables/tiny_qaoa_simulator_smoke_test_summary.json
 results/tables/tiny_qaoa_simulator_smoke_test.csv
 results/tiny_qaoa_simulator_smoke_test_manifest.md
 ```
+
+## Tiny QAOA Parameter Sensitivity
+
+The tiny 6-variable QAOA-ready package was evaluated with a QAOA toy simulator parameter sensitivity experiment.
+
+The tested grid covered:
+
+```text
+reps = 1, 2, 3
+maxiter = 50, 100, 200
+seed = 123, 456, 789, 1001, 2025
+total cases = 45
+```
+
+Observed result:
+
+```text
+num_cases = 45
+pass_count = 44
+partial_pass_count = 1
+skipped_count = 0
+fail_count = 0
+success_rate approximately 0.9778
+```
+
+Best selected case:
+
+```text
+tag = run000_p1_it50_s123
+reps = 1
+maxiter = 50
+seed = 123
+sampler_name = StatevectorSampler
+qaoa_bitstring = 101001
+qaoa_energy = 4.0
+qaoa_gap_to_known = 0.0
+status = PASS
+```
+
+Interpretation: the tiny QAOA software/simulator workflow was robust across the tested toy parameter grid, recovering the known optimum in 44 of 45 cases.
+
+This remains a tiny toy software/simulator experiment. It does not run quantum hardware and does not imply quantum advantage.
+
+Relevant outputs:
+
+```text
+results/tables/tiny_qaoa_parameter_sensitivity_summary.csv
+results/tables/tiny_qaoa_parameter_sensitivity_best.json
+results/tiny_qaoa_parameter_sensitivity_manifest.md
+```
