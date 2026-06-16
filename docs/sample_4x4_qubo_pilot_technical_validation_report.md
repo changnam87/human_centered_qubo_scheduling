@@ -540,3 +540,56 @@ The simulated annealing solver recovered the known brute-force optimum and the s
 Interpretation: the small external-solver package is usable by both exhaustive and heuristic solvers. The simulated annealing result confirms solver-readiness while also showing stochastic sensitivity to initialization and annealing trajectory.
 
 This remains a small-package solver baseline. It is not a full sample_4x4 solve and is not a quantum hardware or QAOA result.
+
+---
+
+## Addendum: Small External Package SA Parameter Sensitivity
+
+The small external-solver-ready QUBO package was used for simulated annealing parameter sensitivity.
+
+The experiment evaluated 216 parameter cases across restarts, iterations, temperature schedules, and random seeds.
+
+## Reference Optimum
+
+```text
+brute_force_optimum = 5.30
+brute_force_bitstring = 100000000000100
+```
+
+## Initial SA Baseline
+
+The initial simulated annealing baseline used 100 restarts and 2,000 iterations per restart.
+
+```text
+success_count = 14 / 100
+success_rate = 0.14
+```
+
+## Best Sensitivity Case
+
+The best observed parameter setting was:
+
+```text
+run_id = 214
+tag = run214_r200_it10000_t20.0_tf0.01_s456
+restarts = 200
+iterations per restart = 10000
+initial_temperature = 20.0
+final_temperature = 0.01
+seed = 456
+best_energy = 5.30
+best_bitstring = 100000000000100
+success_count = 145 / 200
+success_rate = 0.725
+validation_status = PASS
+```
+
+## Interpretation
+
+Parameter tuning substantially improved the simulated annealing optimum-recovery rate for the small external package.
+
+The success rate improved from 0.14 in the initial baseline to 0.725 in the best tested sensitivity setting.
+
+This confirms that the small package can support heuristic solver experiments and parameter-sensitivity studies.
+
+This remains a small-package solver-readiness result. It is not a full sample_4x4 solve and not a quantum hardware or QAOA result.

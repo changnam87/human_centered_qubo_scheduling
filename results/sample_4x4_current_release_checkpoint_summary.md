@@ -220,3 +220,19 @@ A minimal simulated annealing solver recovered the same best energy 5.30 and bes
 The simulated annealing run used 100 restarts and 2,000 iterations per restart, reaching the brute-force optimum in 14 out of 100 restarts.
 
 This confirms that the small external package can be consumed by exhaustive and heuristic QUBO-style solvers.
+
+---
+
+## Addendum: Small External Package SA Sensitivity
+
+The small external-solver-ready QUBO package was evaluated with a simulated annealing parameter sensitivity experiment.
+
+The experiment evaluated 216 parameter cases.
+
+The best case was run214_r200_it10000_t20.0_tf0.01_s456, using 200 restarts, 10,000 iterations per restart, initial_temperature = 20.0, final_temperature = 0.01, and seed = 456.
+
+This case recovered the known brute-force optimum energy 5.30 and bitstring 100000000000100.
+
+The optimum was reached in 145 out of 200 restarts, giving success_rate = 0.725.
+
+This improved over the initial simulated annealing baseline success_rate of 0.14.

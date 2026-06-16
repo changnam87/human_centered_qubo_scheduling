@@ -413,3 +413,52 @@ Relevant outputs:
 results/tables/small_external_solver_smoke_test_summary.json
 results/tables/small_external_package_sa_solver_summary.json
 ```
+
+## Small External Package SA Parameter Sensitivity
+
+The small external-solver-ready QUBO package was also used for simulated annealing parameter sensitivity.
+
+The experiment evaluated 216 parameter cases across restarts, iterations, temperature schedules, and random seeds.
+
+Reference optimum:
+
+```text
+brute_force_optimum = 5.30
+brute_force_bitstring = 100000000000100
+```
+
+Initial SA baseline:
+
+```text
+restarts = 100
+iterations per restart = 2000
+success_count = 14 / 100
+success_rate = 0.14
+```
+
+Best sensitivity case:
+
+```text
+run_id = 214
+tag = run214_r200_it10000_t20.0_tf0.01_s456
+restarts = 200
+iterations per restart = 10000
+initial_temperature = 20.0
+final_temperature = 0.01
+seed = 456
+best_energy = 5.30
+best_bitstring = 100000000000100
+success_count = 145 / 200
+success_rate = 0.725
+validation_status = PASS
+```
+
+This shows that the small external package supports heuristic solver sensitivity experiments. Parameter tuning improved the simulated annealing optimum-recovery rate from 0.14 to 0.725 under the tested settings.
+
+Relevant outputs:
+
+```text
+results/tables/small_external_package_sa_parameter_sensitivity_summary.csv
+results/tables/small_external_package_sa_parameter_sensitivity_best.json
+results/small_external_package_sa_parameter_sensitivity_manifest.md
+```

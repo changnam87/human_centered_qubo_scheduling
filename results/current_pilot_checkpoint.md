@@ -445,3 +445,13 @@ This case recovered the brute-force optimum energy 5.30 and bitstring 1000000000
 The optimum was reached in 145 out of 200 restarts, giving success_rate = 0.725.
 
 This improves substantially over the initial SA baseline success_rate of 0.14.
+
+## Additional Checkpoint: Small External Package SA Sensitivity Documented
+
+The README, technical validation report, and release-style checkpoint summary were updated with the small external package simulated annealing parameter sensitivity results.
+
+The documentation records that 216 parameter cases were evaluated.
+
+The best case, run214_r200_it10000_t20.0_tf0.01_s456, reached the brute-force optimum energy 5.30 in 145 out of 200 restarts, giving success_rate = 0.725.
+
+This improves over the initial simulated annealing baseline success_rate of 0.14.
