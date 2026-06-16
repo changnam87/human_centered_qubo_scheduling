@@ -553,3 +553,19 @@ Scaled QUBO and Ising exports were added and validated for the small external-so
 The validation enumerates all assignments and checks that positive scaling preserves argmin and energy ordering.
 
 This is a solver-readiness coefficient-format validation step and does not execute quantum hardware, quantum annealing, dimod, or QAOA.
+
+## Additional Result: Small Package Scaled QUBO/Ising Export Validation PASS
+
+Scaled QUBO and Ising exports were created and validated for the small external-solver-ready package.
+
+The validation enumerated all 32,768 assignments for the 15-variable package.
+
+Using unit_abs_max scaling, the maximum absolute coefficient before scaling was 959.2 and the scale factor was approximately 0.0010425354.
+
+The unscaled, scaled QUBO, and scaled Ising formulations all selected the same best bitstring 100000000000100.
+
+The unscaled best energy was 5.30, and the scaled best energy was approximately 0.00552544.
+
+The scaled QUBO-vs-Ising maximum absolute error was approximately 7.1e-15, and validation status was PASS.
+
+This confirms that positive coefficient scaling preserves the argmin and energy consistency for the small package.
