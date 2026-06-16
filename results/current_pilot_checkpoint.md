@@ -385,3 +385,11 @@ The best bitstring was 100000000000100 with best QUBO energy 5.30.
 The corresponding Ising energy was 5.30, with maximum absolute QUBO-vs-Ising error approximately 1.14e-12.
 
 The validation status was PASS, confirming that the small package can be consumed as a valid external QUBO/Ising solver input.
+
+## Additional Checkpoint: README and Technical Report Updated with External Solver Package
+
+The README and sample_4x4 technical validation report were updated with information about the small external-solver-ready QUBO/Ising package and brute-force smoke test.
+
+The documentation now points to exports/small_time_indexed_solver_package/ and records the smoke-test result: 15 variables, 32,768 assignments enumerated, best bitstring 100000000000100, best QUBO energy 5.30, and validation status PASS.
+
+This clarifies that the small package can be used as a lightweight external solver input, while remaining distinct from the full sample_4x4 QUBO.

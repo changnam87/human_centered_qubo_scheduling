@@ -304,3 +304,60 @@ An artifact presence checker is available at:
 ```bash
 python scripts/check_sample_4x4_reproducibility_artifacts.py
 ```
+
+## Small External Solver Package
+
+A compact external-solver-ready QUBO/Ising package is available at:
+
+```text
+exports/small_time_indexed_solver_package/
+```
+
+This package is intentionally small and is not the full sample_4x4 QUBO.
+
+It includes:
+
+```text
+qubo_coefficients.csv
+qubo_coefficients_scaled_unit_abs.csv
+ising_linear_fields.csv
+ising_couplers.csv
+package_metadata.json
+energy_validation.csv
+energy_validation_summary.json
+README.md
+```
+
+This package can be used as a lightweight input for external QUBO, Ising, simulated annealing, quantum-annealing-style, or QAOA-oriented solver tests.
+
+## Small External Solver Smoke Test
+
+A minimal brute-force smoke test is available at:
+
+```bash
+python scripts/run_small_external_solver_smoke_test.py
+```
+
+The smoke test reads the exported small QUBO/Ising package, enumerates all binary assignments, identifies the minimum-energy assignment, and validates QUBO-vs-Ising energy consistency.
+
+Observed smoke-test result:
+
+```text
+num_variables = 15
+num_assignments_enumerated = 32768
+best_bitstring = 100000000000100
+best_qubo_energy = 5.30
+best_ising_energy = 5.30
+max_abs_error_qubo_vs_ising approximately 1.14e-12
+validation_status = PASS
+```
+
+This confirms that the small exported package can be consumed as a valid external QUBO/Ising solver input.
+
+Smoke-test outputs are stored in:
+
+```text
+results/tables/small_external_solver_smoke_test_result.csv
+results/tables/small_external_solver_smoke_test_summary.json
+results/small_external_solver_smoke_test_manifest.md
+```

@@ -452,3 +452,41 @@ The runtime profile indicates that streaming export, duplicate merge, and energy
 The artifact-size profile confirms that large coefficient files should remain local ignored artifacts. The streamed QUBO coefficient file is especially large, while the merged sparse QUBO and Ising coupler files are smaller but still unsuitable for ordinary Git tracking.
 
 This supports the current engineering strategy: commit scripts, metadata, summaries, manifests, and compact validation outputs, while keeping large coefficient artifacts local or storing them externally if needed.
+
+---
+
+## Addendum: Small External Solver Package and Smoke Test
+
+A compact external-solver-ready QUBO/Ising package was created for a small time-indexed scheduling instance.
+
+This package is intentionally small and is separate from the full sample_4x4 QUBO.
+
+## Package Directory
+
+```text
+exports/small_time_indexed_solver_package/
+```
+
+The package includes raw QUBO coefficients, scaled QUBO coefficients, Ising linear fields, Ising couplers, package metadata, and QUBO/Ising energy validation outputs.
+
+## Smoke Test
+
+A minimal brute-force smoke test was run on the package.
+
+The smoke test enumerated all binary assignments and checked QUBO-vs-Ising energy consistency.
+
+Observed result:
+
+```text
+num_variables = 15
+num_assignments_enumerated = 32768
+best_bitstring = 100000000000100
+best_qubo_energy = 5.30
+best_ising_energy = 5.30
+max_abs_error_qubo_vs_ising approximately 1.14e-12
+validation_status = PASS
+```
+
+Interpretation: the small external-solver package can be consumed as a valid QUBO/Ising solver input.
+
+This smoke test is not a full sample_4x4 solve and is not a quantum hardware result. It is a lightweight package-level validation step for external solver readiness.
