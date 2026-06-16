@@ -778,3 +778,13 @@ docs/project_v0_2_release_candidate_checklist.md
 ```
 
 The checklist defines required documentation, package outputs, validation summaries, large-artifact policy, and claims boundaries before declaring a v0.2 release-style checkpoint.
+
+## Project v0.2 Release-Style Summary
+
+A v0.2 release-style summary is available at:
+
+```text
+docs/project_v0_2_release_style_summary.md
+```
+
+This summary consolidates the current v0.2 solver-readiness and tiny QAOA software checkpoint.

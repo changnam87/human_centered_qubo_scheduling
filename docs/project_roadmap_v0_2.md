@@ -416,3 +416,15 @@ docs/project_milestone_v0_2_current_overall_checkpoint.md
 ```
 
 This document consolidates the completed small external-solver package workflow and the completed tiny Qiskit/QAOA-oriented workflow.
+
+---
+
+## v0.2 Release-Style Summary
+
+A v0.2 release-style summary has been created at:
+
+```text
+docs/project_v0_2_release_style_summary.md
+```
+
+This document summarizes the small external-solver package, tiny Qiskit/QAOA package, benchmark template, claims boundaries, and recommended next steps.

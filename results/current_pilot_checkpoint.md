@@ -787,3 +787,11 @@ A v0.2 release candidate checklist was created.
 The checklist covers repository cleanliness, core documentation, sample_4x4 prototype status, small external-solver package status, tiny Qiskit/QAOA package status, benchmark template status, large artifact policy, claims boundaries, and final verification commands.
 
 The README and v0.2 roadmap were updated to point to the release candidate checklist.
+
+## Additional Checkpoint: Project v0.2 Release-Style Summary Created
+
+A v0.2 release-style summary document was created.
+
+The summary consolidates the small external-solver package, tiny Qiskit/QAOA package, sample_4x4 baseline, external solver benchmark template, claims boundaries, and recommended next steps.
+
+The README and v0.2 roadmap were updated to point to the release-style summary.
