@@ -477,3 +477,11 @@ The initial simulated annealing baseline had success_rate = 0.14, while the best
 The success-rate improvement was 0.585.
 
 This confirms that the small external package supports both exhaustive and heuristic solver workflows.
+
+## Additional Checkpoint: Small External Package Solver Benchmark Documented
+
+The README, technical validation report, and release-style checkpoint summary were updated with the small external package solver benchmark summary.
+
+The documentation now records brute-force optimum 5.30, best bitstring 100000000000100, initial simulated annealing success_rate 0.14, best tuned simulated annealing success_rate 0.725, and success-rate improvement 0.585.
+
+This documents that the small external package supports both exhaustive and heuristic solver benchmark workflows.

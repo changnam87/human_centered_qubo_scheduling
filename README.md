@@ -462,3 +462,36 @@ results/tables/small_external_package_sa_parameter_sensitivity_summary.csv
 results/tables/small_external_package_sa_parameter_sensitivity_best.json
 results/small_external_package_sa_parameter_sensitivity_manifest.md
 ```
+
+## Small External Package Solver Benchmark Summary
+
+A compact solver benchmark summary is available for the small external-solver-ready QUBO/Ising package.
+
+The summary consolidates three solver results:
+
+```text
+1. brute-force exhaustive enumeration
+2. initial simulated annealing baseline
+3. best simulated annealing parameter sensitivity case
+```
+
+Benchmark headline results:
+
+```text
+num_variables = 15
+brute_force_optimum = 5.30
+brute_force_bitstring = 100000000000100
+initial_sa_success_rate = 0.14
+best_tuned_sa_success_rate = 0.725
+success_rate_improvement = 0.585
+```
+
+Interpretation: the small external package supports both exhaustive and heuristic solver workflows. Parameter tuning improved simulated annealing optimum-recovery rate from 0.14 to 0.725 under the tested settings.
+
+Relevant benchmark outputs:
+
+```text
+results/tables/small_external_package_solver_benchmark_summary.csv
+results/tables/small_external_package_solver_benchmark_summary.json
+results/small_external_package_solver_benchmark_summary_manifest.md
+```

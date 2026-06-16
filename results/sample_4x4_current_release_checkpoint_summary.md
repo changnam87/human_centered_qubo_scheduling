@@ -236,3 +236,21 @@ This case recovered the known brute-force optimum energy 5.30 and bitstring 1000
 The optimum was reached in 145 out of 200 restarts, giving success_rate = 0.725.
 
 This improved over the initial simulated annealing baseline success_rate of 0.14.
+
+---
+
+## Addendum: Small External Package Solver Benchmark Summary
+
+A compact solver benchmark summary was created for the small external-solver-ready package.
+
+The summary compares brute-force enumeration, the initial simulated annealing baseline, and the best tuned simulated annealing case.
+
+The brute-force optimum was 5.30 with bitstring 100000000000100.
+
+The initial simulated annealing baseline had success_rate = 0.14.
+
+The best tuned simulated annealing case had success_rate = 0.725.
+
+The success-rate improvement was 0.585.
+
+This confirms that the small external package supports compact solver benchmarking for exhaustive and heuristic workflows.

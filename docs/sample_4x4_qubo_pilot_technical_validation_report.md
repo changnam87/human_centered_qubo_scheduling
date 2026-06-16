@@ -593,3 +593,34 @@ The success rate improved from 0.14 in the initial baseline to 0.725 in the best
 This confirms that the small package can support heuristic solver experiments and parameter-sensitivity studies.
 
 This remains a small-package solver-readiness result. It is not a full sample_4x4 solve and not a quantum hardware or QAOA result.
+
+---
+
+## Addendum: Small External Package Solver Benchmark Summary
+
+A compact benchmark summary was created for the small external-solver-ready QUBO/Ising package.
+
+The benchmark consolidates brute-force enumeration, the initial simulated annealing baseline, and the best simulated annealing parameter sensitivity result.
+
+## Benchmark Headline Results
+
+```text
+num_variables = 15
+brute_force_optimum = 5.30
+brute_force_bitstring = 100000000000100
+initial_sa_success_rate = 0.14
+best_tuned_sa_success_rate = 0.725
+success_rate_improvement = 0.585
+```
+
+## Interpretation
+
+The small external package supports both exhaustive and heuristic solver workflows.
+
+The initial simulated annealing baseline recovered the brute-force optimum in 14 out of 100 restarts.
+
+The best tuned simulated annealing case recovered the brute-force optimum in 145 out of 200 restarts.
+
+Thus, parameter tuning improved the simulated annealing optimum-recovery rate from 0.14 to 0.725.
+
+This remains a small-package solver benchmark. It is not a full sample_4x4 benchmark, quantum hardware result, or QAOA result.
