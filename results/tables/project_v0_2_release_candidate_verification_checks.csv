@@ -1,0 +1,50 @@
+check_name,status,details
+doc_file: README.md,PASS,exists=True
+doc_file: docs/project_milestone_v0_1_summary.md,PASS,exists=True
+doc_file: docs/project_roadmap_v0_2.md,PASS,exists=True
+doc_file: docs/project_milestone_v0_2_progress_summary.md,PASS,exists=True
+doc_file: docs/project_milestone_v0_2_current_overall_checkpoint.md,PASS,exists=True
+doc_file: docs/tiny_qaoa_package_v0_2_checkpoint_summary.md,PASS,exists=True
+doc_file: docs/project_v0_2_release_candidate_checklist.md,PASS,exists=True
+doc_file: docs/project_v0_2_release_style_summary.md,PASS,exists=True
+doc_file: docs/external_solver_benchmark_template.md,PASS,exists=True
+doc_file: docs/sample_4x4_qubo_pilot_technical_validation_report.md,PASS,exists=True
+doc_file: docs/sample_4x4_reproducibility_workflow.md,PASS,exists=True
+summary_file: results/tables/sample_4x4_sparse_qubo_solver_ready_metadata.json,PASS,exists=True
+summary_file: results/tables/sample_4x4_cpsat_squared_target_summary.json,PASS,exists=True
+summary_file: results/tables/sample_4x4_local_search_parameter_sensitivity_best.json,PASS,exists=True
+summary_file: results/tables/sample_4x4_tuned_local_qubo_solution_component_summary.json,PASS,exists=True
+summary_file: results/tables/sample_4x4_qubo_to_ising_metadata_summary.json,PASS,exists=True
+summary_file: results/tables/sample_4x4_ising_energy_validation_summary.json,PASS,exists=True
+summary_file: results/tables/sample_4x4_runtime_memory_profile_summary.json,PASS,exists=True
+summary_file: results/tables/small_external_package_solver_benchmark_summary.json,PASS,exists=True
+summary_file: results/tables/small_package_scaled_export_validation_summary.json,PASS,exists=True
+summary_file: results/tables/small_package_dimod_bqm_energy_validation_summary.json,PASS,exists=True
+summary_file: results/tables/small_package_dimod_import_smoke_test_summary.json,PASS,exists=True
+summary_file: results/tables/tiny_qaoa_ready_package_summary.json,PASS,exists=True
+summary_file: results/tables/tiny_qiskit_optimization_smoke_test_summary.json,PASS,exists=True
+summary_file: results/tables/tiny_qiskit_classical_optimizer_smoke_test_summary.json,PASS,exists=True
+summary_file: results/tables/tiny_qaoa_simulator_smoke_test_summary.json,PASS,exists=True
+summary_file: results/tables/tiny_qaoa_parameter_sensitivity_best.json,PASS,exists=True
+summary_file: results/tables/external_solver_benchmark_schema.json,PASS,exists=True
+package_dir: exports/small_time_indexed_solver_package,PASS,exists=True
+package_dir: exports/tiny_qaoa_ready_package,PASS,exists=True
+py_compile: scripts/create_external_solver_benchmark_template.py,PASS,compiled
+py_compile: scripts/run_small_package_dimod_import_smoke_test.py,PASS,compiled
+py_compile: scripts/validate_small_package_scaled_exports.py,PASS,compiled
+py_compile: scripts/run_tiny_qiskit_optimization_smoke_test.py,PASS,compiled
+py_compile: scripts/run_tiny_qiskit_classical_optimizer_smoke_test.py,PASS,compiled
+py_compile: scripts/run_tiny_qaoa_simulator_smoke_test.py,PASS,compiled
+py_compile: scripts/run_tiny_qaoa_parameter_sensitivity.py,PASS,compiled
+small_package_bruteforce_optimum,PASS,5.300000000000001
+small_package_best_sa_success_rate,PASS,0.725
+small_package_dimod_import_status,PASS,PASS
+small_package_scaled_export_status,PASS,PASS
+small_package_scaled_argmin_consistent,PASS,True
+tiny_package_known_best_bitstring,PASS,101001
+tiny_package_known_best_energy,PASS,4.0
+tiny_qaoa_smoke_status,PASS,PASS
+tiny_qaoa_gap_to_known,PASS,0.0
+tiny_qaoa_sensitivity_success_rate,PASS,0.9777777777777777
+tiny_qaoa_sensitivity_pass_count,PASS,44
+git_status_clean_before_verification_outputs,WARN,?? scripts/verify_project_v0_2_release_candidate.py

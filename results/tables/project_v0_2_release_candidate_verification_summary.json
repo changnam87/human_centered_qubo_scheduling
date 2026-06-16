@@ -1,0 +1,10 @@
+{
+  "experiment": "project_v0_2_release_candidate_verification",
+  "overall_status": "PASS",
+  "num_checks": 49,
+  "pass_count": 48,
+  "fail_count": 0,
+  "warn_count": 1,
+  "checks_csv": "results/tables/project_v0_2_release_candidate_verification_checks.csv",
+  "note": "Verification script for v0.2 release candidate readiness. Does not rerun expensive experiments."
+}
