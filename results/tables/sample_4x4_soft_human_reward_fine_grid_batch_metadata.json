@@ -1,0 +1,40 @@
+{
+  "experiment": "sample_4x4_soft_human_reward_fine_grid_batch_sensitivity",
+  "seed_start": 2001,
+  "seed_end": 2010,
+  "seeds": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "reward_values": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "time_limit_seconds": 30.0,
+  "num_workers": 8,
+  "jobs": 4,
+  "machines": 4,
+  "operations": 16,
+  "workers": 3,
+  "robots": 2,
+  "resources": 9,
+  "planning_horizon": 63,
+  "binary_variables": 9072,
+  "output_csv": "results/tables/sample_4x4_soft_human_reward_fine_grid_batch_sensitivity.csv",
+  "note": "Fine-grid prototype/pilot reward-threshold robustness check; not final paper-level evidence."
+}
