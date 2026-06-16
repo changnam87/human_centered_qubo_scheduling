@@ -1,0 +1,23 @@
+{
+  "experiment": "tiny_qiskit_optimization_smoke_test",
+  "status": "PASS",
+  "num_variables": 6,
+  "num_assignments_enumerated": 64,
+  "qiskit_optimization_available": true,
+  "best_manual_bitstring": "101001",
+  "best_manual_energy": 4.0,
+  "best_qiskit_bitstring": "101001",
+  "best_qiskit_energy": 4.0,
+  "known_metadata_best_bitstring": "101001",
+  "known_metadata_best_energy": 4.0,
+  "max_abs_error_manual_vs_qiskit": 0.0,
+  "max_abs_error_manual_vs_bruteforce_csv": 0.0,
+  "max_abs_error": 0.0,
+  "quadratic_program_name": "tiny_qaoa_ready_qubo",
+  "num_qp_variables": 6,
+  "num_qp_linear_constraints": 0,
+  "num_qp_quadratic_constraints": 0,
+  "qiskit_qubo_json": "exports/tiny_qaoa_ready_package/qiskit_qubo.json",
+  "rows_csv": "results/tables/tiny_qiskit_optimization_smoke_test.csv",
+  "note": "Qiskit Optimization QuadraticProgram smoke test only. No QAOA or quantum execution."
+}

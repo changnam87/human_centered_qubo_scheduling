@@ -657,3 +657,15 @@ All 64 assignments were enumerated by brute force.
 The best bitstring is 101001 with best energy 4.0, and the best assignment is feasible under the exactly-one-per-pair constraints.
 
 This step only exports and validates the tiny package; it does not run Qiskit, QAOA, quantum hardware, or a quantum simulator.
+
+## Additional Result: Tiny Qiskit Optimization Smoke Test PASS
+
+The tiny Qiskit Optimization smoke test was rerun after installing qiskit-optimization.
+
+The test built a Qiskit Optimization QuadraticProgram from the tiny qiskit_qubo.json file and enumerated all 64 assignments.
+
+The result was PASS: best_manual_bitstring = 101001, best_qiskit_bitstring = 101001, best energy = 4.0, and max_abs_error = 0.0.
+
+This validates Qiskit Optimization compatibility for the tiny QAOA-ready package.
+
+This step does not run QAOA, a quantum simulator, or quantum hardware.
