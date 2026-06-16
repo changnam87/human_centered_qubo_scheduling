@@ -1,9 +1,16 @@
 {
   "experiment": "small_package_dimod_import_smoke_test",
-  "status": "SKIPPED",
-  "reason": "dimod is not installed in the current environment.",
+  "status": "PASS",
+  "dimod_version": "0.12.22",
   "num_variables": 15,
+  "num_samples": 23,
+  "binary_num_variables": 15,
+  "spin_num_variables": 15,
+  "binary_num_interactions": 90,
+  "spin_num_interactions": 90,
+  "max_abs_error": 4.547473508864641e-13,
   "binary_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_binary_bqm.json",
   "spin_bqm_json": "exports/small_time_indexed_solver_package/small_time_indexed_dimod_spin_bqm.json",
-  "note": "Install dimod to run actual BinaryQuadraticModel import validation."
+  "rows_csv": "results/tables/small_package_dimod_import_smoke_test.csv",
+  "note": "Actual dimod BinaryQuadraticModel import smoke test. No hardware execution."
 }

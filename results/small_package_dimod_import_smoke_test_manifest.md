@@ -39,3 +39,15 @@ results/tables/small_package_dimod_import_smoke_test_summary.json
 PASS means dimod imported the BQM objects and sampled energies matched within tolerance.
 
 SKIPPED means dimod was not installed in the current environment.
+
+## Updated Result After Installing dimod
+
+After installing dimod in the active environment, the dimod import smoke test was rerun.
+
+The script imported the BINARY and SPIN BQM-style JSON files into actual dimod BinaryQuadraticModel objects.
+
+The validation compared manual BQM energies and dimod-computed energies on sampled assignments.
+
+The expected successful result is PASS with max_abs_error below numerical tolerance.
+
+This remains a local software import validation step and does not run D-Wave hardware, quantum annealing, or QAOA.

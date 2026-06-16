@@ -599,3 +599,11 @@ This is not a validation failure. The script handled the missing optional depend
 Actual dimod BinaryQuadraticModel import validation can be performed later after installing dimod.
 
 This step did not run D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Result: Small Package dimod Import Smoke Test Rerun After Installing dimod
+
+The dimod import smoke test was rerun after installing dimod in the active environment.
+
+The test imports the small package BINARY and SPIN BQM-style JSON files into actual dimod BinaryQuadraticModel objects and validates sampled energies.
+
+This is a local software import validation step and does not run D-Wave hardware, quantum annealing, or QAOA.
