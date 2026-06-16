@@ -733,3 +733,15 @@ The documentation records that the 6-variable tiny package was solved with QAOA 
 QAOA recovered the known optimum bitstring 101001 with energy 4.0 and gap_to_known = 0.0.
 
 The documentation clearly states that this is a toy simulator/software result only, not quantum hardware execution and not evidence of quantum advantage.
+
+## Additional Result: Tiny QAOA Parameter Sensitivity
+
+The tiny QAOA simulator/software parameter sensitivity experiment was completed for the 6-variable QAOA-ready package.
+
+The experiment evaluated 45 parameter cases across reps, maxiter, and seed settings.
+
+QAOA recovered the known optimum bitstring 101001 with energy 4.0 in 44 out of 45 cases, giving success_rate approximately 0.9778.
+
+The best selected case was run000_p1_it50_s123 with reps = 1, maxiter = 50, seed = 123, StatevectorSampler, qaoa_gap_to_known = 0.0, and status PASS.
+
+This is a toy software/simulator result only. It does not run quantum hardware and does not imply quantum advantage.
