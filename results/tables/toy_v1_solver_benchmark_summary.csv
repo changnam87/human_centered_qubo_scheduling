@@ -1,0 +1,6 @@
+component,role,num_candidates_or_reads,best_bitstring,best_energy_or_cost,absolute_gap_to_bruteforce,feasibility_rate,success_rate,mean_energy,max_abs_validation_error,notes
+Brute force enumeration,Exact validation for toy instance,4096,001001010001,18.0,0.0,0.005859375,1.0,,,Enumerated all 2^12 binary assignments.
+QUBO matrix validation,Validate x^T Q x + offset against evaluator,4096,001001010001,18.0,0.0,,,,5.684341886080803e-14,Checks QUBO matrix energy for all bitstrings.
+Ising conversion validation,Validate Ising energy against QUBO energy,4096,001001010001,18.0,0.0,,,,5.684341886080803e-14,Checks QUBO-to-Ising conversion for all bitstrings.
+Simulated annealing,QUBO-compatible heuristic baseline,100,001001010001,18.0,0.0,1.0,0.27,22.604,,"Single SA setting: 100 reads, 1000 steps, seed 42."
+SA sensitivity best setting,Annealing-parameter sensitivity analysis,100,001001010001,18.0,0.0,1.0,0.49,20.142,,Best sensitivity setting by success rate: steps_2000_T10_to_001

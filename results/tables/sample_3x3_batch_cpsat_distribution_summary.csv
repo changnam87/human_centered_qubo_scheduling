@@ -1,0 +1,2 @@
+num_instances,num_optimal,num_feasible,mean_total_cost,mean_total_cost_ci_lower,mean_total_cost_ci_upper,min_total_cost,max_total_cost,std_total_cost,mean_wall_time
+10,10,10,29.559999999999995,29.24,29.939999999999998,29.0,30.8,0.5872724145478734,0.0469397

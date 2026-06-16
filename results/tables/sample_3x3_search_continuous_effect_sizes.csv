@@ -1,0 +1,2 @@
+analysis_type,comparison,cohens_d,cliffs_delta,notes
+cost_effect_size,Seeded search from handcrafted vs Seeded search from CP-SAT,0.11420452829212757,0.10833333333333334,Computed on feasible reads only; warm-start comparison.

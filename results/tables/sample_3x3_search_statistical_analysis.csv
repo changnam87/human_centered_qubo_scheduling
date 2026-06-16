@@ -1,0 +1,6 @@
+analysis_type,method,n,successes,feasibility_rate,ci_lower,ci_upper,effect_size_name,effect_size_value,comparison,notes,risk_difference_ci_lower,risk_difference_ci_upper,cohens_h,odds_ratio_haldane,comparison_type
+feasibility_proportion,Random-bit SA,200.0,0.0,0.0,0.0,0.018846005918320894,,,,Wilson 95% confidence interval for feasibility proportion.,,,,,
+feasibility_proportion,Seeded search from CP-SAT,10.0,8.0,0.8,0.49015684672072335,0.9433190520193067,,,,Wilson 95% confidence interval for feasibility proportion.,,,,,
+feasibility_proportion,Seeded search from handcrafted,30.0,30.0,1.0,0.8864829086095221,1.0,,,,Wilson 95% confidence interval for feasibility proportion.,,,,,
+feasibility_effect_size,,,,,,,risk_difference,1.0,Seeded search from handcrafted vs Random-bit SA,"Risk difference, Cohen's h, and Haldane-corrected odds ratio.",1.0,1.0,3.141592653589793,24461.0,main
+feasibility_effect_size,,,,,,,risk_difference,0.8,Seeded search from CP-SAT vs Random-bit SA,"Risk difference, Cohen's h, and Haldane-corrected odds ratio.",0.5520774314427992,1.047922568557201,2.214297435588181,1363.4,warm-start_ablation

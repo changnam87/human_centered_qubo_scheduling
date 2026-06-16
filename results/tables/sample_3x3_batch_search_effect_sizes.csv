@@ -1,0 +1,4 @@
+comparison,metric,group1_value,group2_value,difference,cohens_h,odds_ratio_haldane,notes,cohens_d,cliffs_delta
+structure_aware_random_seed vs structure_aware_cpsat_seed,feasibility_rate,0.99,0.97,0.020000000000000018,0.1478311789498412,2.85025641025641,Positive difference means random-seed structure-aware search had higher feasibility.,,
+structure_aware_random_seed vs structure_aware_cpsat_seed,gap_to_cpsat_feasible_reads,6.063636363636364,4.60618556701031,1.4574507966260546,,,Positive difference means random-seed search had larger CP-SAT gap.,0.5164807082440125,0.2877746537540352
+structure_aware_random_seed vs structure_aware_cpsat_seed,best_gap_to_cpsat_instance_level,2.400000000000001,3.552713678800501e-16,2.4000000000000004,,,Computed across 10 augmentation seeds using best gap per instance.,7.348469228349531,1.0

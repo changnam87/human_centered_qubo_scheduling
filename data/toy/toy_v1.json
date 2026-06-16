@@ -1,0 +1,60 @@
+{
+  "instance_name": "toy_v1_human_centered_assignment",
+  "description": "Small human-centered assignment scheduling instance for brute-force QUBO validation.",
+  "jobs": {
+    "J1": ["O11", "O12"],
+    "J2": ["O21", "O22"]
+  },
+  "operations": ["O11", "O12", "O21", "O22"],
+  "resources": ["H", "R", "M"],
+  "resource_descriptions": {
+    "H": "Human worker",
+    "R": "Collaborative robot",
+    "M": "Machine"
+  },
+  "precedence": [
+    ["O11", "O12"],
+    ["O21", "O22"]
+  ],
+  "processing_cost": {
+    "O11": {"H": 4, "R": 6, "M": 5},
+    "O12": {"H": 7, "R": 5, "M": 4},
+    "O21": {"H": 5, "R": 4, "M": 6},
+    "O22": {"H": 6, "R": 7, "M": 3}
+  },
+  "workload_score": {
+    "O11": 3,
+    "O12": 7,
+    "O21": 4,
+    "O22": 5
+  },
+  "ergonomic_risk": {
+    "O11": 2,
+    "O12": 8,
+    "O21": 3,
+    "O22": 4
+  },
+  "skill_compatibility": {
+    "O11": {"H": 1, "R": 1, "M": 1},
+    "O12": {"H": 1, "R": 0, "M": 1},
+    "O21": {"H": 1, "R": 1, "M": 0},
+    "O22": {"H": 1, "R": 0, "M": 1}
+  },
+  "robot_safety_risk": {
+    "O11": 1,
+    "O12": 0,
+    "O21": 2,
+    "O22": 0
+  },
+  "weights": {
+    "lambda_workload": 0.5,
+    "lambda_ergonomic": 0.7,
+    "lambda_safety": 1.0
+  },
+  "penalties": {
+    "P_assignment": 20,
+    "P_skill": 20,
+    "P_robot_utilization": 5,
+    "robot_utilization_target": 1
+  }
+}

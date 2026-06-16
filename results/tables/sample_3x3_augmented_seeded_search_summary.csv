@@ -1,0 +1,3 @@
+search_name,total_reads,feasible_reads,feasibility_rate,best_feasible_cost,mean_feasible_cost,best_gap_to_cpsat
+seeded_from_cpsat,10,8,0.8,31.8,35.8,0.0
+seeded_from_handcrafted,30,30,1.0,33.4,36.10666666666667,1.5999999999999979

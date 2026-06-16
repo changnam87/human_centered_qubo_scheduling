@@ -1,0 +1,11 @@
+base_instance,seed,output_file,num_operations,num_machines,num_workers,num_robots,num_resources,planning_horizon,num_time_slots,num_binary_variables,total_compatible_assignments,worker_compatible_assignments,robot_compatible_assignments,avg_workload,avg_ergonomic_risk,avg_safety_risk,avg_fatigue_coefficient
+sample_3x3,1001,data/augmented/batch/sample_3x3_hc_seed1001_time_indexed.json,9,3,2,1,6,34,34,1836,27,12,6,5.666666666666667,5.777777777777778,1.1111111111111112,0.18911111111111112
+sample_3x3,1002,data/augmented/batch/sample_3x3_hc_seed1002_time_indexed.json,9,3,2,1,6,34,34,1836,27,14,4,5.111111111111111,6.555555555555555,1.1111111111111112,0.2111111111111111
+sample_3x3,1003,data/augmented/batch/sample_3x3_hc_seed1003_time_indexed.json,9,3,2,1,6,34,34,1836,27,13,5,4.444444444444445,7.111111111111111,1.5555555555555556,0.18733333333333335
+sample_3x3,1004,data/augmented/batch/sample_3x3_hc_seed1004_time_indexed.json,9,3,2,1,6,34,34,1836,25,12,4,5.0,5.444444444444445,2.0,0.18244444444444446
+sample_3x3,1005,data/augmented/batch/sample_3x3_hc_seed1005_time_indexed.json,9,3,2,1,6,34,34,1836,30,15,6,6.222222222222222,7.777777777777778,1.4444444444444444,0.16244444444444447
+sample_3x3,1006,data/augmented/batch/sample_3x3_hc_seed1006_time_indexed.json,9,3,2,1,6,33,33,1782,27,12,6,4.333333333333333,4.444444444444445,1.5555555555555556,0.1542222222222222
+sample_3x3,1007,data/augmented/batch/sample_3x3_hc_seed1007_time_indexed.json,9,3,2,1,6,33,33,1782,29,14,6,5.777777777777778,4.777777777777778,1.6666666666666667,0.15211111111111114
+sample_3x3,1008,data/augmented/batch/sample_3x3_hc_seed1008_time_indexed.json,9,3,2,1,6,34,34,1836,28,14,5,5.111111111111111,5.111111111111111,1.4444444444444444,0.15333333333333332
+sample_3x3,1009,data/augmented/batch/sample_3x3_hc_seed1009_time_indexed.json,9,3,2,1,6,34,34,1836,26,12,5,4.444444444444445,3.888888888888889,1.6666666666666667,0.18755555555555556
+sample_3x3,1010,data/augmented/batch/sample_3x3_hc_seed1010_time_indexed.json,9,3,2,1,6,34,34,1836,27,13,5,5.555555555555555,6.666666666666667,1.4444444444444444,0.11755555555555554
