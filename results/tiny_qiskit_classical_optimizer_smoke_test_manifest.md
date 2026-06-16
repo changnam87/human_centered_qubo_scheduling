@@ -18,3 +18,23 @@ The solver and manual fallback both matched the known optimum with zero numerica
 This confirms the tiny package objective remains correct, while indicating that additional Qiskit solver dependencies are needed for an actual Qiskit exact optimizer path.
 
 This step does not run QAOA, a quantum simulator, or quantum hardware.
+
+## Updated Result After Installing qiskit-algorithms
+
+After installing qiskit-algorithms in the active environment, the tiny Qiskit classical optimizer smoke test was rerun.
+
+The result was PASS.
+
+The solver path was MinimumEigenOptimizer with NumPyMinimumEigensolver.
+
+The solver status was OptimizationResultStatus.SUCCESS.
+
+The solver recovered the known optimum bitstring 101001 with energy 4.0.
+
+The absolute error versus the known optimum was 0.0.
+
+CplexOptimizer remained unavailable because the CPLEX optional dependency was not installed, but this did not prevent the NumPyMinimumEigensolver path from passing.
+
+This remains a classical Qiskit Optimization solver validation step.
+
+It does not run QAOA, a quantum simulator, or quantum hardware.

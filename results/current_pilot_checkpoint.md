@@ -691,3 +691,15 @@ The solver best and manual best matched the known optimum with abs_error = 0.0.
 This confirms the tiny package objective remains correct, while indicating that qiskit_algorithms or CPLEX-related dependencies are needed for an actual Qiskit classical optimizer solve path.
 
 This step did not run QAOA, a quantum simulator, or quantum hardware.
+
+## Additional Result: Tiny Qiskit Classical Optimizer Smoke Test PASS
+
+The tiny Qiskit classical optimizer smoke test was rerun after installing qiskit-algorithms.
+
+The test passed using MinimumEigenOptimizer with NumPyMinimumEigensolver.
+
+The solver recovered the known optimum bitstring 101001 with energy 4.0, matching the manual brute-force reference with abs_error = 0.0.
+
+CplexOptimizer was unavailable due to the missing CPLEX optional dependency, but the NumPyMinimumEigensolver path succeeded.
+
+This step did not run QAOA, a quantum simulator, or quantum hardware.

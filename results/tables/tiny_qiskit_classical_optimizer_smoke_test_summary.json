@@ -1,9 +1,9 @@
 {
   "experiment": "tiny_qiskit_classical_optimizer_smoke_test",
-  "status": "FALLBACK_PASS",
-  "solver_name": "manual_exhaustive_fallback",
-  "solver_status": "FALLBACK",
-  "solver_message": "CplexOptimizer unavailable or failed: MissingOptionalLibraryError(\"The 'CPLEX' library is required to use 'CplexOptimizer'. You can install it with 'pip install 'qiskit-optimization[cplex]''.\") | MinimumEigenOptimizer unavailable or failed: ModuleNotFoundError(\"No module named 'qiskit_algorithms'\") |",
+  "status": "PASS",
+  "solver_name": "MinimumEigenOptimizer_NumPyMinimumEigensolver",
+  "solver_status": "OptimizationResultStatus.SUCCESS",
+  "solver_message": "CplexOptimizer unavailable or failed: MissingOptionalLibraryError(\"The 'CPLEX' library is required to use 'CplexOptimizer'. You can install it with 'pip install 'qiskit-optimization[cplex]''.\") |",
   "num_variables": 6,
   "num_assignments_enumerated_manual_reference": 64,
   "known_best_bitstring": "101001",
