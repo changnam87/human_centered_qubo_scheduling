@@ -517,3 +517,13 @@ Energy validation was added for the small package dimod-compatible BQM-style exp
 The validation compares original QUBO energy, original Ising energy, dimod-style BINARY BQM energy, and dimod-style SPIN BQM energy on sampled assignments.
 
 This checks solver-format consistency without requiring dimod, D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Result: Small Package dimod-Style BQM Energy Validation PASS
+
+Energy validation was completed for the small package dimod-compatible BQM-style exports.
+
+The validation compared original QUBO energy, original Ising energy, dimod-style BINARY BQM energy, and dimod-style SPIN BQM energy on 23 sampled assignments.
+
+The maximum absolute error was approximately 9.09e-13, and the validation status was PASS.
+
+This confirms numerical energy consistency of the dimod-style BQM JSON exports without requiring dimod, D-Wave hardware, quantum annealing, or QAOA.
