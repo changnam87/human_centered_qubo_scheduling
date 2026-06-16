@@ -97,3 +97,13 @@ Low human_reward values required larger lambda_target values to induce human ass
 The widest target-consistent tuning region occurred near human_reward = 3.0, where lambda_target >= 0.5 produced feasible target-consistent optima.
 
 This result confirms the separation of roles among QUBO weights: constraint penalties enforce scheduling feasibility, while human_reward and lambda_target control human-utilization behavior.
+
+## Additional Checkpoint: Medium Time-Indexed QUBO Export
+
+A medium time-indexed QUBO export was added with 3 operations, 3 resources, and horizon 6.
+
+The model uses x[operation, resource, start_time] variables and includes assignment/start-time cost, human-centered workload and ergonomic costs, soft human reward, squared target human-utilization penalty, one-start assignment penalties, resource overlap penalties, and precedence penalties.
+
+Because brute-force validation becomes expensive as variable count grows, the medium prototype uses sampled energy validation plus a generated greedy feasible schedule.
+
+A QUBO size scaling summary was also created to compare assignment-only toy, small time-indexed, medium time-indexed, and sample_4x4-scale formulations.
