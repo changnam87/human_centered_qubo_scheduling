@@ -84,3 +84,19 @@ If the mean distance from target_human_assignments decreases for some nonzero ov
 If overuse_penalty becomes too large and human assignments fall below the desired target, this suggests that the penalty must be calibrated jointly with the human_reward parameter.
 
 These findings remain prototype-level validation results and should motivate additional target-based or workload-balancing variants.
+
+## Observed Overuse-Penalty Pattern
+
+The overuse-penalty batch pilot showed that the penalty term successfully controlled excessive human assignment induced by the linear soft human-reward term.
+
+For human_reward = 2.5, the unpenalized model was already close to the target level of four human assignments. A small overuse penalty of 0.5 produced the best average target proximity, with mean human assignments of 3.6 and mean distance from target of 0.4.
+
+For human_reward = 3.0, the unpenalized model over-assigned operations to human resources, with mean human assignments around 8.4. Increasing the overuse penalty sharply reduced human assignments, and overuse_penalty = 1.0 achieved the target exactly, with mean human assignments of 4.0, mean distance from target of 0.0, and mean overuse count of 0.0.
+
+For human_reward = 3.5, the unpenalized model produced strong over-assignment, with mean human assignments around 12.3. A larger overuse penalty was required. At overuse_penalty = 2.0 and above, the model stabilized at the target level, with mean human assignments of 4.0, mean distance from target of 0.0, and mean overuse count of 0.0.
+
+These results suggest that human_reward and overuse_penalty operate as a coupled tuning pair. Stronger human rewards require stronger overuse penalties to maintain target-oriented human utilization.
+
+The adjusted objective increased when overuse penalties were introduced for stronger reward settings, but this is expected because the goal of the penalty term is not to minimize the reward-adjusted objective alone. Instead, the goal is to prevent excessive human assignment while preserving controlled human involvement.
+
+Overall, this pilot supports the use of an over-utilization penalty as a prototype-level control mechanism for balancing human involvement against workload and ergonomic cost.
