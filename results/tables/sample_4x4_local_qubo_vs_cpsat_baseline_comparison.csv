@@ -1,0 +1,6 @@
+metric,cpsat_baseline,local_qubo_best,difference_local_minus_cpsat,interpretation_note
+total_cost_without_reward,57.0,61.25,4.25,
+human_count,0.0,4.0,4.0,
+workload_cost,0.0,5.5,5.5,
+ergonomic_cost,0.0,3.3,3.3,
+local_or_adjusted_objective,57.0,51.25,-5.75,Objectives are not identical when local QUBO includes human reward and target penalty.

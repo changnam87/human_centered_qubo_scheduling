@@ -203,3 +203,11 @@ The feasible rate was 19 out of 20 restarts, or 0.95.
 The best solution satisfied one-start assignment, resource-overlap, and precedence diagnostics and achieved exactly four human assignments, matching the target_human_assignments value.
 
 This demonstrates that the solver-ready sparse QUBO can be used for energy-based local search, while remaining a prototype heuristic result rather than a proof of optimality.
+
+## Additional Checkpoint: sample_4x4 Local QUBO Solution Component Analysis
+
+The best solution found by the merged sample_4x4 QUBO local search was decomposed into interpretable objective components.
+
+The analysis reports assignment cost, workload cost, ergonomic cost, start-time cost, reward term, target penalty, feasibility penalties, and machine/human/robot assignment counts.
+
+The analysis also compares the local QUBO best solution against the previously established CP-SAT baseline values, with the caveat that the QUBO local-search objective includes human reward and target penalty terms.

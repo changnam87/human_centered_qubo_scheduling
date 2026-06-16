@@ -1,0 +1,32 @@
+{
+  "experiment": "sample_4x4_local_qubo_solution_component_analysis",
+  "best_solution_csv": "results/tables/sample_4x4_merged_qubo_local_search_best_solution.csv",
+  "component_summary_csv": "results/tables/sample_4x4_local_qubo_solution_component_summary.csv",
+  "operation_components_csv": "results/tables/sample_4x4_local_qubo_solution_operation_components.csv",
+  "comparison_csv": "results/tables/sample_4x4_local_qubo_vs_cpsat_baseline_comparison.csv",
+  "assignment_cost": 40.9,
+  "workload_cost": 5.5,
+  "ergonomic_cost": 3.3,
+  "start_time_cost": 11.55,
+  "total_cost_without_reward": 61.25,
+  "human_count": 4,
+  "machine_count": 12,
+  "robot_count": 0,
+  "reward_term": 10.0,
+  "target_penalty": 0.0,
+  "assignment_violations": 0,
+  "resource_overlap_violations": 0,
+  "precedence_violations": 0,
+  "recomputed_objective": 51.25,
+  "local_search_best_energy": 51.25,
+  "abs_error_vs_local_search_energy": 0.0,
+  "feasible": true,
+  "cpsat_baseline_reference": {
+    "total_cost_without_reward": 57.0,
+    "human_count": 0,
+    "workload_cost": 0.0,
+    "ergonomic_cost": 0.0,
+    "local_or_adjusted_objective": 57.0
+  },
+  "note": "Prototype comparison. CP-SAT baseline and QUBO local search objective variants should be interpreted carefully."
+}
