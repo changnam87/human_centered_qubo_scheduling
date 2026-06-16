@@ -341,3 +341,11 @@ The documentation now reports runtime highlights for streaming sparse QUBO expor
 The documentation also reports large local artifact sizes, including approximately 800.64 MB for streamed QUBO coefficients, 112.25 MB for merged QUBO coefficients, and 117.79 MB for Ising couplers.
 
 This improves the engineering transparency of the prototype/pilot validation workflow.
+
+## Additional Checkpoint: Current Release-Style Summary Created
+
+A release-style checkpoint summary was created for the current sample_4x4 QUBO/Ising prototype status.
+
+The summary consolidates sample_4x4 scale, sparse QUBO size, CP-SAT squared-target optimum, tuned local QUBO result, QUBO-to-Ising validation, runtime/artifact profile, and recommended next steps.
+
+The README was updated to point to this release-style checkpoint summary.
