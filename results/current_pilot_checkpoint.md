@@ -753,3 +753,11 @@ The README, technical validation report, v0.2 roadmap, v0.2 progress summary, an
 The documentation records that 45 parameter cases were evaluated and QAOA recovered the known optimum bitstring 101001 with energy 4.0 in 44 cases, giving success_rate approximately 0.9778.
 
 The documentation clearly states that this is a toy simulator/software result only, not quantum hardware execution and not evidence of quantum advantage.
+
+## Additional Checkpoint: Tiny QAOA Package v0.2 Checkpoint Summary Created
+
+A dedicated v0.2 checkpoint summary was created for the tiny Qiskit/QAOA-oriented package.
+
+The summary consolidates the tiny QUBO export, Qiskit Optimization QuadraticProgram validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity results.
+
+The README, v0.2 roadmap, and v0.2 progress summary were updated to point to this checkpoint summary.

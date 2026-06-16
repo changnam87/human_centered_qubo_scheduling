@@ -730,3 +730,13 @@ results/tables/tiny_qaoa_parameter_sensitivity_summary.csv
 results/tables/tiny_qaoa_parameter_sensitivity_best.json
 results/tiny_qaoa_parameter_sensitivity_manifest.md
 ```
+
+## Tiny QAOA Package v0.2 Checkpoint
+
+A compact v0.2 checkpoint summary for the tiny Qiskit/QAOA-oriented package is available at:
+
+```text
+docs/tiny_qaoa_package_v0_2_checkpoint_summary.md
+```
+
+This document summarizes the tiny QUBO export, Qiskit Optimization validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity results.

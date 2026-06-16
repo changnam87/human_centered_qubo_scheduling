@@ -392,3 +392,15 @@ The best selected case was run000_p1_it50_s123, using reps = 1, maxiter = 50, se
 This completes the first QAOA toy parameter-sensitivity objective for the tiny package.
 
 This remains a toy simulator/software result only. It does not run quantum hardware and does not imply quantum advantage.
+
+---
+
+## Tiny QAOA Package v0.2 Checkpoint Summary
+
+A compact checkpoint summary for the tiny QAOA-oriented workflow is available at:
+
+```text
+docs/tiny_qaoa_package_v0_2_checkpoint_summary.md
+```
+
+This checkpoint consolidates the tiny QUBO export, Qiskit Optimization validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity results.

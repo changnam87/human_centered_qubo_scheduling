@@ -269,3 +269,15 @@ qaoa_gap_to_known = 0.0
 This confirms that the tiny QAOA toy software path is robust across the tested parameter grid.
 
 This does not run quantum hardware and does not imply quantum advantage.
+
+---
+
+## Tiny QAOA Package Checkpoint Summary
+
+A dedicated checkpoint summary for the tiny QAOA-oriented workflow has been created:
+
+```text
+docs/tiny_qaoa_package_v0_2_checkpoint_summary.md
+```
+
+It consolidates the tiny package export, Qiskit Optimization validation, classical Qiskit optimizer validation, QAOA simulator smoke test, and QAOA parameter sensitivity results.
