@@ -1,0 +1,119 @@
+{
+  "experiment": "sample_4x4_qubo_export_feasibility",
+  "jobs": 4,
+  "ops_per_job": 4,
+  "operations": 16,
+  "machines": 4,
+  "workers": 3,
+  "robots": 2,
+  "resources": 9,
+  "horizon": 63,
+  "target_human_assignments": 4,
+  "num_variables_representative_valid_starts": 8713,
+  "nominal_variables_if_full_grid": 9072,
+  "num_human_variables": 2883,
+  "linear_terms": 8713,
+  "assignment_quadratic_terms": 2368473,
+  "human_target_quadratic_terms": 4154403,
+  "resource_overlap_terms": 379545,
+  "precedence_terms": 1949832,
+  "estimated_sparse_terms_before_merge": 8860966,
+  "memory_estimate_100_bytes_mb": 845.0475692749023,
+  "memory_estimate_200_bytes_mb": 1690.0951385498047,
+  "precedence_arcs": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      14,
+      15
+    ]
+  ],
+  "assignment_terms_by_operation": {
+    "0": 152628,
+    "1": 147696,
+    "2": 142845,
+    "3": 152628,
+    "4": 147696,
+    "5": 142845,
+    "6": 152628,
+    "7": 147696,
+    "8": 142845,
+    "9": 152628,
+    "10": 147696,
+    "11": 142845,
+    "12": 152628,
+    "13": 147696,
+    "14": 142845,
+    "15": 152628
+  },
+  "resource_overlap_terms_by_resource": {
+    "0": 34880,
+    "1": 34880,
+    "2": 34880,
+    "3": 34880,
+    "4": 48005,
+    "5": 48005,
+    "6": 48005,
+    "7": 48005,
+    "8": 48005
+  },
+  "precedence_terms_by_arc": {
+    "0->1": 162747,
+    "1->2": 162252,
+    "2->3": 162459,
+    "4->5": 162252,
+    "5->6": 162459,
+    "6->7": 162747,
+    "8->9": 162459,
+    "9->10": 162747,
+    "10->11": 162252,
+    "12->13": 162747,
+    "13->14": 162252,
+    "14->15": 162459
+  },
+  "note": "Representative size estimate; exact term count may vary by seed-specific durations and coefficient merging.",
+  "sample_coefficients_csv": "results/tables/sample_4x4_qubo_export_sample_coefficients.csv",
+  "sample_coefficients_rows": 20000
+}

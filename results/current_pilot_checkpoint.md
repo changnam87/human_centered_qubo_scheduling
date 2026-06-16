@@ -107,3 +107,13 @@ The model uses x[operation, resource, start_time] variables and includes assignm
 Because brute-force validation becomes expensive as variable count grows, the medium prototype uses sampled energy validation plus a generated greedy feasible schedule.
 
 A QUBO size scaling summary was also created to compare assignment-only toy, small time-indexed, medium time-indexed, and sample_4x4-scale formulations.
+
+## Additional Checkpoint: sample_4x4 QUBO Export Feasibility
+
+A sample_4x4 QUBO export feasibility study was added.
+
+The study estimates variable count, sparse coefficient term count, memory requirements, and dominant QUBO components for the 16-operation, 9-resource, 63-horizon sample_4x4 scale.
+
+The purpose is to determine whether full sparse QUBO coefficient export should be performed in memory or via streaming CSV export.
+
+This prepares the project for a future full sample_4x4 sparse QUBO coefficient export without yet attempting QUBO optimization at that scale.

@@ -1,0 +1,7 @@
+term_group,count,description
+linear_terms,8713,"One linear term per valid x[operation, resource, start_time] variable."
+assignment_quadratic_terms,2368473,Pairwise terms from one-start-per-operation penalties.
+human_target_quadratic_terms,4154403,Pairwise terms from squared target human-utilization penalty.
+resource_overlap_terms,379545,Forbidden pair terms for overlapping use of the same resource.
+precedence_terms,1949832,Forbidden pair terms for job precedence violations.
+estimated_sparse_terms_before_merge,8860966,Approximate sparse term count before duplicate coefficient merging.
