@@ -317,3 +317,90 @@ The updated results strengthen the prototype validation in several ways:
 5. The tuned local QUBO solution is feasible and target-consistent.
 
 These findings remain prototype/pilot validation results. They do not prove global optimality of the local QUBO heuristic, but they show that the merged sparse QUBO representation supports meaningful near-optimal energy-based search on the representative sample_4x4 instance.
+
+---
+
+## Addendum: QUBO-to-Ising Conversion and Energy Validation
+
+This addendum updates the technical validation report with the QUBO-to-Ising conversion metadata and energy validation results.
+
+## QUBO-to-Ising Conversion
+
+The merged sample_4x4 sparse QUBO was converted conceptually into an Ising representation using the standard binary-to-spin transformation:
+
+```text
+s_i = 2 x_i - 1
+x_i = (1 + s_i) / 2
+```
+
+The QUBO energy convention is:
+
+```text
+E_QUBO(x) = constant + sum_i Q_ii x_i + sum_{i<j} Q_ij x_i x_j
+```
+
+The Ising energy convention is:
+
+```text
+E_Ising(s) = offset + sum_i h_i s_i + sum_{i<j} J_ij s_i s_j
+```
+
+The conversion rules are:
+
+```text
+Q_ii x_i = Q_ii / 2 + Q_ii / 2 * s_i
+Q_ij x_i x_j = Q_ij / 4 * (1 + s_i + s_j + s_i s_j)
+J_ij = Q_ij / 4
+```
+
+The QUBO-to-Ising metadata analysis generated Ising linear fields, coupler metadata, coefficient ranges, density information, and scaling recommendations.
+
+This step prepares the prototype for downstream Ising-based solvers, quantum annealing formats, and QAOA-oriented representations.
+
+## Ising Energy Validation
+
+The QUBO-to-Ising energy validation compared merged QUBO energy and Ising-transformed energy on sampled assignments.
+
+Validation samples included:
+
+```text
+tuned_local_best
+all_zero
+random_one_start_0
+random_one_start_1
+random_sparse_0
+random_sparse_1
+```
+
+Observed result:
+
+```text
+num_samples = 6
+max_abs_error = 0.0
+mean_abs_error = 0.0
+validation_status = PASS
+```
+
+Interpretation: the sample_4x4 QUBO-to-Ising transformation is energy-consistent on the sampled assignments.
+
+This validates the mathematical transformation from QUBO to Ising energy representation. It does not yet indicate quantum hardware execution, quantum annealing execution, or QAOA simulation.
+
+## Updated Prototype Status
+
+With this update, the prototype now supports the following validated path:
+
+```text
+human-centered scheduling formulation
+    -> QUBO-compatible squared target penalty
+    -> time-indexed sparse QUBO export
+    -> streamed coefficient validation
+    -> duplicate-merged compact sparse QUBO
+    -> solver-ready QUBO metadata
+    -> local energy-based heuristic search
+    -> objective-equivalent CP-SAT comparison
+    -> tuned local search gap analysis
+    -> QUBO-to-Ising metadata
+    -> Ising energy validation
+```
+
+The project remains in prototype and pilot validation stage. The current work validates formulation, sparse representation, local heuristic search, and QUBO-to-Ising energy consistency, but it has not yet performed quantum hardware execution.

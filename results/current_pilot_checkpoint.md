@@ -299,3 +299,13 @@ The maximum absolute error was 0.0 and the mean absolute error was 0.0.
 This confirms exact energy consistency between the merged sparse QUBO representation and the corresponding Ising energy representation on the sampled assignments.
 
 This step validates the transformation only; it does not yet run quantum hardware, quantum annealing, or QAOA.
+
+## Additional Checkpoint: Technical Validation Report Updated with Ising Results
+
+The sample_4x4 technical validation report was updated with QUBO-to-Ising conversion metadata and Ising energy validation results.
+
+The report now documents the QUBO-to-Ising transformation using s_i = 2 x_i - 1 and the corresponding energy conventions.
+
+The Ising energy validation passed on six sampled assignments with max_abs_error = 0.0 and mean_abs_error = 0.0.
+
+This confirms energy consistency between the merged sparse QUBO representation and the Ising-transformed representation at prototype validation level.
