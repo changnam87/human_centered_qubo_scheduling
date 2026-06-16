@@ -404,3 +404,51 @@ human-centered scheduling formulation
 ```
 
 The project remains in prototype and pilot validation stage. The current work validates formulation, sparse representation, local heuristic search, and QUBO-to-Ising energy consistency, but it has not yet performed quantum hardware execution.
+
+---
+
+## Addendum: Runtime and Artifact Profile
+
+This addendum summarizes runtime and artifact-size observations for the sample_4x4 QUBO/Ising prototype pipeline.
+
+The profile was generated from existing result artifacts and did not rerun heavy experiments.
+
+## Key Engineering Results
+
+```text
+num_variables = 8713
+merged_terms = 8218171
+quadratic_density approximately 0.2163
+CP-SAT squared-target optimum = 47.70
+tuned local QUBO best = 48.20
+tuned gap to CP-SAT = 0.50
+Ising validation status = PASS
+Ising validation max_abs_error = 0.0
+```
+
+## Runtime Highlights
+
+```text
+streaming sparse QUBO export = approximately 21.39 seconds
+streamed QUBO energy validation = approximately 5.23 seconds
+duplicate merge = approximately 10.30 seconds
+merged QUBO energy validation = approximately 3.58 seconds
+local QUBO initial search load = approximately 3.15 seconds
+```
+
+## Large Local Artifact Sizes
+
+```text
+streamed QUBO coefficients CSV = approximately 800.64 MB
+merged QUBO coefficients CSV = approximately 112.25 MB
+Ising couplers CSV = approximately 117.79 MB
+Ising linear fields CSV = approximately 0.12 MB
+```
+
+## Interpretation
+
+The runtime profile indicates that streaming export, duplicate merge, and energy validation are practical at the representative sample_4x4 scale on a local development machine.
+
+The artifact-size profile confirms that large coefficient files should remain local ignored artifacts. The streamed QUBO coefficient file is especially large, while the merged sparse QUBO and Ising coupler files are smaller but still unsuitable for ordinary Git tracking.
+
+This supports the current engineering strategy: commit scripts, metadata, summaries, manifests, and compact validation outputs, while keeping large coefficient artifacts local or storing them externally if needed.

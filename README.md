@@ -256,3 +256,37 @@ Recommended next steps include:
 4. Add QUBO/Ising scaling exports for external solvers.
 5. Test small instances with external QUBO or annealing-style samplers.
 6. Develop a manuscript-oriented experimental design after prototype validation stabilizes.
+
+## Runtime and Artifact Profile
+
+The sample_4x4 prototype includes a compact engineering profile summarizing runtime and artifact sizes.
+
+Key runtime observations:
+
+```text
+streaming sparse QUBO export = approximately 21.39 seconds
+streamed QUBO energy validation = approximately 5.23 seconds
+duplicate merge = approximately 10.30 seconds
+merged QUBO energy validation = approximately 3.58 seconds
+local QUBO initial search load = approximately 3.15 seconds
+```
+
+Large local artifact sizes:
+
+```text
+streamed QUBO coefficients CSV = approximately 800.64 MB
+merged QUBO coefficients CSV = approximately 112.25 MB
+Ising couplers CSV = approximately 117.79 MB
+Ising linear fields CSV = approximately 0.12 MB
+```
+
+These results show that the prototype can handle sample_4x4-scale sparse QUBO and Ising artifacts locally, but the largest coefficient files should remain ignored artifacts rather than tracked Git files.
+
+The runtime and artifact profile is summarized in:
+
+```text
+results/tables/sample_4x4_runtime_memory_profile_summary.json
+results/tables/sample_4x4_runtime_memory_profile_summary.csv
+results/tables/sample_4x4_large_artifact_size_summary.csv
+results/sample_4x4_runtime_memory_profile_manifest.md
+```

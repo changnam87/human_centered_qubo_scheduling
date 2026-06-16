@@ -331,3 +331,13 @@ The profile reports 8,713 variables, 8,218,171 merged terms, quadratic density a
 Runtime highlights include streaming sparse QUBO export approximately 21.39 seconds, streamed energy validation approximately 5.23 seconds, duplicate merge approximately 10.30 seconds, and merged energy validation approximately 3.58 seconds.
 
 Large local artifact sizes include streamed QUBO coefficients approximately 800.64 MB, merged QUBO coefficients approximately 112.25 MB, and Ising couplers approximately 117.79 MB.
+
+## Additional Checkpoint: README and Technical Report Updated with Runtime Profile
+
+The README and sample_4x4 technical validation report were updated with runtime and artifact-size profile results.
+
+The documentation now reports runtime highlights for streaming sparse QUBO export, streamed energy validation, duplicate merge, merged energy validation, and local QUBO search loading.
+
+The documentation also reports large local artifact sizes, including approximately 800.64 MB for streamed QUBO coefficients, 112.25 MB for merged QUBO coefficients, and 117.79 MB for Ising couplers.
+
+This improves the engineering transparency of the prototype/pilot validation workflow.
