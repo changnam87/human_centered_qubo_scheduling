@@ -501,3 +501,11 @@ A dimod-compatible BQM-style export was added for the small external-solver-read
 The export includes BINARY and SPIN JSON files plus linear/quadratic CSV files.
 
 This prepares the small package for D-Wave Ocean/dimod-style workflows but does not execute D-Wave hardware, quantum annealing, or QAOA.
+
+## Additional Checkpoint: Small Package dimod-Compatible BQM Export
+
+A dimod-compatible BQM-style export was added for the small external-solver-ready QUBO/Ising package.
+
+The export includes BINARY and SPIN JSON files plus linear/quadratic CSV files.
+
+This prepares the small package for D-Wave Ocean/dimod-style workflows but does not execute D-Wave hardware, quantum annealing, or QAOA.
